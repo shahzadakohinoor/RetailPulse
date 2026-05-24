@@ -14,8 +14,8 @@ st.set_page_config(page_title="RetailPulse", layout="wide")
 
 st.title("RetailPulse - AI Customer Analytics Dashboard")
 
-# Load dataset
-uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
+# ---------------- LOAD DATA ----------------
+uploaded_file = st.sidebar.file_uploader("Upload CSV file", type=["csv"])
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
@@ -39,8 +39,6 @@ else:
             "churn": np.random.randint(0, 2, 500)
         })
 
-st.write("Dataset Shape:", df.shape)
-
 required_cols = ["customer_id", "sales", "quantity", "frequency", "recency", "inventory", "churn"]
 missing_cols = [col for col in required_cols if col not in df.columns]
 
@@ -48,14 +46,24 @@ if missing_cols:
     st.error(f"Missing columns: {missing_cols}")
     st.stop()
 
+# ---------------- SIDEBAR ----------------
+st.sidebar.header("Filters")
+
+min_sales, max_sales = int(df["sales"].min()), int(df["sales"].max())
+sales_range = st.sidebar.slider("Sales Range", min_sales, max_sales, (min_sales, max_sales))
+
+df = df[(df["sales"] >= sales_range[0]) & (df["sales"] <= sales_range[1])]
+
 menu = st.sidebar.radio(
     "Select Page",
     ["Overview", "Customer Segmentation", "Churn Prediction", "Inventory Optimization"]
 )
 
+st.write("Dataset Shape:", df.shape)
+
+# ---------------- OVERVIEW ----------------
 if menu == "Overview":
-    st.subheader("Dataset Preview")
-    st.dataframe(df.head())
+    st.subheader("Business Overview")
 
     c1, c2, c3, c4 = st.columns(4)
     c1.metric("Total Sales", f"₹{df['sales'].sum():,.0f}")
@@ -63,22 +71,26 @@ if menu == "Overview":
     c3.metric("Avg Sales", f"₹{df['sales'].mean():.2f}")
     c4.metric("Churn Rate", f"{df['churn'].mean() * 100:.2f}%")
 
-    st.plotly_chart(
-        px.histogram(df, x="sales", title="Sales Distribution"),
-        use_container_width=True
-    )
+    st.subheader("Dataset Preview")
+    st.dataframe(df.head(20))
 
-    st.plotly_chart(
-        px.scatter(
+    col1, col2 = st.columns(2)
+
+    with col1:
+        fig = px.histogram(df, x="sales", title="Sales Distribution")
+        st.plotly_chart(fig, use_container_width=True)
+
+    with col2:
+        fig = px.scatter(
             df,
             x="frequency",
             y="sales",
             color=df["churn"].astype(str),
             title="Frequency vs Sales"
-        ),
-        use_container_width=True
-    )
+        )
+        st.plotly_chart(fig, use_container_width=True)
 
+# ---------------- SEGMENTATION ----------------
 elif menu == "Customer Segmentation":
     st.subheader("Customer Segmentation")
 
@@ -91,20 +103,27 @@ elif menu == "Customer Segmentation":
     model = KMeans(n_clusters=k, random_state=42, n_init=10)
     df["segment"] = model.fit_predict(X_scaled)
 
-    st.plotly_chart(
-        px.scatter(
-            df,
-            x="frequency",
-            y="sales",
-            color=df["segment"].astype(str),
-            hover_data=["customer_id", "recency"],
-            title="Customer Segments"
-        ),
-        use_container_width=True
+    fig = px.scatter(
+        df,
+        x="frequency",
+        y="sales",
+        color=df["segment"].astype(str),
+        hover_data=["customer_id", "recency"],
+        title="Customer Segments"
+    )
+    st.plotly_chart(fig, use_container_width=True)
+
+    st.subheader("Segment Summary")
+    st.dataframe(df.groupby("segment")[["sales", "frequency", "recency"]].mean())
+
+    st.download_button(
+        "Download Segmented Customers",
+        df.to_csv(index=False),
+        "segmented_customers.csv",
+        "text/csv"
     )
 
-    st.dataframe(df)
-
+# ---------------- CHURN ----------------
 elif menu == "Churn Prediction":
     st.subheader("Churn Prediction")
 
@@ -119,7 +138,7 @@ elif menu == "Churn Prediction":
         X, y, test_size=0.25, random_state=42, stratify=y
     )
 
-    model = RandomForestClassifier(n_estimators=100, random_state=42)
+    model = RandomForestClassifier(n_estimators=150, random_state=42)
     model.fit(X_train, y_train)
 
     preds = model.predict(X_test)
@@ -134,15 +153,29 @@ elif menu == "Churn Prediction":
     st.subheader("Top Churn Risk Customers")
     st.dataframe(df.sort_values("churn_risk", ascending=False).head(20))
 
+    importance = pd.DataFrame({
+        "Feature": X.columns,
+        "Importance": model.feature_importances_
+    }).sort_values("Importance", ascending=False)
+
+    fig = px.bar(importance, x="Feature", y="Importance", title="Feature Importance")
+    st.plotly_chart(fig, use_container_width=True)
+
+    st.download_button(
+        "Download Churn Predictions",
+        df.to_csv(index=False),
+        "churn_predictions.csv",
+        "text/csv"
+    )
+
+# ---------------- INVENTORY ----------------
 elif menu == "Inventory Optimization":
     st.subheader("Inventory Optimization")
 
     demand_factor = st.slider("Demand Forecast Multiplier", 1.0, 3.0, 1.5)
 
     df["forecast_demand"] = df["quantity"] * demand_factor
-    df["reorder_quantity"] = np.maximum(
-        df["forecast_demand"] - df["inventory"], 0
-    ).round()
+    df["reorder_quantity"] = np.maximum(df["forecast_demand"] - df["inventory"], 0).round()
 
     st.dataframe(df[[
         "customer_id",
@@ -152,12 +185,17 @@ elif menu == "Inventory Optimization":
         "reorder_quantity"
     ]])
 
-    st.plotly_chart(
-        px.bar(
-            df.head(30),
-            x="customer_id",
-            y="reorder_quantity",
-            title="Reorder Quantity Recommendation"
-        ),
-        use_container_width=True
+    fig = px.bar(
+        df.head(30),
+        x="customer_id",
+        y="reorder_quantity",
+        title="Reorder Quantity Recommendation"
+    )
+    st.plotly_chart(fig, use_container_width=True)
+
+    st.download_button(
+        "Download Inventory Recommendations",
+        df.to_csv(index=False),
+        "inventory_recommendations.csv",
+        "text/csv"
     )
