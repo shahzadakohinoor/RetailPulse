@@ -77,5 +77,16 @@ python -m streamlit run dashboard/app.py
 
 ---
 
+<<<<<<< HEAD
 ## 👤 Author
 **Shahzada Kohinoor**
+=======
+Implement LSTM for forecasting
+
+Deploy using Docker
+
+Add MLflow tracking
+
+👤 Author
+Shahzada Kohinoor
+>>>>>>> e6ab0c58d8e7459f528a9bd2ecf6c5299bcfcf9c
