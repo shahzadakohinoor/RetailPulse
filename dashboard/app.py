@@ -1,9 +1,11 @@
+import os
 import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
 
 from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, roc_auc_score
@@ -13,18 +15,19 @@ st.set_page_config(page_title="RetailPulse", layout="wide")
 st.title("RetailPulse - AI Customer Analytics Dashboard")
 
 # Load dataset
-try:
-    df = pd.read_csv("data/raw/retail_data.csv")
-    st.sidebar.success("Using Real Dataset")
-except FileNotFoundError:
-    uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
+uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
 
-    if uploaded_file:
-        df = pd.read_csv(uploaded_file)
-        st.sidebar.success("Using Uploaded Dataset")
+if uploaded_file:
+    df = pd.read_csv(uploaded_file)
+    st.sidebar.success("Using Uploaded Dataset")
+else:
+    data_path = os.path.join("data", "raw", "retail_data.csv")
+
+    if os.path.exists(data_path):
+        df = pd.read_csv(data_path)
+        st.sidebar.success("Using Real Dataset")
     else:
         st.warning("No dataset found. Using sample data.")
-
         np.random.seed(42)
         df = pd.DataFrame({
             "customer_id": range(1, 501),
@@ -39,7 +42,6 @@ except FileNotFoundError:
 st.write("Dataset Shape:", df.shape)
 
 required_cols = ["customer_id", "sales", "quantity", "frequency", "recency", "inventory", "churn"]
-
 missing_cols = [col for col in required_cols if col not in df.columns]
 
 if missing_cols:
@@ -56,44 +58,51 @@ if menu == "Overview":
     st.dataframe(df.head())
 
     c1, c2, c3, c4 = st.columns(4)
-
     c1.metric("Total Sales", f"₹{df['sales'].sum():,.0f}")
     c2.metric("Customers", df["customer_id"].nunique())
     c3.metric("Avg Sales", f"₹{df['sales'].mean():.2f}")
-    c4.metric("Total Quantity", int(df["quantity"].sum()))
+    c4.metric("Churn Rate", f"{df['churn'].mean() * 100:.2f}%")
 
-    fig = px.histogram(df, x="sales", title="Sales Distribution")
-    st.plotly_chart(fig, use_container_width=True)
-
-    fig2 = px.scatter(
-        df,
-        x="frequency",
-        y="sales",
-        color="churn",
-        title="Frequency vs Sales"
+    st.plotly_chart(
+        px.histogram(df, x="sales", title="Sales Distribution"),
+        use_container_width=True
     )
-    st.plotly_chart(fig2, use_container_width=True)
+
+    st.plotly_chart(
+        px.scatter(
+            df,
+            x="frequency",
+            y="sales",
+            color=df["churn"].astype(str),
+            title="Frequency vs Sales"
+        ),
+        use_container_width=True
+    )
 
 elif menu == "Customer Segmentation":
     st.subheader("Customer Segmentation")
 
-    X = df[["recency", "frequency", "sales"]]
-
     k = st.slider("Select Number of Clusters", 2, 6, 4)
 
-    model = KMeans(n_clusters=k, random_state=42, n_init=10)
-    df["segment"] = model.fit_predict(X)
+    X = df[["recency", "frequency", "sales"]]
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X)
 
-    fig = px.scatter(
-        df,
-        x="frequency",
-        y="sales",
-        color=df["segment"].astype(str),
-        hover_data=["customer_id", "recency"],
-        title="Customer Segments"
+    model = KMeans(n_clusters=k, random_state=42, n_init=10)
+    df["segment"] = model.fit_predict(X_scaled)
+
+    st.plotly_chart(
+        px.scatter(
+            df,
+            x="frequency",
+            y="sales",
+            color=df["segment"].astype(str),
+            hover_data=["customer_id", "recency"],
+            title="Customer Segments"
+        ),
+        use_container_width=True
     )
 
-    st.plotly_chart(fig, use_container_width=True)
     st.dataframe(df)
 
 elif menu == "Churn Prediction":
@@ -102,11 +111,15 @@ elif menu == "Churn Prediction":
     X = df[["sales", "quantity", "frequency", "recency", "inventory"]]
     y = df["churn"]
 
+    if y.nunique() < 2:
+        st.error("Churn column must contain both 0 and 1 values.")
+        st.stop()
+
     X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.25, random_state=42
+        X, y, test_size=0.25, random_state=42, stratify=y
     )
 
-    model = RandomForestClassifier(random_state=42)
+    model = RandomForestClassifier(n_estimators=100, random_state=42)
     model.fit(X_train, y_train)
 
     preds = model.predict(X_test)
@@ -119,34 +132,32 @@ elif menu == "Churn Prediction":
     df["churn_risk"] = model.predict_proba(X)[:, 1]
 
     st.subheader("Top Churn Risk Customers")
-    st.dataframe(
-        df.sort_values("churn_risk", ascending=False).head(20)
-    )
+    st.dataframe(df.sort_values("churn_risk", ascending=False).head(20))
 
 elif menu == "Inventory Optimization":
     st.subheader("Inventory Optimization")
 
-    df["forecast_demand"] = df["quantity"] * 1.5
+    demand_factor = st.slider("Demand Forecast Multiplier", 1.0, 3.0, 1.5)
 
+    df["forecast_demand"] = df["quantity"] * demand_factor
     df["reorder_quantity"] = np.maximum(
         df["forecast_demand"] - df["inventory"], 0
     ).round()
 
-    st.dataframe(
-        df[[
-            "customer_id",
-            "quantity",
-            "inventory",
-            "forecast_demand",
-            "reorder_quantity"
-        ]]
-    )
+    st.dataframe(df[[
+        "customer_id",
+        "quantity",
+        "inventory",
+        "forecast_demand",
+        "reorder_quantity"
+    ]])
 
-    fig = px.bar(
-        df.head(30),
-        x="customer_id",
-        y="reorder_quantity",
-        title="Reorder Quantity Recommendation"
+    st.plotly_chart(
+        px.bar(
+            df.head(30),
+            x="customer_id",
+            y="reorder_quantity",
+            title="Reorder Quantity Recommendation"
+        ),
+        use_container_width=True
     )
-
-    st.plotly_chart(fig, use_container_width=True)
