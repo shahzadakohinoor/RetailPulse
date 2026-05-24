@@ -8,14 +8,15 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, roc_auc_score
+from sklearn.metrics import accuracy_score, roc_auc_score, confusion_matrix
 
 st.set_page_config(page_title="RetailPulse", layout="wide")
 
 st.title("RetailPulse - AI Customer Analytics Dashboard")
+st.caption("Customer Segmentation | Churn Prediction | Inventory Optimization")
 
-# ---------------- LOAD DATA ----------------
-uploaded_file = st.sidebar.file_uploader("Upload CSV file", type=["csv"])
+# ---------------- DATA LOADING ----------------
+uploaded_file = st.sidebar.file_uploader("Upload CSV Dataset", type=["csv"])
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
@@ -39,45 +40,85 @@ else:
             "churn": np.random.randint(0, 2, 500)
         })
 
-required_cols = ["customer_id", "sales", "quantity", "frequency", "recency", "inventory", "churn"]
+required_cols = [
+    "customer_id", "sales", "quantity",
+    "frequency", "recency", "inventory", "churn"
+]
+
 missing_cols = [col for col in required_cols if col not in df.columns]
 
 if missing_cols:
     st.error(f"Missing columns: {missing_cols}")
     st.stop()
 
-# ---------------- SIDEBAR ----------------
-st.sidebar.header("Filters")
+# ---------------- SIDEBAR FILTERS ----------------
+st.sidebar.header("Dashboard Filters")
 
-min_sales, max_sales = int(df["sales"].min()), int(df["sales"].max())
-sales_range = st.sidebar.slider("Sales Range", min_sales, max_sales, (min_sales, max_sales))
+sales_range = st.sidebar.slider(
+    "Sales Range",
+    int(df["sales"].min()),
+    int(df["sales"].max()),
+    (int(df["sales"].min()), int(df["sales"].max()))
+)
 
-df = df[(df["sales"] >= sales_range[0]) & (df["sales"] <= sales_range[1])]
+frequency_range = st.sidebar.slider(
+    "Frequency Range",
+    int(df["frequency"].min()),
+    int(df["frequency"].max()),
+    (int(df["frequency"].min()), int(df["frequency"].max()))
+)
+
+churn_filter = st.sidebar.multiselect(
+    "Churn Status",
+    options=sorted(df["churn"].unique()),
+    default=sorted(df["churn"].unique())
+)
+
+df = df[
+    (df["sales"] >= sales_range[0]) &
+    (df["sales"] <= sales_range[1]) &
+    (df["frequency"] >= frequency_range[0]) &
+    (df["frequency"] <= frequency_range[1]) &
+    (df["churn"].isin(churn_filter))
+]
 
 menu = st.sidebar.radio(
     "Select Page",
-    ["Overview", "Customer Segmentation", "Churn Prediction", "Inventory Optimization"]
+    [
+        "Overview",
+        "Customer Segmentation",
+        "Churn Prediction",
+        "Inventory Optimization",
+        "Data Explorer"
+    ]
 )
 
-st.write("Dataset Shape:", df.shape)
+st.sidebar.write("Rows after filter:", df.shape[0])
 
 # ---------------- OVERVIEW ----------------
 if menu == "Overview":
     st.subheader("Business Overview")
 
-    c1, c2, c3, c4 = st.columns(4)
+    c1, c2, c3, c4, c5 = st.columns(5)
+
     c1.metric("Total Sales", f"₹{df['sales'].sum():,.0f}")
     c2.metric("Customers", df["customer_id"].nunique())
     c3.metric("Avg Sales", f"₹{df['sales'].mean():.2f}")
-    c4.metric("Churn Rate", f"{df['churn'].mean() * 100:.2f}%")
+    c4.metric("Total Quantity", int(df["quantity"].sum()))
+    c5.metric("Churn Rate", f"{df['churn'].mean() * 100:.2f}%")
 
     st.subheader("Dataset Preview")
-    st.dataframe(df.head(20))
+    st.dataframe(df.head(20), use_container_width=True)
 
     col1, col2 = st.columns(2)
 
     with col1:
-        fig = px.histogram(df, x="sales", title="Sales Distribution")
+        fig = px.histogram(
+            df,
+            x="sales",
+            nbins=30,
+            title="Sales Distribution"
+        )
         st.plotly_chart(fig, use_container_width=True)
 
     with col2:
@@ -86,35 +127,68 @@ if menu == "Overview":
             x="frequency",
             y="sales",
             color=df["churn"].astype(str),
+            size="quantity",
             title="Frequency vs Sales"
         )
         st.plotly_chart(fig, use_container_width=True)
 
-# ---------------- SEGMENTATION ----------------
+    fig = px.box(
+        df,
+        x="churn",
+        y="sales",
+        color=df["churn"].astype(str),
+        title="Sales by Churn Status"
+    )
+    st.plotly_chart(fig, use_container_width=True)
+
+# ---------------- CUSTOMER SEGMENTATION ----------------
 elif menu == "Customer Segmentation":
     st.subheader("Customer Segmentation")
 
-    k = st.slider("Select Number of Clusters", 2, 6, 4)
+    k = st.slider("Number of Customer Segments", 2, 8, 4)
 
-    X = df[["recency", "frequency", "sales"]]
+    features = st.multiselect(
+        "Select Features for Segmentation",
+        ["recency", "frequency", "sales", "quantity", "inventory"],
+        default=["recency", "frequency", "sales"]
+    )
+
+    X = df[features]
+
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
 
     model = KMeans(n_clusters=k, random_state=42, n_init=10)
     df["segment"] = model.fit_predict(X_scaled)
 
-    fig = px.scatter(
-        df,
-        x="frequency",
-        y="sales",
-        color=df["segment"].astype(str),
-        hover_data=["customer_id", "recency"],
-        title="Customer Segments"
-    )
-    st.plotly_chart(fig, use_container_width=True)
+    col1, col2 = st.columns(2)
+
+    with col1:
+        fig = px.scatter(
+            df,
+            x="frequency",
+            y="sales",
+            color=df["segment"].astype(str),
+            hover_data=["customer_id", "recency"],
+            title="Customer Segments"
+        )
+        st.plotly_chart(fig, use_container_width=True)
+
+    with col2:
+        fig = px.box(
+            df,
+            x="segment",
+            y="sales",
+            color=df["segment"].astype(str),
+            title="Sales by Segment"
+        )
+        st.plotly_chart(fig, use_container_width=True)
 
     st.subheader("Segment Summary")
-    st.dataframe(df.groupby("segment")[["sales", "frequency", "recency"]].mean())
+    st.dataframe(
+        df.groupby("segment")[["sales", "frequency", "recency", "quantity", "inventory"]].mean(),
+        use_container_width=True
+    )
 
     st.download_button(
         "Download Segmented Customers",
@@ -123,7 +197,7 @@ elif menu == "Customer Segmentation":
         "text/csv"
     )
 
-# ---------------- CHURN ----------------
+# ---------------- CHURN PREDICTION ----------------
 elif menu == "Churn Prediction":
     st.subheader("Churn Prediction")
 
@@ -134,11 +208,22 @@ elif menu == "Churn Prediction":
         st.error("Churn column must contain both 0 and 1 values.")
         st.stop()
 
+    test_size = st.slider("Test Size", 0.2, 0.4, 0.25)
+    trees = st.slider("Number of Trees", 50, 300, 150)
+
     X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.25, random_state=42, stratify=y
+        X,
+        y,
+        test_size=test_size,
+        random_state=42,
+        stratify=y
     )
 
-    model = RandomForestClassifier(n_estimators=150, random_state=42)
+    model = RandomForestClassifier(
+        n_estimators=trees,
+        random_state=42
+    )
+
     model.fit(X_train, y_train)
 
     preds = model.predict(X_test)
@@ -151,15 +236,40 @@ elif menu == "Churn Prediction":
     df["churn_risk"] = model.predict_proba(X)[:, 1]
 
     st.subheader("Top Churn Risk Customers")
-    st.dataframe(df.sort_values("churn_risk", ascending=False).head(20))
+    st.dataframe(
+        df.sort_values("churn_risk", ascending=False).head(20),
+        use_container_width=True
+    )
 
     importance = pd.DataFrame({
         "Feature": X.columns,
         "Importance": model.feature_importances_
     }).sort_values("Importance", ascending=False)
 
-    fig = px.bar(importance, x="Feature", y="Importance", title="Feature Importance")
-    st.plotly_chart(fig, use_container_width=True)
+    col1, col2 = st.columns(2)
+
+    with col1:
+        fig = px.bar(
+            importance,
+            x="Feature",
+            y="Importance",
+            title="Feature Importance"
+        )
+        st.plotly_chart(fig, use_container_width=True)
+
+    with col2:
+        cm = confusion_matrix(y_test, preds)
+        cm_df = pd.DataFrame(
+            cm,
+            index=["Actual 0", "Actual 1"],
+            columns=["Predicted 0", "Predicted 1"]
+        )
+        fig = px.imshow(
+            cm_df,
+            text_auto=True,
+            title="Confusion Matrix"
+        )
+        st.plotly_chart(fig, use_container_width=True)
 
     st.download_button(
         "Download Churn Predictions",
@@ -168,28 +278,43 @@ elif menu == "Churn Prediction":
         "text/csv"
     )
 
-# ---------------- INVENTORY ----------------
+# ---------------- INVENTORY OPTIMIZATION ----------------
 elif menu == "Inventory Optimization":
     st.subheader("Inventory Optimization")
 
-    demand_factor = st.slider("Demand Forecast Multiplier", 1.0, 3.0, 1.5)
+    demand_factor = st.slider("Demand Forecast Multiplier", 1.0, 5.0, 1.5)
+    safety_stock = st.slider("Safety Stock %", 0, 100, 20)
 
     df["forecast_demand"] = df["quantity"] * demand_factor
-    df["reorder_quantity"] = np.maximum(df["forecast_demand"] - df["inventory"], 0).round()
+    df["safety_stock"] = df["forecast_demand"] * (safety_stock / 100)
 
-    st.dataframe(df[[
-        "customer_id",
-        "quantity",
-        "inventory",
-        "forecast_demand",
-        "reorder_quantity"
-    ]])
+    df["reorder_quantity"] = np.maximum(
+        df["forecast_demand"] + df["safety_stock"] - df["inventory"],
+        0
+    ).round()
+
+    c1, c2, c3 = st.columns(3)
+    c1.metric("Total Forecast Demand", round(df["forecast_demand"].sum(), 2))
+    c2.metric("Total Safety Stock", round(df["safety_stock"].sum(), 2))
+    c3.metric("Total Reorder Qty", round(df["reorder_quantity"].sum(), 2))
+
+    st.dataframe(
+        df[[
+            "customer_id",
+            "quantity",
+            "inventory",
+            "forecast_demand",
+            "safety_stock",
+            "reorder_quantity"
+        ]],
+        use_container_width=True
+    )
 
     fig = px.bar(
-        df.head(30),
+        df.sort_values("reorder_quantity", ascending=False).head(30),
         x="customer_id",
         y="reorder_quantity",
-        title="Reorder Quantity Recommendation"
+        title="Top Reorder Recommendations"
     )
     st.plotly_chart(fig, use_container_width=True)
 
@@ -197,5 +322,38 @@ elif menu == "Inventory Optimization":
         "Download Inventory Recommendations",
         df.to_csv(index=False),
         "inventory_recommendations.csv",
+        "text/csv"
+    )
+
+# ---------------- DATA EXPLORER ----------------
+elif menu == "Data Explorer":
+    st.subheader("Interactive Data Explorer")
+
+    selected_columns = st.multiselect(
+        "Select Columns",
+        df.columns.tolist(),
+        default=df.columns.tolist()
+    )
+
+    st.dataframe(df[selected_columns], use_container_width=True)
+
+    st.subheader("Summary Statistics")
+    st.dataframe(df.describe(), use_container_width=True)
+
+    chart_x = st.selectbox("X-axis", df.columns)
+    chart_y = st.selectbox("Y-axis", df.select_dtypes(include=np.number).columns)
+
+    fig = px.scatter(
+        df,
+        x=chart_x,
+        y=chart_y,
+        title=f"{chart_x} vs {chart_y}"
+    )
+    st.plotly_chart(fig, use_container_width=True)
+
+    st.download_button(
+        "Download Filtered Dataset",
+        df.to_csv(index=False),
+        "filtered_dataset.csv",
         "text/csv"
     )
