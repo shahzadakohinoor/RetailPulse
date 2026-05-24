@@ -1,19 +1,18 @@
 # RetailPulse – AI-Powered Customer Analytics & Demand Forecasting
 
 ## 📌 Overview
-RetailPulse is an AI-powered retail analytics project that helps businesses understand customer behavior, predict churn, segment customers, and optimize inventory decisions using machine learning.
+RetailPulse is a data science project that analyzes retail customer behavior, predicts churn, segments customers, and optimizes inventory using machine learning.
 
----
+## 🌐 Live Demo
+🚀 Streamlit App: https://retailpulse-kohinoor.streamlit.app/
 
-## 🚀 Features
-- Customer Segmentation using K-Means
-- Churn Prediction using Random Forest
-- Inventory Optimization
-- Demand Forecasting
-- Interactive Streamlit Dashboard
-- Real CSV Dataset Integration
-
----
+## 🚀 Key Highlights
+- Interactive Streamlit dashboard
+- Customer segmentation using K-Means
+- Churn prediction using Random Forest
+- Inventory optimization recommendations
+- Dynamic filters and downloadable reports
+- GitHub-ready project structure
 
 ## 🏗️ Project Structure
 
@@ -34,8 +33,6 @@ RetailPulse/
 └── .gitignore
 ```
 
----
-
 ## 🛠️ Tech Stack
 - Python
 - Pandas
@@ -46,17 +43,6 @@ RetailPulse/
 - Docker
 - Git & GitHub
 
----
-
-## ▶️ How to Run
-
-```bash
-pip install -r requirements.txt
-python -m streamlit run dashboard/app.py
-```
-
----
-
 ## 📊 Modules
 1. Exploratory Data Analysis
 2. Feature Engineering
@@ -66,16 +52,36 @@ python -m streamlit run dashboard/app.py
 6. Inventory Optimization
 7. Streamlit Dashboard
 
----
+## ▶️ How to Run
+
+```bash
+pip install -r requirements.txt
+python -m streamlit run dashboard/app.py
+```
+
+## 📈 Dashboard Features
+- Upload custom CSV dataset
+- Filter sales and frequency dynamically
+- View business KPIs
+- Analyze customer segments
+- Predict churn risk
+- Generate inventory reorder recommendations
+- Download processed results as CSV
+
+## 📌 Expected Dataset Columns
+
+```text
+customer_id, sales, quantity, frequency, recency, inventory, churn
+```
 
 ## 📈 Future Improvements
-- Add a larger real-world retail dataset
-- Improve model accuracy with XGBoost
-- Add advanced time-series forecasting
-- Deploy dashboard online
-- Add MLflow experiment tracking
-
----
+- Add larger real-world retail dataset
+- Add XGBoost model
+- Add SHAP explainability
+- Add Prophet/LSTM forecasting
+- Add MLflow tracking
+- Add GitHub Actions CI/CD
+- Deploy with Docker
 
 ## 👤 Author
 **Shahzada Kohinoor**
