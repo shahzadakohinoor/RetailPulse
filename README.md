@@ -14,8 +14,9 @@ RetailPulse is a data science project that analyzes customer behavior, predicts 
 ---
 
 ## 🏗️ Project Structure
+
+```text
 RetailPulse/
-│
 ├── data/
 ├── notebooks/
 ├── src/
