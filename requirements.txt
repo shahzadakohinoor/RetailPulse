@@ -7,3 +7,4 @@ xgboost
 jupyter
 xgboost
 shap
+seaborn
