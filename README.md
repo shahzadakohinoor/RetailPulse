@@ -1,40 +1,50 @@
 # RetailPulse – AI-Powered Customer Analytics & Demand Forecasting
 
 ## 📌 Overview
-RetailPulse is a data science project that analyzes customer behavior, predicts churn, and optimizes inventory using machine learning.
+RetailPulse is an AI-powered retail analytics project that helps businesses understand customer behavior, predict churn, segment customers, and optimize inventory decisions using machine learning.
 
 ---
 
 ## 🚀 Features
-- Customer Segmentation (K-Means)
-- Churn Prediction (Random Forest)
+- Customer Segmentation using K-Means
+- Churn Prediction using Random Forest
 - Inventory Optimization
-- Interactive Dashboard (Streamlit)
+- Demand Forecasting
+- Interactive Streamlit Dashboard
+- Real CSV Dataset Integration
 
 ---
 
 ## 🏗️ Project Structure
+
+```text
 RetailPulse/
-│
 ├── data/
+│   ├── raw/
+│   └── processed/
 ├── notebooks/
 ├── src/
 ├── dashboard/
+│   └── app.py
 ├── reports/
 ├── tests/
 ├── requirements.txt
 ├── Dockerfile
 ├── README.md
 └── .gitignore
+```
 
 ---
 
 ## 🛠️ Tech Stack
 - Python
-- Pandas, NumPy
+- Pandas
+- NumPy
 - Scikit-learn
-- Streamlit
 - Plotly
+- Streamlit
+- Docker
+- Git & GitHub
 
 ---
 
@@ -43,24 +53,29 @@ RetailPulse/
 ```bash
 pip install -r requirements.txt
 python -m streamlit run dashboard/app.py
+```
 
-📊 Modules
-Customer Segmentation
+---
 
-Churn Prediction
+## 📊 Modules
+1. Exploratory Data Analysis
+2. Feature Engineering
+3. Customer Segmentation
+4. Demand Forecasting
+5. Churn Prediction
+6. Inventory Optimization
+7. Streamlit Dashboard
 
-Inventory Optimization
+---
 
-Data Visualization
+## 📈 Future Improvements
+- Add a larger real-world retail dataset
+- Improve model accuracy with XGBoost
+- Add advanced time-series forecasting
+- Deploy dashboard online
+- Add MLflow experiment tracking
 
-📈 Future Improvements
-Add real-world dataset
+---
 
-Implement LSTM for forecasting
-
-Deploy using Docker
-
-Add MLflow tracking
-
-👤 Author
-Shahzada Kohinoor
+## 👤 Author
+**Shahzada Kohinoor**
