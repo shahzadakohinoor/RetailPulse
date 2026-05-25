@@ -6,7 +6,7 @@ RetailPulse is an end-to-end data science project designed to analyze retail cus
 ---
 
 ## 🌐 Live Demo
-👉 https://retailpulse-kohinoor.streamlit.app/
+https://retailpulse-kohinoor.streamlit.app/
 
 ---
 
