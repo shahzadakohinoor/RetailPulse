@@ -71,10 +71,6 @@ div[data-testid="stMetricLabel"] {
     letter-spacing: 2px;
 }
 
-h1, h2, h3 {
-    color: #dbeafe;
-}
-
 .stTabs [data-baseweb="tab-list"] {
     gap: 20px;
     border-bottom: 1px solid #334155;
@@ -91,12 +87,19 @@ h1, h2, h3 {
     border-bottom: 3px solid #fbbf24;
 }
 
+.footer {
+    color: #64748b;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
 .block-container {
     padding-top: 2rem;
 }
 </style>
 """, unsafe_allow_html=True)
-
 
 def style_fig(fig):
     fig.update_layout(
@@ -108,7 +111,6 @@ def style_fig(fig):
         margin=dict(l=20, r=20, t=60, b=20)
     )
     return fig
-
 
 st.markdown("""
 <div class="hero">
@@ -185,11 +187,7 @@ if df.empty:
 st.sidebar.metric("Rows After Filter", df.shape[0])
 
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "Overview",
-    "Segments",
-    "Churn Risk",
-    "Inventory",
-    "Data Explorer"
+    "OVERVIEW", "SEGMENTS", "CHURN RISK", "INVENTORY", "DATA EXPLORER"
 ])
 
 with tab1:
@@ -246,8 +244,7 @@ with tab2:
         st.stop()
 
     X = df[features]
-    scaler = StandardScaler()
-    X_scaled = scaler.fit_transform(X)
+    X_scaled = StandardScaler().fit_transform(X)
 
     model = KMeans(n_clusters=k, random_state=42, n_init=10)
     df["segment"] = model.fit_predict(X_scaled)
@@ -276,18 +273,12 @@ with tab2:
         )
         st.plotly_chart(style_fig(fig), use_container_width=True)
 
-    st.subheader("Segment Summary")
     st.dataframe(
         df.groupby("segment")[["sales", "frequency", "recency", "quantity", "inventory"]].mean(),
         use_container_width=True
     )
 
-    st.download_button(
-        "Download Segmented Customers",
-        df.to_csv(index=False),
-        "segmented_customers.csv",
-        "text/csv"
-    )
+    st.download_button("Download Segmented Customers", df.to_csv(index=False), "segmented_customers.csv", "text/csv")
 
 with tab3:
     st.subheader("Churn Prediction")
@@ -319,11 +310,7 @@ with tab3:
 
     df["churn_risk"] = model.predict_proba(X)[:, 1]
 
-    st.subheader("Top Churn Risk Customers")
-    st.dataframe(
-        df.sort_values("churn_risk", ascending=False).head(20),
-        use_container_width=True
-    )
+    st.dataframe(df.sort_values("churn_risk", ascending=False).head(20), use_container_width=True)
 
     importance = pd.DataFrame({
         "Feature": X.columns,
@@ -338,20 +325,11 @@ with tab3:
 
     with col2:
         cm = confusion_matrix(y_test, preds)
-        cm_df = pd.DataFrame(
-            cm,
-            index=["Actual 0", "Actual 1"],
-            columns=["Predicted 0", "Predicted 1"]
-        )
+        cm_df = pd.DataFrame(cm, index=["Actual 0", "Actual 1"], columns=["Predicted 0", "Predicted 1"])
         fig = px.imshow(cm_df, text_auto=True, title="Confusion Matrix")
         st.plotly_chart(style_fig(fig), use_container_width=True)
 
-    st.download_button(
-        "Download Churn Predictions",
-        df.to_csv(index=False),
-        "churn_predictions.csv",
-        "text/csv"
-    )
+    st.download_button("Download Churn Predictions", df.to_csv(index=False), "churn_predictions.csv", "text/csv")
 
 with tab4:
     st.subheader("Inventory Optimization")
@@ -380,29 +358,16 @@ with tab4:
     st.plotly_chart(style_fig(fig), use_container_width=True)
 
     st.dataframe(
-        df[[
-            "customer_id", "quantity", "inventory",
-            "forecast_demand", "safety_stock", "reorder_quantity"
-        ]],
+        df[["customer_id", "quantity", "inventory", "forecast_demand", "safety_stock", "reorder_quantity"]],
         use_container_width=True
     )
 
-    st.download_button(
-        "Download Inventory Recommendations",
-        df.to_csv(index=False),
-        "inventory_recommendations.csv",
-        "text/csv"
-    )
+    st.download_button("Download Inventory Recommendations", df.to_csv(index=False), "inventory_recommendations.csv", "text/csv")
 
 with tab5:
     st.subheader("Interactive Data Explorer")
 
-    selected_columns = st.multiselect(
-        "Select Columns",
-        df.columns.tolist(),
-        default=df.columns.tolist()
-    )
-
+    selected_columns = st.multiselect("Select Columns", df.columns.tolist(), default=df.columns.tolist())
     st.dataframe(df[selected_columns], use_container_width=True)
 
     st.subheader("Summary Statistics")
@@ -414,9 +379,11 @@ with tab5:
     fig = px.scatter(df, x=chart_x, y=chart_y, title=f"{chart_x} vs {chart_y}")
     st.plotly_chart(style_fig(fig), use_container_width=True)
 
-    st.download_button(
-        "Download Filtered Dataset",
-        df.to_csv(index=False),
-        "filtered_dataset.csv",
-        "text/csv"
-    )
+    st.download_button("Download Filtered Dataset", df.to_csv(index=False), "filtered_dataset.csv", "text/csv")
+
+st.markdown("---")
+st.markdown("""
+<div class="footer">
+RETAILPULSE · ZIDIO DEVELOPMENT · DATA SCIENCE & ANALYTICS PORTFOLIO
+</div>
+""", unsafe_allow_html=True)
