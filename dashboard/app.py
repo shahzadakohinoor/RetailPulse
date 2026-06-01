@@ -384,6 +384,6 @@ with tab5:
 st.markdown("---")
 st.markdown("""
 <div class="footer">
-RETAILPULSE · ZIDIO DEVELOPMENT · DATA SCIENCE & ANALYTICS PORTFOLIO
+RETAILPULSE · SHAHZADA KOHINOOR · ZIDIO DEVELOPMENT · DATA SCIENCE & ANALYTICS PORTFOLIO
 </div>
 """, unsafe_allow_html=True)
