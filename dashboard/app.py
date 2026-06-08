@@ -1,389 +1,440 @@
 import os
-import streamlit as st
 import pandas as pd
-import numpy as np
 import plotly.express as px
+import plotly.graph_objects as go
+import streamlit as st
 
-from sklearn.cluster import KMeans
-from sklearn.preprocessing import StandardScaler
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, roc_auc_score, confusion_matrix
+st.set_page_config(
+    page_title="RetailPulse (AI-Driven Analytics)",
+    page_icon="▲",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
 
-st.set_page_config(page_title="RetailPulse", layout="wide")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-st.markdown("""
+BG = "#0a0e16"
+PANEL = "#10151f"
+BORDER = "#1e2733"
+TEXT = "#c8d3e0"
+MUTED = "#5d6b7d"
+ACCENT = "#f0a92b"
+POS = "#2dbd6e"
+NEG = "#e5484d"
+
+SEGMENT_COLORS = {
+    "Champions": "#2dbd6e",
+    "Loyal Customers": "#3b9eff",
+    "Recent Low-Value": "#f0a92b",
+    "At Risk / Lost": "#e5484d",
+}
+
+st.markdown(f"""
 <style>
-.stApp {
-    background: linear-gradient(135deg, #050816, #0f172a);
-    color: #dbeafe;
-    font-family: monospace;
-}
+:root {{
+ --bg:{BG}; --panel:{PANEL}; --border:{BORDER};
+ --text:{TEXT}; --muted:{MUTED}; --accent:{ACCENT};
+}}
+.stApp {{ background-color: var(--bg); }}
+#MainMenu, footer, header {{ visibility: hidden; }}
+.block-container {{ padding-top: 1.2rem; max-width: 1500px; }}
+* {{ font-family: Inter, sans-serif; }}
+h1,h2,h3,h4 {{ color: var(--text); }}
 
-[data-testid="stSidebar"] {
-    background-color: #020617;
-    border-right: 1px solid #1e293b;
-}
+.hdr {{
+ display:flex; justify-content:space-between; align-items:flex-end;
+ border-bottom:1px solid var(--border); padding-bottom:12px; margin-bottom:14px;
+}}
+.brand {{ font-size:22px; font-weight:700; color:var(--text); }}
+.sq {{ color:var(--accent); }}
+.brand small {{
+ color:var(--muted); font-size:11px; letter-spacing:.18em;
+ text-transform:uppercase; display:block; margin-top:4px;
+}}
+.meta {{
+ font-family:monospace; font-size:11px; color:var(--muted);
+ text-align:right; line-height:1.6;
+}}
+.meta b {{ color:var(--text); }}
 
-.hero {
-    background: linear-gradient(135deg, #111827, #1e293b);
-    padding: 28px;
-    border-radius: 18px;
-    border: 1px solid #334155;
-    margin-bottom: 25px;
-    box-shadow: 0 0 30px rgba(251,191,36,0.12);
-}
+.ticker {{
+ display:flex; background:var(--panel); border:1px solid var(--border);
+ border-radius:6px; overflow:hidden; margin-bottom:16px;
+}}
+.tk {{ flex:1; padding:12px 16px; border-right:1px solid var(--border); }}
+.tk:last-child {{ border-right:none; }}
+.tk span {{
+ font-size:10px; letter-spacing:.13em; text-transform:uppercase; color:var(--muted);
+}}
+.tk b {{
+ font-family:monospace; font-size:16px; color:var(--text); display:block; margin-top:4px;
+}}
+.tk b.acc {{ color:var(--accent); }}
 
-.hero h1 {
-    color: #fbbf24;
-    font-size: 44px;
-    margin-bottom: 4px;
-}
+.tilerow {{ display:flex; gap:10px; margin:8px 0 12px 0; }}
+.tile {{
+ flex:1; background:var(--panel); border:1px solid var(--border);
+ border-radius:6px; padding:15px 16px;
+}}
+.tlabel {{
+ font-size:10px; letter-spacing:.12em; text-transform:uppercase;
+ color:var(--muted); margin-bottom:9px;
+}}
+.tval {{
+ font-family:monospace; font-size:25px; font-weight:700;
+ color:var(--text); line-height:1;
+}}
+.tsub {{ font-family:monospace; font-size:11px; margin-top:7px; }}
+.pos {{ color:{POS}; }}
+.neg {{ color:{NEG}; }}
+.acc {{ color:{ACCENT}; }}
+.mut {{ color:{MUTED}; }}
 
-.hero p {
-    color: #93c5fd;
-    letter-spacing: 3px;
-    font-size: 15px;
-}
-
-.stMetric {
-    background: #111827;
-    border: 1px solid #334155;
-    padding: 18px;
-    border-radius: 14px;
-    transition: 0.3s ease;
-}
-
-.stMetric:hover {
-    transform: scale(1.03);
-    border-color: #fbbf24;
-    box-shadow: 0 0 20px rgba(251,191,36,0.25);
-}
-
-div[data-testid="stMetricValue"] {
-    color: #fbbf24;
-    font-size: 28px;
-}
-
-div[data-testid="stMetricLabel"] {
-    color: #94a3b8;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.stTabs [data-baseweb="tab-list"] {
-    gap: 20px;
-    border-bottom: 1px solid #334155;
-}
-
-.stTabs [data-baseweb="tab"] {
-    color: #94a3b8;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
-.stTabs [aria-selected="true"] {
-    color: #fbbf24;
-    border-bottom: 3px solid #fbbf24;
-}
-
-.footer {
-    color: #64748b;
-    font-size: 13px;
-    letter-spacing: 2px;
-    margin-top: 20px;
-    padding-bottom: 20px;
-}
-
-.block-container {
-    padding-top: 2rem;
-}
+.sect {{
+ font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+ color:var(--muted); margin:22px 0 9px 0; padding-left:9px;
+ border-left:2px solid var(--accent);
+}}
+.note {{
+ background:rgba(240,169,43,.05); border:1px solid var(--border);
+ border-left:2px solid var(--accent); border-radius:4px; padding:12px 15px;
+ font-size:13px; color:var(--text); margin-top:12px; line-height:1.55;
+}}
+.stTabs [data-baseweb="tab-list"] {{
+ gap:0; border-bottom:1px solid var(--border);
+}}
+.stTabs [data-baseweb="tab"] {{
+ background:transparent; border-radius:0; padding:10px 22px;
+ font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
+}}
+.stTabs [aria-selected="true"] {{
+ color:var(--text); border-bottom:2px solid var(--accent);
+}}
+[data-testid="stDataFrame"] {{
+ border:1px solid var(--border); border-radius:6px;
+}}
 </style>
 """, unsafe_allow_html=True)
 
-def style_fig(fig):
+
+def gbp(x):
+    if x >= 1e6:
+        return f"£{x/1e6:.1f}M"
+    if x >= 1e3:
+        return f"£{x/1e3:.0f}K"
+    return f"£{x:,.0f}"
+
+
+def tile(label, value, sub="", tone="mut"):
+    return (
+        f'<div class="tile"><div class="tlabel">{label}</div>'
+        f'<div class="tval">{value}</div>'
+        f'<div class="tsub {tone}">{sub}</div></div>'
+    )
+
+
+def tilerow(tiles):
+    st.markdown('<div class="tilerow">' + "".join(tiles) + '</div>', unsafe_allow_html=True)
+
+
+def sect(text):
+    st.markdown(f'<div class="sect">{text}</div>', unsafe_allow_html=True)
+
+
+def note(text):
+    st.markdown(f'<div class="note">{text}</div>', unsafe_allow_html=True)
+
+
+def style_fig(fig, height=320, legend=True):
     fig.update_layout(
         template="plotly_dark",
-        paper_bgcolor="#111827",
-        plot_bgcolor="#111827",
-        font=dict(color="#DBEAFE"),
-        title_font=dict(size=20, color="#FBBF24"),
-        margin=dict(l=20, r=20, t=60, b=20)
+        height=height,
+        margin=dict(l=10, r=10, t=42, b=10),
+        paper_bgcolor=PANEL,
+        plot_bgcolor=PANEL,
+        font=dict(family="monospace", color=TEXT, size=11),
+        title_font=dict(size=13, color=MUTED),
+        colorway=[ACCENT, "#3b9eff", POS, NEG, "#a78bfa"],
+        showlegend=legend,
+        legend=dict(orientation="h", y=-0.22, x=0, font=dict(size=10)),
     )
+    fig.update_xaxes(gridcolor=BORDER, zerolinecolor=BORDER, linecolor=BORDER)
+    fig.update_yaxes(gridcolor=BORDER, zerolinecolor=BORDER, linecolor=BORDER)
     return fig
 
-st.markdown("""
-<div class="hero">
-<h1>RetailPulse ▲</h1>
-<p>AI RETAIL INTELLIGENCE TERMINAL</p>
+
+@st.cache_data
+def load_data():
+    rfm = pd.read_csv(os.path.join(BASE_DIR, "data", "processed", "rfm_clustered.csv"))
+    churn = pd.read_csv(os.path.join(BASE_DIR, "data", "processed", "churn_scores.csv"))
+    forecast = pd.read_csv(os.path.join(BASE_DIR, "data", "processed", "weekly_forecast.csv"))
+    inventory = pd.read_csv(os.path.join(BASE_DIR, "data", "processed", "inventory_recommendations.csv"))
+
+    forecast.columns = ["Week", "ForecastedDemand"]
+
+    rfm = rfm.merge(
+        churn[["CustomerID", "Churn_Probability"]],
+        on="CustomerID",
+        how="left"
+    )
+
+    return rfm, churn, forecast, inventory
+
+
+try:
+    rfm, churn, forecast, inventory = load_data()
+except FileNotFoundError as e:
+    st.error(f"Data file not found. Run from project root or dashboard folder. Details: {e}")
+    st.stop()
+
+TOTAL_REV = rfm["Monetary"].sum()
+AVG_VAL = rfm["Monetary"].mean()
+N_CHAMP = int((rfm["Cluster_Name"] == "Champions").sum())
+N_RISK = int((churn["Churn_Probability"] > 0.7).sum())
+CHURN_RATE = churn["Churned"].mean() * 100
+FC_AVG = forecast["ForecastedDemand"].mean()
+
+st.markdown(f"""
+<div class="hdr">
+  <div class="brand">RetailPulse <span class="sq">▲</span>
+    <small>Retail Intelligence Terminal</small>
+  </div>
+  <div class="meta">
+    UK ONLINE RETAIL · DEC 2010–DEC 2011<br>
+    SOURCE <b>397,884 TXNS</b> · <b>{len(rfm):,} CUSTOMERS</b>
+  </div>
 </div>
 """, unsafe_allow_html=True)
 
-uploaded_file = st.sidebar.file_uploader("Upload CSV Dataset", type=["csv"])
+st.markdown(f"""
+<div class="ticker">
+  <div class="tk"><span>Customers</span><b>{len(rfm):,}</b></div>
+  <div class="tk"><span>Revenue</span><b class="acc">{gbp(TOTAL_REV)}</b></div>
+  <div class="tk"><span>Champions</span><b>{N_CHAMP:,}</b></div>
+  <div class="tk"><span>Churn risk >0.7</span><b>{N_RISK:,}</b></div>
+  <div class="tk"><span>Fcst demand / wk</span><b>{FC_AVG:,.0f}</b></div>
+  <div class="tk"><span>Portfolio churn</span><b>{CHURN_RATE:.0f}%</b></div>
+</div>
+""", unsafe_allow_html=True)
 
-if uploaded_file:
-    df = pd.read_csv(uploaded_file)
-    st.sidebar.success("Using Uploaded Dataset")
-else:
-    data_path = os.path.join("data", "raw", "retail_data.csv")
-
-    if os.path.exists(data_path):
-        df = pd.read_csv(data_path)
-        st.sidebar.success("Using Real Dataset")
-    else:
-        st.warning("No dataset found. Using sample data.")
-        np.random.seed(42)
-        df = pd.DataFrame({
-            "customer_id": range(1, 501),
-            "sales": np.random.randint(100, 5000, 500),
-            "quantity": np.random.randint(1, 20, 500),
-            "frequency": np.random.randint(1, 30, 500),
-            "recency": np.random.randint(1, 365, 500),
-            "inventory": np.random.randint(10, 300, 500),
-            "churn": np.random.randint(0, 2, 500)
-        })
-
-required_cols = ["customer_id", "sales", "quantity", "frequency", "recency", "inventory", "churn"]
-missing_cols = [col for col in required_cols if col not in df.columns]
-
-if missing_cols:
-    st.error(f"Missing columns: {missing_cols}")
-    st.stop()
-
-st.sidebar.header("Filters")
-
-sales_range = st.sidebar.slider(
-    "Sales Range",
-    int(df["sales"].min()),
-    int(df["sales"].max()),
-    (int(df["sales"].min()), int(df["sales"].max()))
+t1, t2, t3, t4, t5 = st.tabs(
+    ["Overview", "Segments", "Demand Forecast", "Churn Risk", "Inventory"]
 )
 
-frequency_range = st.sidebar.slider(
-    "Frequency Range",
-    int(df["frequency"].min()),
-    int(df["frequency"].max()),
-    (int(df["frequency"].min()), int(df["frequency"].max()))
-)
+with t1:
+    champ_rev = rfm.loc[rfm["Cluster_Name"] == "Champions", "Monetary"].sum()
+    champ_rev_sh = champ_rev / TOTAL_REV * 100
+    champ_cnt_sh = N_CHAMP / len(rfm) * 100
 
-churn_filter = st.sidebar.multiselect(
-    "Churn Status",
-    options=sorted(df["churn"].unique()),
-    default=sorted(df["churn"].unique())
-)
+    tilerow([
+        tile("Total Revenue", gbp(TOTAL_REV), "lifetime, cleaned txns"),
+        tile("Avg Customer Value", gbp(AVG_VAL), "per customer"),
+        tile("Champions", f"{N_CHAMP:,}", f"{champ_cnt_sh:.0f}% of base", "pos"),
+        tile("High Churn Risk", f"{N_RISK:,}", "prob > 0.70 — act now", "neg"),
+    ])
 
-df = df[
-    (df["sales"] >= sales_range[0]) &
-    (df["sales"] <= sales_range[1]) &
-    (df["frequency"] >= frequency_range[0]) &
-    (df["frequency"] <= frequency_range[1]) &
-    (df["churn"].isin(churn_filter))
-]
+    sect("Customer base vs revenue concentration")
+    c1, c2 = st.columns([3, 2])
 
-if df.empty:
-    st.error("No data available after applying filters.")
-    st.stop()
-
-st.sidebar.metric("Rows After Filter", df.shape[0])
-
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "OVERVIEW", "SEGMENTS", "CHURN RISK", "INVENTORY", "DATA EXPLORER"
-])
-
-with tab1:
-    st.subheader("Business Overview")
-
-    c1, c2, c3, c4, c5 = st.columns(5)
-    c1.metric("Customers", df["customer_id"].nunique())
-    c2.metric("Revenue", f"₹{df['sales'].sum():,.0f}")
-    c3.metric("Avg Sales", f"₹{df['sales'].mean():.0f}")
-    c4.metric("Quantity", int(df["quantity"].sum()))
-    c5.metric("Churn Rate", f"{df['churn'].mean() * 100:.2f}%")
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        fig = px.histogram(df, x="sales", nbins=30, title="Sales Distribution")
-        st.plotly_chart(style_fig(fig), use_container_width=True)
-
-    with col2:
-        fig = px.scatter(
-            df,
-            x="frequency",
-            y="sales",
-            color=df["churn"].astype(str),
-            size="quantity",
-            title="Frequency vs Sales"
+    with c1:
+        seg = rfm["Cluster_Name"].value_counts().reset_index()
+        seg.columns = ["Segment", "Customers"]
+        fig = px.bar(
+            seg,
+            x="Customers",
+            y="Segment",
+            orientation="h",
+            color="Segment",
+            color_discrete_map=SEGMENT_COLORS,
+            title="CUSTOMERS BY SEGMENT"
         )
-        st.plotly_chart(style_fig(fig), use_container_width=True)
+        fig.update_layout(yaxis_title=None, xaxis_title=None)
+        st.plotly_chart(style_fig(fig, 300, False), use_container_width=True)
 
-    fig = px.box(
-        df,
-        x=df["churn"].astype(str),
-        y="sales",
-        color=df["churn"].astype(str),
-        title="Sales by Churn Status"
-    )
-    st.plotly_chart(style_fig(fig), use_container_width=True)
-
-    st.dataframe(df.head(20), use_container_width=True)
-
-with tab2:
-    st.subheader("Customer Segmentation")
-
-    k = st.slider("Number of Segments", 2, 8, 4)
-
-    features = st.multiselect(
-        "Select Features",
-        ["recency", "frequency", "sales", "quantity", "inventory"],
-        default=["recency", "frequency", "sales"]
-    )
-
-    if len(features) < 2:
-        st.error("Select at least 2 features.")
-        st.stop()
-
-    X = df[features]
-    X_scaled = StandardScaler().fit_transform(X)
-
-    model = KMeans(n_clusters=k, random_state=42, n_init=10)
-    df["segment"] = model.fit_predict(X_scaled)
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        fig = px.scatter(
-            df,
-            x="frequency",
-            y="sales",
-            color=df["segment"].astype(str),
-            size="quantity",
-            hover_data=["customer_id", "recency"],
-            title="Customer Segments"
-        )
-        st.plotly_chart(style_fig(fig), use_container_width=True)
-
-    with col2:
+    with c2:
+        rev = rfm.groupby("Cluster_Name")["Monetary"].sum().reset_index()
         fig = px.pie(
-            df,
-            names="segment",
-            values="sales",
-            hole=0.45,
-            title="Revenue Share by Segment"
+            rev,
+            names="Cluster_Name",
+            values="Monetary",
+            hole=0.62,
+            color="Cluster_Name",
+            color_discrete_map=SEGMENT_COLORS,
+            title="REVENUE SHARE"
         )
-        st.plotly_chart(style_fig(fig), use_container_width=True)
+        fig.update_traces(textinfo="percent", textfont_size=11)
+        st.plotly_chart(style_fig(fig, 300), use_container_width=True)
 
+    note(
+        f"<b>Concentration:</b> Champions are {champ_cnt_sh:.0f}% of customers "
+        f"but ~{champ_rev_sh:.0f}% of revenue. Retention spend is best aimed here "
+        f"and at the <b>At Risk / Lost</b> tier."
+    )
+
+with t2:
+    pick = st.selectbox("Segment filter", ["All"] + sorted(rfm["Cluster_Name"].unique()))
+    view = rfm if pick == "All" else rfm[rfm["Cluster_Name"] == pick]
+
+    tilerow([
+        tile("Customers", f"{len(view):,}", "in selection"),
+        tile("Avg Spend", gbp(view["Monetary"].mean()), "monetary"),
+        tile("Avg Orders", f"{view['Frequency'].mean():.1f}", "frequency"),
+        tile("Avg Recency", f"{view['Recency'].mean():.0f}d", "since last buy"),
+    ])
+
+    sect("RFM space")
+    c1, c2 = st.columns([3, 2])
+
+    with c1:
+        fig = px.scatter(
+            view,
+            x="Recency",
+            y="Monetary",
+            color="Cluster_Name",
+            color_discrete_map=SEGMENT_COLORS,
+            opacity=0.6,
+            title="EACH POINT = ONE CUSTOMER"
+        )
+        fig.update_yaxes(range=[0, 20000])
+        st.plotly_chart(style_fig(fig, 380), use_container_width=True)
+
+    with c2:
+        avg = view.groupby("Cluster_Name")["Monetary"].mean().sort_values().reset_index()
+        fig = px.bar(
+            avg,
+            x="Monetary",
+            y="Cluster_Name",
+            orientation="h",
+            color="Cluster_Name",
+            color_discrete_map=SEGMENT_COLORS,
+            title="AVG SPEND PER SEGMENT"
+        )
+        st.plotly_chart(style_fig(fig, 380, False), use_container_width=True)
+
+    sect("Customer detail")
     st.dataframe(
-        df.groupby("segment")[["sales", "frequency", "recency", "quantity", "inventory"]].mean(),
-        use_container_width=True
+        view[["CustomerID", "Recency", "Frequency", "Monetary", "Cluster_Name", "Churn_Probability"]]
+        .sort_values("Monetary", ascending=False)
+        .head(100),
+        use_container_width=True,
+        height=240
     )
 
-    st.download_button("Download Segmented Customers", df.to_csv(index=False), "segmented_customers.csv", "text/csv")
+with t3:
+    tilerow([
+        tile("Avg Weekly Demand", f"{FC_AVG:,.0f}", "units"),
+        tile("Peak Week", f"{forecast['ForecastedDemand'].max():,.0f}", "units", "acc"),
+        tile("Model", "Holt-Winters", "damped trend"),
+        tile("Accuracy", "8.7%", "MAPE", "pos"),
+    ])
 
-with tab3:
-    st.subheader("Churn Prediction")
+    sect("Forecasted weekly demand")
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=forecast["Week"],
+        y=forecast["ForecastedDemand"],
+        mode="lines+markers",
+        name="Forecast",
+        line=dict(color=ACCENT, width=2.5),
+        marker=dict(size=7, color=ACCENT),
+        fill="tozeroy",
+        fillcolor="rgba(240,169,43,0.08)"
+    ))
+    fig.update_layout(title="UNITS PER WEEK")
+    st.plotly_chart(style_fig(fig, 320, False), use_container_width=True)
 
-    X = df[["sales", "quantity", "frequency", "recency", "inventory"]]
-    y = df["churn"]
+    sect("Forecast table")
+    show = forecast.copy()
+    show["ForecastedDemand"] = show["ForecastedDemand"].round(0).astype(int)
+    st.dataframe(show, use_container_width=True, height=220)
 
-    if y.nunique() < 2:
-        st.error("Churn column must contain both 0 and 1 values.")
-        st.stop()
-
-    test_size = st.slider("Test Size", 0.2, 0.4, 0.25)
-    trees = st.slider("Number of Trees", 50, 300, 150)
-
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=test_size, random_state=42, stratify=y
+with t4:
+    thr = st.slider("Risk threshold", 0.0, 1.0, 0.7, 0.05)
+    at_risk = churn[churn["Churn_Probability"] >= thr].sort_values(
+        "Churn_Probability",
+        ascending=False
     )
+    avg_risk = at_risk["Churn_Probability"].mean() if len(at_risk) else 0
 
-    model = RandomForestClassifier(n_estimators=trees, random_state=42)
-    model.fit(X_train, y_train)
+    tilerow([
+        tile("Flagged", f"{len(at_risk):,}", f"prob ≥ {thr:.2f}", "neg"),
+        tile("Share of Base", f"{len(at_risk)/len(churn)*100:.0f}%", "customers"),
+        tile("Avg Risk Score", f"{avg_risk:.2f}", "flagged"),
+        tile("Model AUC", "0.72", "leakage-free", "acc"),
+    ])
 
-    preds = model.predict(X_test)
-    probs = model.predict_proba(X_test)[:, 1]
+    c1, c2 = st.columns([3, 2])
 
-    c1, c2, c3 = st.columns(3)
-    c1.metric("Model", "Random Forest")
-    c2.metric("Accuracy", round(accuracy_score(y_test, preds), 3))
-    c3.metric("AUC Score", round(roc_auc_score(y_test, probs), 3))
+    with c1:
+        sect("Churn probability distribution")
+        fig = px.histogram(churn, x="Churn_Probability", nbins=34)
+        fig.update_traces(marker_color="#3b9eff")
+        fig.add_vline(x=thr, line_dash="dash", line_color=ACCENT)
+        st.plotly_chart(style_fig(fig, 320, False), use_container_width=True)
 
-    df["churn_risk"] = model.predict_proba(X)[:, 1]
+    with c2:
+        sect("Risk bands")
+        bands = pd.cut(
+            churn["Churn_Probability"],
+            [0, .3, .7, 1.0],
+            labels=["Low", "Medium", "High"]
+        )
+        bc = bands.value_counts().reindex(["Low", "Medium", "High"]).reset_index()
+        bc.columns = ["Band", "Customers"]
+        fig = px.bar(
+            bc,
+            x="Customers",
+            y="Band",
+            orientation="h",
+            color="Band",
+            color_discrete_sequence=[POS, ACCENT, NEG]
+        )
+        st.plotly_chart(style_fig(fig, 320, False), use_container_width=True)
 
-    st.dataframe(df.sort_values("churn_risk", ascending=False).head(20), use_container_width=True)
+    sect("Highest-risk customers")
+    st.dataframe(at_risk.head(100), use_container_width=True, height=230)
 
-    importance = pd.DataFrame({
-        "Feature": X.columns,
-        "Importance": model.feature_importances_
-    }).sort_values("Importance", ascending=False)
+with t5:
+    avg_d = inventory["ForecastedDemand"].mean()
+    avg_o = inventory["RecommendedOrder"].mean()
+    buf = avg_o - avg_d
 
-    col1, col2 = st.columns(2)
+    tilerow([
+        tile("Avg Weekly Demand", f"{avg_d:,.0f}", "forecast units"),
+        tile("Avg Recommended Order", f"{avg_o:,.0f}", "incl. buffer", "acc"),
+        tile("Safety Buffer", f"{buf:,.0f}", "95% service level", "pos"),
+        tile("Lead Time", "1 wk", "assumed"),
+    ])
 
-    with col1:
-        fig = px.bar(importance, x="Feature", y="Importance", title="Feature Importance")
-        st.plotly_chart(style_fig(fig), use_container_width=True)
+    sect("Forecast vs recommended order")
+    fig = go.Figure()
+    fig.add_trace(go.Bar(
+        x=inventory["Week"],
+        y=inventory["ForecastedDemand"],
+        name="Forecast demand",
+        marker_color="#3b4b5e"
+    ))
+    fig.add_trace(go.Bar(
+        x=inventory["Week"],
+        y=inventory["RecommendedOrder"],
+        name="Recommended order",
+        marker_color=ACCENT
+    ))
+    fig.update_layout(barmode="group", title="UNITS PER WEEK")
+    st.plotly_chart(style_fig(fig, 320), use_container_width=True)
 
-    with col2:
-        cm = confusion_matrix(y_test, preds)
-        cm_df = pd.DataFrame(cm, index=["Actual 0", "Actual 1"], columns=["Predicted 0", "Predicted 1"])
-        fig = px.imshow(cm_df, text_auto=True, title="Confusion Matrix")
-        st.plotly_chart(style_fig(fig), use_container_width=True)
+    sect("Reorder table")
+    show = inventory.copy()
+    for col in ["ForecastedDemand", "RecommendedOrder"]:
+        show[col] = show[col].round(0).astype(int)
+    st.dataframe(show, use_container_width=True, height=220)
 
-    st.download_button("Download Churn Predictions", df.to_csv(index=False), "churn_predictions.csv", "text/csv")
-
-with tab4:
-    st.subheader("Inventory Optimization")
-
-    demand_factor = st.slider("Demand Forecast Multiplier", 1.0, 5.0, 1.5)
-    safety_stock = st.slider("Safety Stock %", 0, 100, 20)
-
-    df["forecast_demand"] = df["quantity"] * demand_factor
-    df["safety_stock"] = df["forecast_demand"] * (safety_stock / 100)
-    df["reorder_quantity"] = np.maximum(
-        df["forecast_demand"] + df["safety_stock"] - df["inventory"],
-        0
-    ).round()
-
-    c1, c2, c3 = st.columns(3)
-    c1.metric("Forecast Demand", round(df["forecast_demand"].sum(), 2))
-    c2.metric("Safety Stock", round(df["safety_stock"].sum(), 2))
-    c3.metric("Reorder Qty", round(df["reorder_quantity"].sum(), 2))
-
-    fig = px.bar(
-        df.sort_values("reorder_quantity", ascending=False).head(30),
-        x="customer_id",
-        y="reorder_quantity",
-        title="Top Reorder Recommendations"
-    )
-    st.plotly_chart(style_fig(fig), use_container_width=True)
-
-    st.dataframe(
-        df[["customer_id", "quantity", "inventory", "forecast_demand", "safety_stock", "reorder_quantity"]],
-        use_container_width=True
-    )
-
-    st.download_button("Download Inventory Recommendations", df.to_csv(index=False), "inventory_recommendations.csv", "text/csv")
-
-with tab5:
-    st.subheader("Interactive Data Explorer")
-
-    selected_columns = st.multiselect("Select Columns", df.columns.tolist(), default=df.columns.tolist())
-    st.dataframe(df[selected_columns], use_container_width=True)
-
-    st.subheader("Summary Statistics")
-    st.dataframe(df.describe(), use_container_width=True)
-
-    chart_x = st.selectbox("X-axis", df.columns)
-    chart_y = st.selectbox("Y-axis", df.select_dtypes(include=np.number).columns)
-
-    fig = px.scatter(df, x=chart_x, y=chart_y, title=f"{chart_x} vs {chart_y}")
-    st.plotly_chart(style_fig(fig), use_container_width=True)
-
-    st.download_button("Download Filtered Dataset", df.to_csv(index=False), "filtered_dataset.csv", "text/csv")
-
-st.markdown("---")
-st.markdown("""
-<div class="footer">
-RETAILPULSE · SHAHZADA KOHINOOR · ZIDIO DEVELOPMENT · DATA SCIENCE & ANALYTICS PORTFOLIO
-</div>
-""", unsafe_allow_html=True)
+st.markdown(
+    f"""
+    <div style="border-top:1px solid {BORDER};margin-top:24px;padding-top:10px;
+    font-size:11px;color:{MUTED};font-family:monospace;">
+    SHAHZADA KOHINOOR · RETAILPULSE · ZIDIO DEVELOPMENT · DATA SCIENCE & ANALYTICS PORTFOLIO
+    </div>
+    """,
+    unsafe_allow_html=True
+)
