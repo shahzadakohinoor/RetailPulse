@@ -1,4 +1,5 @@
 # RetailPulse ▲
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ### AI-Powered Retail Analytics & Customer Intelligence Platform
 
 RetailPulse is an end-to-end retail analytics solution that helps businesses understand customer behavior, predict churn, forecast demand, and optimize inventory using Machine Learning and Data Science.
