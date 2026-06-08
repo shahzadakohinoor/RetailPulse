@@ -8,7 +8,7 @@ RetailPulse is an end-to-end retail analytics solution that helps businesses und
 
 ## 🚀 Live Demo
 
-https://retailpulse1.streamlit.app/
+https://retailpulse-kohinoor.streamlit.app/
 
 ---
 
