@@ -1,0 +1,4339 @@
+CustomerID,Recency,Frequency,Monetary,Cluster_Name
+1,103,19,19370,At Risk / Lost
+2,349,26,14345,Champions
+3,271,25,19137,Champions
+4,107,10,15854,Recent Low-Value
+5,72,15,9380,Recent Low-Value
+6,189,22,12677,At Risk / Lost
+7,21,21,2614,Loyal Customers
+8,103,22,4069,Champions
+9,122,36,19768,Recent Low-Value
+10,215,34,4666,At Risk / Lost
+11,331,30,2296,Recent Low-Value
+12,88,25,17273,At Risk / Lost
+13,100,28,19959,Recent Low-Value
+14,360,1,11445,Loyal Customers
+15,152,4,1409,Champions
+16,131,7,964,Recent Low-Value
+17,150,9,12155,Champions
+18,309,36,5489,At Risk / Lost
+19,258,19,19847,Loyal Customers
+20,344,1,11816,Champions
+21,294,10,12078,Recent Low-Value
+22,192,36,3103,Champions
+23,277,9,14274,Champions
+24,161,32,13872,At Risk / Lost
+25,314,32,17715,Loyal Customers
+26,22,6,8059,Loyal Customers
+27,253,38,12080,Champions
+28,236,17,19195,Champions
+29,345,10,6681,At Risk / Lost
+30,49,27,16905,Champions
+31,59,35,10065,At Risk / Lost
+32,170,21,11860,Loyal Customers
+33,188,25,15022,Loyal Customers
+34,271,28,1046,At Risk / Lost
+35,190,15,18318,Champions
+36,175,4,1664,Loyal Customers
+37,51,29,7432,Recent Low-Value
+38,364,9,5044,At Risk / Lost
+39,55,27,16157,Loyal Customers
+40,244,26,13977,Loyal Customers
+41,320,19,10239,Loyal Customers
+42,131,28,1408,Recent Low-Value
+43,307,17,19470,Recent Low-Value
+44,135,20,16870,Recent Low-Value
+45,21,39,3358,Champions
+46,329,23,4911,At Risk / Lost
+47,167,32,6797,Champions
+48,274,33,15875,Recent Low-Value
+49,89,5,11139,At Risk / Lost
+50,316,34,1539,Champions
+51,14,11,11734,Champions
+52,242,3,155,Champions
+53,265,33,19808,Recent Low-Value
+54,346,11,205,Loyal Customers
+55,53,16,3301,At Risk / Lost
+56,340,18,15284,Recent Low-Value
+57,92,30,769,At Risk / Lost
+58,264,10,12763,Recent Low-Value
+59,35,18,1066,Champions
+60,206,38,16791,Champions
+61,81,19,18622,Loyal Customers
+62,50,36,11756,Loyal Customers
+63,360,13,15993,At Risk / Lost
+64,2,3,13189,Loyal Customers
+65,54,10,16593,Loyal Customers
+66,106,38,3732,At Risk / Lost
+67,260,1,5784,Recent Low-Value
+68,310,27,13366,Loyal Customers
+69,191,8,18399,Recent Low-Value
+70,218,17,17040,Champions
+71,44,9,204,Loyal Customers
+72,162,6,2147,Champions
+73,202,25,16629,Champions
+74,270,39,17357,Recent Low-Value
+75,351,28,16782,At Risk / Lost
+76,304,33,19722,Loyal Customers
+77,271,37,8937,Recent Low-Value
+78,215,9,15507,At Risk / Lost
+79,252,18,6482,Champions
+80,190,21,18995,Loyal Customers
+81,296,2,883,Champions
+82,213,38,470,Champions
+83,208,36,16008,Loyal Customers
+84,237,37,586,At Risk / Lost
+85,338,15,14600,At Risk / Lost
+86,53,28,3296,Loyal Customers
+87,280,18,9652,Loyal Customers
+88,217,34,2361,Recent Low-Value
+89,252,22,10913,Recent Low-Value
+90,188,11,9248,Champions
+91,41,13,8672,Loyal Customers
+92,157,4,15108,At Risk / Lost
+93,15,22,13185,Champions
+94,301,7,16722,Champions
+95,65,24,6943,Champions
+96,345,4,1205,Champions
+97,327,28,17870,At Risk / Lost
+98,9,15,10541,Champions
+99,344,1,9819,Loyal Customers
+100,129,3,18151,Recent Low-Value
+101,136,14,2791,At Risk / Lost
+102,63,38,11964,Loyal Customers
+103,139,1,2096,Loyal Customers
+104,81,38,1525,Loyal Customers
+105,163,38,16478,Recent Low-Value
+106,289,21,6949,Recent Low-Value
+107,261,29,3347,Recent Low-Value
+108,231,5,19076,Loyal Customers
+109,41,10,1590,Recent Low-Value
+110,28,28,17708,Champions
+111,135,21,19071,Recent Low-Value
+112,201,7,19548,At Risk / Lost
+113,328,3,14410,Loyal Customers
+114,268,20,17316,Loyal Customers
+115,33,19,15501,Champions
+116,48,35,12984,Recent Low-Value
+117,62,4,18924,Recent Low-Value
+118,216,5,4895,At Risk / Lost
+119,293,1,1746,Champions
+120,99,4,16242,At Risk / Lost
+121,172,12,14406,At Risk / Lost
+122,360,27,16924,Loyal Customers
+123,214,23,6056,Loyal Customers
+124,35,25,14028,Recent Low-Value
+125,227,21,9821,Recent Low-Value
+126,101,24,11257,At Risk / Lost
+127,131,25,2467,Recent Low-Value
+128,257,32,6796,At Risk / Lost
+129,5,32,5290,Recent Low-Value
+130,218,5,4763,Recent Low-Value
+131,255,36,7162,Loyal Customers
+132,359,39,4431,Loyal Customers
+133,283,16,19518,Loyal Customers
+134,207,33,11980,Loyal Customers
+135,15,21,16346,Champions
+136,346,9,3362,Loyal Customers
+137,42,6,13420,Champions
+138,179,35,18591,Loyal Customers
+139,63,39,7136,Recent Low-Value
+140,352,22,19231,At Risk / Lost
+141,231,5,4777,Recent Low-Value
+142,241,23,8072,Recent Low-Value
+143,52,17,15429,Champions
+144,96,12,4364,Loyal Customers
+145,222,23,3233,At Risk / Lost
+146,231,16,11712,At Risk / Lost
+147,237,3,17949,Loyal Customers
+148,143,30,18695,Champions
+149,171,22,14258,Champions
+150,29,9,9835,Champions
+151,36,29,1789,At Risk / Lost
+152,13,37,9863,Champions
+153,160,23,7827,Champions
+154,327,13,7864,At Risk / Lost
+155,187,32,13103,At Risk / Lost
+156,243,23,918,Recent Low-Value
+157,86,17,14539,At Risk / Lost
+158,284,21,15177,Loyal Customers
+159,66,2,4621,At Risk / Lost
+160,170,37,1224,At Risk / Lost
+161,45,6,5760,Champions
+162,62,18,5741,Recent Low-Value
+163,134,30,17613,Champions
+164,284,22,1802,Recent Low-Value
+165,28,33,18485,Champions
+166,108,30,11239,Loyal Customers
+167,44,17,15802,Champions
+168,340,32,6623,Champions
+169,286,14,12497,Loyal Customers
+170,331,10,8211,Loyal Customers
+171,128,36,2501,At Risk / Lost
+172,348,34,9581,Champions
+173,231,9,10167,Loyal Customers
+174,190,28,13476,Loyal Customers
+175,225,11,13924,At Risk / Lost
+176,283,14,13544,Recent Low-Value
+177,121,39,12979,Loyal Customers
+178,116,19,16212,Loyal Customers
+179,233,15,639,Champions
+180,259,28,11074,At Risk / Lost
+181,359,24,13946,Champions
+182,198,8,5715,Recent Low-Value
+183,137,9,16116,At Risk / Lost
+184,318,33,3056,Champions
+185,165,33,8177,Loyal Customers
+186,225,19,3822,Loyal Customers
+187,307,3,12159,At Risk / Lost
+188,234,10,5187,Loyal Customers
+189,172,1,10438,Champions
+190,152,29,2270,At Risk / Lost
+191,315,34,3491,Loyal Customers
+192,160,13,7042,Loyal Customers
+193,96,1,18100,Recent Low-Value
+194,233,34,13906,Recent Low-Value
+195,180,29,14892,At Risk / Lost
+196,113,13,12909,Recent Low-Value
+197,318,29,14955,Champions
+198,52,39,9208,Loyal Customers
+199,268,24,6558,Loyal Customers
+200,295,26,2856,Loyal Customers
+201,113,17,6953,At Risk / Lost
+202,101,7,7809,At Risk / Lost
+203,113,13,18420,Recent Low-Value
+204,81,5,19575,Loyal Customers
+205,187,26,12947,Loyal Customers
+206,113,3,17452,Loyal Customers
+207,2,7,7397,Loyal Customers
+208,130,39,16356,Loyal Customers
+209,220,1,3303,Champions
+210,54,17,6599,Loyal Customers
+211,343,25,5273,Champions
+212,224,3,17373,Loyal Customers
+213,225,15,11750,At Risk / Lost
+214,126,29,9273,At Risk / Lost
+215,130,32,7482,Champions
+216,53,26,901,Loyal Customers
+217,172,16,8334,At Risk / Lost
+218,218,25,13997,At Risk / Lost
+219,160,28,15297,Loyal Customers
+220,198,9,19833,Loyal Customers
+221,247,1,10069,At Risk / Lost
+222,324,29,3301,Loyal Customers
+223,203,22,16833,Recent Low-Value
+224,184,16,10072,Loyal Customers
+225,123,7,683,At Risk / Lost
+226,255,14,12819,At Risk / Lost
+227,294,29,3477,Champions
+228,280,19,14955,Recent Low-Value
+229,325,19,3501,At Risk / Lost
+230,98,2,13736,Recent Low-Value
+231,198,15,19669,Loyal Customers
+232,240,3,15838,At Risk / Lost
+233,144,11,6872,Champions
+234,97,30,19831,At Risk / Lost
+235,201,18,10231,Champions
+236,124,2,888,Recent Low-Value
+237,187,32,16284,Champions
+238,326,8,2989,Loyal Customers
+239,349,22,9669,Loyal Customers
+240,259,6,10241,Loyal Customers
+241,148,12,19756,At Risk / Lost
+242,252,36,12034,Loyal Customers
+243,346,15,9869,Loyal Customers
+244,147,28,7712,At Risk / Lost
+245,148,18,18976,Recent Low-Value
+246,352,2,16305,Loyal Customers
+247,199,13,14034,Loyal Customers
+248,308,15,10195,At Risk / Lost
+249,128,20,4340,Recent Low-Value
+250,39,29,18806,Recent Low-Value
+251,338,29,10848,Recent Low-Value
+252,360,3,5398,At Risk / Lost
+253,129,19,1961,Champions
+254,267,3,14242,Champions
+255,151,14,7420,Loyal Customers
+256,298,4,11467,Loyal Customers
+257,99,11,17582,Loyal Customers
+258,263,31,5347,Champions
+259,252,32,1834,At Risk / Lost
+260,144,27,4763,Loyal Customers
+261,346,30,6009,At Risk / Lost
+262,112,2,19900,Loyal Customers
+263,60,9,12918,At Risk / Lost
+264,2,28,17164,At Risk / Lost
+265,304,31,8263,Champions
+266,254,34,18554,At Risk / Lost
+267,140,15,13458,Recent Low-Value
+268,37,25,6768,Champions
+269,160,36,13116,Loyal Customers
+270,9,8,8101,Champions
+271,233,9,10021,Recent Low-Value
+272,99,37,2291,Recent Low-Value
+273,147,39,8959,At Risk / Lost
+274,304,32,8972,Recent Low-Value
+275,208,17,19330,Recent Low-Value
+276,131,35,18947,Recent Low-Value
+277,152,37,5022,Recent Low-Value
+278,54,19,4492,Loyal Customers
+279,120,29,19667,Loyal Customers
+280,161,7,13641,Champions
+281,116,28,19651,At Risk / Lost
+282,75,9,19481,Loyal Customers
+283,113,28,15115,Recent Low-Value
+284,104,6,3327,At Risk / Lost
+285,340,29,2124,Loyal Customers
+286,254,17,16813,Champions
+287,227,16,2586,Recent Low-Value
+288,112,23,1255,At Risk / Lost
+289,99,31,10182,Loyal Customers
+290,153,3,4577,At Risk / Lost
+291,349,21,18669,Loyal Customers
+292,338,26,7186,Champions
+293,194,36,2417,Recent Low-Value
+294,310,37,3721,Champions
+295,163,22,4591,Recent Low-Value
+296,208,12,16016,Recent Low-Value
+297,169,13,15348,At Risk / Lost
+298,161,11,2611,Loyal Customers
+299,68,16,9646,Champions
+300,289,8,15712,Champions
+301,277,2,7948,Champions
+302,304,30,14374,At Risk / Lost
+303,135,30,17777,At Risk / Lost
+304,195,12,2565,At Risk / Lost
+305,128,10,16404,Recent Low-Value
+306,33,11,15769,Champions
+307,176,15,11394,Recent Low-Value
+308,22,16,3275,Champions
+309,238,17,7949,Champions
+310,158,26,12573,Loyal Customers
+311,38,2,9525,Champions
+312,230,12,12322,At Risk / Lost
+313,51,26,8544,At Risk / Lost
+314,264,23,8310,At Risk / Lost
+315,283,18,2859,Loyal Customers
+316,27,32,16191,Loyal Customers
+317,226,38,102,Recent Low-Value
+318,277,3,17743,Champions
+319,286,38,8290,Champions
+320,97,3,15348,At Risk / Lost
+321,284,30,5873,At Risk / Lost
+322,317,1,12886,At Risk / Lost
+323,304,30,19052,At Risk / Lost
+324,147,32,15137,At Risk / Lost
+325,4,28,1985,At Risk / Lost
+326,35,21,7160,Champions
+327,192,13,16431,Loyal Customers
+328,49,27,7944,At Risk / Lost
+329,17,36,13550,Champions
+330,172,7,9591,At Risk / Lost
+331,220,22,18822,Recent Low-Value
+332,158,10,9368,Recent Low-Value
+333,46,39,9239,Champions
+334,6,15,6891,Loyal Customers
+335,99,15,7271,Recent Low-Value
+336,233,4,19215,Recent Low-Value
+337,37,32,17353,Loyal Customers
+338,280,23,193,Recent Low-Value
+339,349,6,3087,At Risk / Lost
+340,302,24,12947,Loyal Customers
+341,181,20,10067,Recent Low-Value
+342,95,37,16318,Loyal Customers
+343,99,20,10552,At Risk / Lost
+344,188,12,8727,Recent Low-Value
+345,116,33,5047,Champions
+346,191,28,6751,Recent Low-Value
+347,253,8,3244,Recent Low-Value
+348,161,1,16560,At Risk / Lost
+349,256,37,9059,Champions
+350,323,22,8397,Champions
+351,128,6,6794,Champions
+352,18,21,15935,At Risk / Lost
+353,281,32,19357,At Risk / Lost
+354,223,35,3446,At Risk / Lost
+355,54,15,19632,At Risk / Lost
+356,58,5,11440,At Risk / Lost
+357,323,6,344,Champions
+358,360,25,2725,Loyal Customers
+359,174,29,3949,At Risk / Lost
+360,280,7,9697,Loyal Customers
+361,114,13,7837,Recent Low-Value
+362,288,38,14124,Recent Low-Value
+363,342,18,12100,At Risk / Lost
+364,151,2,8433,Recent Low-Value
+365,127,8,17376,Loyal Customers
+366,155,11,7410,Recent Low-Value
+367,273,33,2499,Recent Low-Value
+368,104,38,4740,Loyal Customers
+369,299,27,19444,Recent Low-Value
+370,246,20,10491,At Risk / Lost
+371,176,12,17953,Loyal Customers
+372,39,31,10992,Loyal Customers
+373,170,27,11297,Champions
+374,247,32,13150,Champions
+375,26,10,3474,Loyal Customers
+376,355,3,13011,Loyal Customers
+377,306,27,8947,Champions
+378,13,35,14885,At Risk / Lost
+379,316,31,11060,Recent Low-Value
+380,313,15,13635,Recent Low-Value
+381,36,16,8334,Recent Low-Value
+382,173,13,10603,Loyal Customers
+383,20,35,5222,At Risk / Lost
+384,321,11,9952,Champions
+385,264,21,5487,At Risk / Lost
+386,142,11,7731,At Risk / Lost
+387,143,30,7326,Recent Low-Value
+388,92,35,5208,Champions
+389,354,22,18708,At Risk / Lost
+390,322,38,2210,Champions
+391,288,31,1057,Loyal Customers
+392,215,14,7246,Recent Low-Value
+393,342,24,660,Champions
+394,51,32,1412,Loyal Customers
+395,153,36,18305,Loyal Customers
+396,186,32,11695,Loyal Customers
+397,63,15,5474,At Risk / Lost
+398,190,35,2751,At Risk / Lost
+399,125,3,10106,Recent Low-Value
+400,150,16,10033,Recent Low-Value
+401,314,5,16272,Loyal Customers
+402,58,21,2977,Recent Low-Value
+403,342,10,4183,At Risk / Lost
+404,305,19,845,Recent Low-Value
+405,180,25,8849,Champions
+406,170,4,17425,At Risk / Lost
+407,326,29,18780,Loyal Customers
+408,271,19,17423,Loyal Customers
+409,54,2,18094,Recent Low-Value
+410,101,10,1825,At Risk / Lost
+411,264,25,12313,Loyal Customers
+412,53,20,9628,Loyal Customers
+413,60,19,14262,At Risk / Lost
+414,108,23,8953,At Risk / Lost
+415,5,24,7287,Loyal Customers
+416,103,11,132,Recent Low-Value
+417,196,34,14993,Recent Low-Value
+418,262,28,14508,Recent Low-Value
+419,350,5,15260,Champions
+420,47,5,3514,At Risk / Lost
+421,355,21,17640,Loyal Customers
+422,311,12,19610,Champions
+423,308,4,12220,Recent Low-Value
+424,144,20,1643,Champions
+425,269,38,371,Loyal Customers
+426,124,25,5395,Loyal Customers
+427,106,14,15063,At Risk / Lost
+428,158,11,11680,Recent Low-Value
+429,147,32,19193,Recent Low-Value
+430,145,11,12697,Champions
+431,120,18,12145,Recent Low-Value
+432,319,27,13703,Champions
+433,275,18,10037,Loyal Customers
+434,92,23,14930,Loyal Customers
+435,58,11,6822,Loyal Customers
+436,346,21,8301,Loyal Customers
+437,229,5,4244,Loyal Customers
+438,117,23,5706,Champions
+439,318,25,6866,Loyal Customers
+440,279,10,17214,Champions
+441,127,22,16028,Loyal Customers
+442,129,19,1748,Champions
+443,58,1,2230,Champions
+444,122,7,14492,Champions
+445,1,4,10688,Recent Low-Value
+446,239,1,4466,Champions
+447,290,15,1606,Champions
+448,96,12,18642,Loyal Customers
+449,126,22,19400,Champions
+450,118,22,15322,Champions
+451,48,17,12463,At Risk / Lost
+452,89,29,19713,Recent Low-Value
+453,237,14,11895,At Risk / Lost
+454,272,20,9958,Loyal Customers
+455,189,33,12716,Recent Low-Value
+456,192,15,4236,Recent Low-Value
+457,69,12,13578,At Risk / Lost
+458,278,20,11261,Recent Low-Value
+459,349,30,2789,At Risk / Lost
+460,247,38,2910,Champions
+461,76,3,11763,At Risk / Lost
+462,154,28,6252,Recent Low-Value
+463,144,26,112,Recent Low-Value
+464,86,30,11262,Loyal Customers
+465,185,13,8099,Loyal Customers
+466,285,13,7319,Loyal Customers
+467,220,2,5428,Loyal Customers
+468,69,37,3721,Recent Low-Value
+469,47,38,11765,Loyal Customers
+470,94,2,11414,At Risk / Lost
+471,238,36,752,Champions
+472,204,26,16282,Recent Low-Value
+473,218,11,8912,Loyal Customers
+474,341,8,3890,Recent Low-Value
+475,39,22,15759,Loyal Customers
+476,100,20,1745,Recent Low-Value
+477,289,8,10535,Loyal Customers
+478,254,29,3788,Champions
+479,222,26,7789,Loyal Customers
+480,357,30,1479,At Risk / Lost
+481,23,17,4343,Recent Low-Value
+482,250,20,10337,Recent Low-Value
+483,10,16,16430,At Risk / Lost
+484,246,7,19137,At Risk / Lost
+485,325,16,5711,Champions
+486,100,27,12616,Recent Low-Value
+487,290,23,13986,Champions
+488,180,24,13816,Recent Low-Value
+489,223,9,6012,Recent Low-Value
+490,250,35,6549,Champions
+491,147,20,1825,Recent Low-Value
+492,96,37,15970,Recent Low-Value
+493,257,17,9404,Champions
+494,325,31,7622,Loyal Customers
+495,4,8,13763,Champions
+496,16,15,4884,Recent Low-Value
+497,280,31,9572,At Risk / Lost
+498,336,30,17716,Loyal Customers
+499,247,20,10155,At Risk / Lost
+500,258,39,12776,Loyal Customers
+501,160,12,7546,At Risk / Lost
+502,340,17,4825,Loyal Customers
+503,152,30,14869,Champions
+504,178,29,1509,Loyal Customers
+505,163,19,8305,Loyal Customers
+506,33,11,16465,Loyal Customers
+507,179,34,356,Recent Low-Value
+508,101,7,18205,At Risk / Lost
+509,268,34,15804,Champions
+510,323,20,17907,At Risk / Lost
+511,65,38,3090,At Risk / Lost
+512,168,24,1295,Champions
+513,330,10,1344,Recent Low-Value
+514,43,32,11515,Loyal Customers
+515,44,15,6866,Recent Low-Value
+516,285,37,11762,Recent Low-Value
+517,12,20,16310,Loyal Customers
+518,95,3,17790,At Risk / Lost
+519,302,37,10413,Loyal Customers
+520,253,8,2502,Champions
+521,242,23,16980,Loyal Customers
+522,35,11,19883,At Risk / Lost
+523,215,8,13375,Recent Low-Value
+524,337,29,15015,Recent Low-Value
+525,90,30,1009,Loyal Customers
+526,264,10,15906,Champions
+527,93,39,472,At Risk / Lost
+528,90,28,1444,Recent Low-Value
+529,115,36,8615,Loyal Customers
+530,105,13,2531,Champions
+531,196,32,19268,Champions
+532,314,36,10685,Recent Low-Value
+533,114,37,15562,Recent Low-Value
+534,75,26,1795,At Risk / Lost
+535,217,22,2007,Champions
+536,277,4,17264,At Risk / Lost
+537,249,31,1119,Champions
+538,164,18,11557,Champions
+539,357,38,1503,Loyal Customers
+540,192,24,17910,Recent Low-Value
+541,227,23,8955,Champions
+542,177,22,5968,At Risk / Lost
+543,99,2,10939,Recent Low-Value
+544,36,31,110,At Risk / Lost
+545,96,11,6430,Recent Low-Value
+546,152,28,15161,Recent Low-Value
+547,151,32,9330,Champions
+548,190,5,19309,Loyal Customers
+549,224,38,7564,Champions
+550,37,10,14846,Recent Low-Value
+551,268,24,3103,Champions
+552,183,35,7295,Champions
+553,13,23,19572,Recent Low-Value
+554,279,17,13762,Recent Low-Value
+555,217,1,13839,Champions
+556,355,31,15688,Champions
+557,361,31,1889,Champions
+558,286,34,19520,At Risk / Lost
+559,273,9,7698,Champions
+560,62,22,4938,At Risk / Lost
+561,84,13,5972,Loyal Customers
+562,217,25,11467,At Risk / Lost
+563,342,18,4399,Champions
+564,187,12,17457,Loyal Customers
+565,19,17,7183,At Risk / Lost
+566,177,15,5594,At Risk / Lost
+567,100,15,11417,Recent Low-Value
+568,233,15,19890,Loyal Customers
+569,76,39,3229,Recent Low-Value
+570,265,13,204,Loyal Customers
+571,284,17,7533,At Risk / Lost
+572,206,32,7789,Recent Low-Value
+573,223,9,3667,Champions
+574,52,20,17665,At Risk / Lost
+575,339,26,4744,Loyal Customers
+576,144,27,15066,Loyal Customers
+577,69,21,11430,Recent Low-Value
+578,99,18,4494,Recent Low-Value
+579,25,13,3634,Loyal Customers
+580,53,16,12488,At Risk / Lost
+581,151,9,11419,Recent Low-Value
+582,144,12,6575,Champions
+583,57,38,18258,Loyal Customers
+584,39,19,14828,Champions
+585,109,7,12106,Loyal Customers
+586,181,35,16250,Champions
+587,42,18,546,At Risk / Lost
+588,186,16,208,Loyal Customers
+589,223,39,3339,At Risk / Lost
+590,122,4,6031,Recent Low-Value
+591,133,25,4153,Loyal Customers
+592,163,32,13846,At Risk / Lost
+593,215,13,1345,Champions
+594,221,17,19204,At Risk / Lost
+595,235,37,13939,Loyal Customers
+596,331,6,12956,At Risk / Lost
+597,146,19,5205,Champions
+598,239,13,3022,Champions
+599,76,26,2613,Champions
+600,9,14,2901,Recent Low-Value
+601,74,31,13995,Loyal Customers
+602,253,4,7081,Champions
+603,230,39,8321,Recent Low-Value
+604,7,8,6138,Champions
+605,174,25,15182,At Risk / Lost
+606,141,13,14748,Loyal Customers
+607,168,32,464,At Risk / Lost
+608,170,38,1900,Recent Low-Value
+609,283,38,14210,At Risk / Lost
+610,122,28,6058,At Risk / Lost
+611,194,30,9196,Champions
+612,5,3,7536,At Risk / Lost
+613,29,28,12738,Champions
+614,165,3,279,Champions
+615,339,34,3973,Loyal Customers
+616,136,16,17670,Recent Low-Value
+617,321,22,15555,Recent Low-Value
+618,342,32,17257,Recent Low-Value
+619,145,38,12897,Champions
+620,327,8,4560,Recent Low-Value
+621,217,8,15416,Champions
+622,301,6,452,Loyal Customers
+623,132,14,5444,Recent Low-Value
+624,292,32,4607,Champions
+625,70,35,4930,Recent Low-Value
+626,252,10,11320,Recent Low-Value
+627,275,3,217,Loyal Customers
+628,364,12,16965,At Risk / Lost
+629,182,31,4387,Recent Low-Value
+630,167,29,4577,Loyal Customers
+631,91,5,6633,Recent Low-Value
+632,202,25,16727,Recent Low-Value
+633,346,31,12855,Recent Low-Value
+634,19,21,965,Recent Low-Value
+635,39,20,11273,At Risk / Lost
+636,126,39,5429,At Risk / Lost
+637,173,22,703,Recent Low-Value
+638,141,4,5856,Recent Low-Value
+639,242,13,11354,Loyal Customers
+640,220,20,4118,Loyal Customers
+641,126,13,5292,Champions
+642,58,17,2115,At Risk / Lost
+643,148,36,9950,Recent Low-Value
+644,317,33,3480,At Risk / Lost
+645,361,1,3870,Loyal Customers
+646,1,15,5929,At Risk / Lost
+647,348,13,1713,At Risk / Lost
+648,190,17,13247,Recent Low-Value
+649,191,24,15645,Recent Low-Value
+650,312,8,18363,Loyal Customers
+651,117,27,5472,Recent Low-Value
+652,134,23,10638,Loyal Customers
+653,58,8,248,Loyal Customers
+654,44,8,1854,Champions
+655,173,26,7478,Champions
+656,160,13,13691,Champions
+657,173,39,9471,At Risk / Lost
+658,317,37,12879,Champions
+659,303,28,9895,Recent Low-Value
+660,149,25,19536,Recent Low-Value
+661,80,16,5792,Champions
+662,213,2,4318,At Risk / Lost
+663,203,18,4903,Loyal Customers
+664,252,17,18861,At Risk / Lost
+665,229,30,11772,At Risk / Lost
+666,164,39,3282,Loyal Customers
+667,227,13,11109,Loyal Customers
+668,147,32,14428,Loyal Customers
+669,20,29,19644,Recent Low-Value
+670,47,30,2686,Loyal Customers
+671,233,18,2748,Loyal Customers
+672,305,13,7413,At Risk / Lost
+673,14,21,18201,At Risk / Lost
+674,143,30,12644,Champions
+675,1,21,7507,At Risk / Lost
+676,54,17,17354,Loyal Customers
+677,259,19,15334,Recent Low-Value
+678,144,15,15112,At Risk / Lost
+679,12,9,9835,At Risk / Lost
+680,330,10,13525,Loyal Customers
+681,224,31,15798,At Risk / Lost
+682,272,23,15421,At Risk / Lost
+683,358,30,12746,Loyal Customers
+684,156,33,19724,At Risk / Lost
+685,8,9,4993,Recent Low-Value
+686,122,1,9576,Champions
+687,348,35,17370,At Risk / Lost
+688,164,11,18742,Recent Low-Value
+689,90,34,4482,At Risk / Lost
+690,136,16,1885,Champions
+691,186,9,13130,Loyal Customers
+692,316,32,11835,Champions
+693,178,15,16779,At Risk / Lost
+694,28,12,10345,Champions
+695,220,33,2697,Champions
+696,357,14,17164,Loyal Customers
+697,41,8,424,At Risk / Lost
+698,228,8,15260,Champions
+699,192,27,12714,Champions
+700,145,12,1086,Loyal Customers
+701,201,1,19602,Recent Low-Value
+702,212,11,860,At Risk / Lost
+703,220,39,11985,Recent Low-Value
+704,240,31,9328,Recent Low-Value
+705,46,17,17390,Loyal Customers
+706,35,33,5599,Loyal Customers
+707,253,32,464,At Risk / Lost
+708,82,29,19897,Recent Low-Value
+709,256,21,8127,Champions
+710,197,21,13632,Recent Low-Value
+711,303,23,14508,Loyal Customers
+712,10,6,16205,Champions
+713,312,22,8039,Champions
+714,286,38,14036,Loyal Customers
+715,242,37,9361,Champions
+716,251,8,15963,Recent Low-Value
+717,5,35,12661,Loyal Customers
+718,119,11,10547,At Risk / Lost
+719,289,24,14272,Loyal Customers
+720,65,21,11978,At Risk / Lost
+721,146,2,12511,At Risk / Lost
+722,224,19,19565,Loyal Customers
+723,239,39,5548,Loyal Customers
+724,177,28,19742,At Risk / Lost
+725,267,17,2207,At Risk / Lost
+726,341,6,8028,Champions
+727,282,19,15334,Loyal Customers
+728,63,38,19417,Loyal Customers
+729,217,28,16410,Champions
+730,342,2,19313,Loyal Customers
+731,315,38,13628,Champions
+732,283,37,13413,Champions
+733,177,4,1659,Loyal Customers
+734,98,22,18225,Recent Low-Value
+735,105,26,15267,At Risk / Lost
+736,99,36,15443,Loyal Customers
+737,311,13,5930,Recent Low-Value
+738,6,32,7623,Champions
+739,197,17,17109,Recent Low-Value
+740,351,36,18174,Loyal Customers
+741,133,19,15624,Loyal Customers
+742,358,35,13385,Recent Low-Value
+743,259,28,11073,Loyal Customers
+744,23,1,3106,At Risk / Lost
+745,53,18,4402,Recent Low-Value
+746,165,33,17572,Champions
+747,202,12,4711,Recent Low-Value
+748,83,8,9472,Recent Low-Value
+749,145,24,14180,Recent Low-Value
+750,85,16,15182,Recent Low-Value
+751,78,4,14741,Champions
+752,1,38,10193,Champions
+753,51,27,8478,Champions
+754,173,9,1697,Recent Low-Value
+755,205,16,11700,At Risk / Lost
+756,260,12,3847,At Risk / Lost
+757,288,31,13979,Champions
+758,34,24,19154,At Risk / Lost
+759,348,14,13117,At Risk / Lost
+760,95,25,19064,At Risk / Lost
+761,72,34,7532,At Risk / Lost
+762,39,3,18990,At Risk / Lost
+763,154,24,4825,Loyal Customers
+764,250,9,10537,Champions
+765,162,26,13369,Recent Low-Value
+766,118,20,13192,At Risk / Lost
+767,259,10,7102,Loyal Customers
+768,306,19,6231,Recent Low-Value
+769,268,3,13361,Loyal Customers
+770,54,24,12712,At Risk / Lost
+771,236,5,4637,At Risk / Lost
+772,222,3,13191,At Risk / Lost
+773,251,27,2435,At Risk / Lost
+774,313,16,4421,Recent Low-Value
+775,112,15,13354,Recent Low-Value
+776,255,35,19469,Loyal Customers
+777,303,12,659,Champions
+778,207,26,813,At Risk / Lost
+779,229,34,4693,Loyal Customers
+780,341,23,15284,Loyal Customers
+781,66,31,15361,Loyal Customers
+782,75,20,356,At Risk / Lost
+783,103,12,14674,At Risk / Lost
+784,192,23,137,Loyal Customers
+785,252,4,10364,At Risk / Lost
+786,226,23,12797,Loyal Customers
+787,294,1,8752,Recent Low-Value
+788,306,25,16030,At Risk / Lost
+789,98,2,1932,Recent Low-Value
+790,338,30,15617,Champions
+791,286,3,5267,At Risk / Lost
+792,335,21,532,Champions
+793,347,25,4251,Loyal Customers
+794,308,20,15012,At Risk / Lost
+795,249,22,6511,At Risk / Lost
+796,166,21,18235,At Risk / Lost
+797,335,33,356,Champions
+798,30,38,771,Champions
+799,247,15,589,Loyal Customers
+800,106,15,6989,Recent Low-Value
+801,51,25,12006,Recent Low-Value
+802,81,21,18580,Champions
+803,133,24,18166,At Risk / Lost
+804,285,5,12703,Recent Low-Value
+805,138,6,2560,Recent Low-Value
+806,184,23,4629,Champions
+807,330,4,2075,Loyal Customers
+808,273,27,3316,Champions
+809,340,18,14367,Champions
+810,69,21,9681,At Risk / Lost
+811,34,28,4615,Champions
+812,262,35,12148,At Risk / Lost
+813,53,22,9876,Loyal Customers
+814,205,23,3063,At Risk / Lost
+815,126,3,6886,Loyal Customers
+816,235,10,13966,Loyal Customers
+817,43,25,6300,Loyal Customers
+818,240,8,17460,Champions
+819,111,11,7445,At Risk / Lost
+820,249,5,145,Recent Low-Value
+821,151,37,1293,Champions
+822,183,38,4612,Loyal Customers
+823,336,29,16730,Recent Low-Value
+824,95,5,19703,Champions
+825,8,9,9083,Recent Low-Value
+826,360,2,736,Loyal Customers
+827,184,1,3875,Recent Low-Value
+828,281,30,2521,Recent Low-Value
+829,195,11,13125,Loyal Customers
+830,352,28,9380,Recent Low-Value
+831,195,12,4283,Champions
+832,155,39,11451,Recent Low-Value
+833,93,26,17196,At Risk / Lost
+834,160,13,5423,Champions
+835,61,8,12988,Recent Low-Value
+836,122,28,3744,At Risk / Lost
+837,51,30,16242,At Risk / Lost
+838,277,9,7873,At Risk / Lost
+839,5,39,10878,Recent Low-Value
+840,92,31,12601,Loyal Customers
+841,170,21,14509,At Risk / Lost
+842,317,34,2208,Loyal Customers
+843,22,31,3714,Champions
+844,326,25,10351,Loyal Customers
+845,1,12,11778,Loyal Customers
+846,133,1,14467,Loyal Customers
+847,233,22,4432,Loyal Customers
+848,12,37,12102,Loyal Customers
+849,346,1,15800,Champions
+850,46,1,13869,Champions
+851,34,21,7063,Loyal Customers
+852,78,15,7938,Loyal Customers
+853,218,17,12499,At Risk / Lost
+854,301,22,12343,Champions
+855,73,38,1945,Recent Low-Value
+856,282,35,14042,Champions
+857,249,16,16866,Recent Low-Value
+858,47,8,4212,At Risk / Lost
+859,121,17,12880,Loyal Customers
+860,214,17,15790,At Risk / Lost
+861,239,26,10188,Loyal Customers
+862,56,13,1609,Champions
+863,350,17,12504,Loyal Customers
+864,107,38,1678,Recent Low-Value
+865,319,17,17363,Recent Low-Value
+866,48,14,18646,At Risk / Lost
+867,61,6,14206,Champions
+868,337,35,9940,Recent Low-Value
+869,26,14,13031,At Risk / Lost
+870,292,8,1459,Champions
+871,257,15,4342,Champions
+872,8,27,16564,At Risk / Lost
+873,113,13,19216,Recent Low-Value
+874,355,31,2809,Recent Low-Value
+875,253,35,18906,At Risk / Lost
+876,180,6,12891,Recent Low-Value
+877,207,5,17151,At Risk / Lost
+878,303,22,18980,Recent Low-Value
+879,127,23,3599,Recent Low-Value
+880,56,25,11790,At Risk / Lost
+881,214,34,8180,At Risk / Lost
+882,14,26,1289,Recent Low-Value
+883,28,5,14008,At Risk / Lost
+884,78,26,12851,Recent Low-Value
+885,216,20,14814,Loyal Customers
+886,154,6,1125,Champions
+887,14,6,171,Champions
+888,187,18,5646,Recent Low-Value
+889,312,4,2785,Champions
+890,7,17,9485,Recent Low-Value
+891,3,14,18332,At Risk / Lost
+892,111,14,10676,Loyal Customers
+893,238,13,2122,Champions
+894,363,7,15931,Champions
+895,239,15,13040,At Risk / Lost
+896,274,19,17782,Loyal Customers
+897,294,35,4202,Loyal Customers
+898,227,17,17388,Loyal Customers
+899,15,35,3126,At Risk / Lost
+900,192,19,6809,Champions
+901,119,20,6069,Champions
+902,28,36,2720,Loyal Customers
+903,202,35,2746,At Risk / Lost
+904,39,32,4965,At Risk / Lost
+905,273,24,2389,At Risk / Lost
+906,231,17,7470,Loyal Customers
+907,86,7,13954,At Risk / Lost
+908,126,1,9777,Loyal Customers
+909,300,35,11443,Loyal Customers
+910,25,32,17924,Loyal Customers
+911,145,36,865,Recent Low-Value
+912,13,13,12771,Loyal Customers
+913,212,6,16258,At Risk / Lost
+914,25,14,4192,Recent Low-Value
+915,68,37,13075,Champions
+916,67,15,9441,Champions
+917,233,4,12434,At Risk / Lost
+918,109,16,16177,At Risk / Lost
+919,146,28,15935,At Risk / Lost
+920,111,16,2766,At Risk / Lost
+921,228,4,6068,Recent Low-Value
+922,111,26,7741,At Risk / Lost
+923,34,28,18665,Loyal Customers
+924,111,32,9934,Champions
+925,264,2,3988,At Risk / Lost
+926,236,31,940,Loyal Customers
+927,83,3,13973,At Risk / Lost
+928,42,8,10946,Loyal Customers
+929,101,24,5999,Recent Low-Value
+930,6,15,665,Champions
+931,180,31,6105,Champions
+932,282,9,9256,Recent Low-Value
+933,320,39,10574,Loyal Customers
+934,226,2,9287,At Risk / Lost
+935,315,8,7326,Loyal Customers
+936,229,7,9479,Champions
+937,289,39,5990,Recent Low-Value
+938,150,16,13213,Recent Low-Value
+939,277,35,4411,Loyal Customers
+940,198,30,11546,Loyal Customers
+941,70,10,8948,Recent Low-Value
+942,112,38,19466,Champions
+943,4,18,6183,At Risk / Lost
+944,350,5,12698,At Risk / Lost
+945,331,29,17040,Loyal Customers
+946,318,39,19503,Recent Low-Value
+947,350,34,2680,Recent Low-Value
+948,95,23,13944,Recent Low-Value
+949,152,5,9653,Champions
+950,311,30,9486,Loyal Customers
+951,137,6,19622,Loyal Customers
+952,247,4,14735,Loyal Customers
+953,243,29,771,Champions
+954,31,23,877,Loyal Customers
+955,40,6,3122,At Risk / Lost
+956,229,32,18344,Loyal Customers
+957,36,18,19623,Loyal Customers
+958,223,15,13917,Loyal Customers
+959,6,32,14360,Champions
+960,322,9,1174,At Risk / Lost
+961,220,37,10008,At Risk / Lost
+962,75,10,9575,Recent Low-Value
+963,4,20,12978,Recent Low-Value
+964,335,6,15220,At Risk / Lost
+965,134,3,2086,Loyal Customers
+966,118,11,10925,Loyal Customers
+967,94,17,9293,Loyal Customers
+968,62,32,17530,Champions
+969,194,4,2276,Loyal Customers
+970,335,4,18822,Champions
+971,203,17,10147,At Risk / Lost
+972,26,19,16984,Loyal Customers
+973,173,5,18717,Loyal Customers
+974,300,32,4708,Recent Low-Value
+975,133,22,12006,At Risk / Lost
+976,326,6,7334,Loyal Customers
+977,118,35,6710,Champions
+978,324,22,10624,At Risk / Lost
+979,275,1,17084,Recent Low-Value
+980,212,20,13511,At Risk / Lost
+981,225,22,9280,Champions
+982,20,11,15325,Recent Low-Value
+983,113,13,10173,Champions
+984,140,3,4583,At Risk / Lost
+985,47,9,6001,Recent Low-Value
+986,1,12,6229,Champions
+987,90,23,18238,At Risk / Lost
+988,142,14,18948,Champions
+989,320,33,10515,Loyal Customers
+990,38,18,4582,At Risk / Lost
+991,293,9,9786,Recent Low-Value
+992,139,23,7500,Recent Low-Value
+993,356,10,6906,Loyal Customers
+994,333,19,10616,Champions
+995,259,5,7496,Champions
+996,161,23,7438,Recent Low-Value
+997,178,30,10050,Champions
+998,10,25,12600,At Risk / Lost
+999,261,28,11645,At Risk / Lost
+1000,138,34,5341,Recent Low-Value
+1001,172,25,4795,At Risk / Lost
+1002,13,10,11630,Recent Low-Value
+1003,168,14,14412,Champions
+1004,130,30,19072,Champions
+1005,84,25,14418,Champions
+1006,321,14,18266,Loyal Customers
+1007,319,35,11424,Recent Low-Value
+1008,101,34,3318,At Risk / Lost
+1009,329,10,4116,Champions
+1010,273,35,2937,Loyal Customers
+1011,265,11,16412,At Risk / Lost
+1012,38,11,7134,At Risk / Lost
+1013,94,21,7409,At Risk / Lost
+1014,95,21,14479,Champions
+1015,305,22,4339,At Risk / Lost
+1016,69,7,12228,Recent Low-Value
+1017,318,17,15956,Loyal Customers
+1018,236,2,9711,At Risk / Lost
+1019,334,12,4250,At Risk / Lost
+1020,137,18,11209,Recent Low-Value
+1021,76,11,1546,At Risk / Lost
+1022,35,16,12036,Champions
+1023,1,18,11136,Champions
+1024,296,35,6568,Champions
+1025,320,26,14121,At Risk / Lost
+1026,60,16,4275,Loyal Customers
+1027,320,6,15490,Loyal Customers
+1028,349,12,5180,At Risk / Lost
+1029,328,13,15571,Loyal Customers
+1030,267,4,14993,Loyal Customers
+1031,361,39,17348,At Risk / Lost
+1032,229,2,16109,Champions
+1033,270,26,6317,At Risk / Lost
+1034,316,27,5772,Champions
+1035,286,27,1602,Champions
+1036,291,15,1510,Loyal Customers
+1037,213,8,3870,Loyal Customers
+1038,165,7,10197,Champions
+1039,5,12,4101,Champions
+1040,339,13,19967,Loyal Customers
+1041,78,17,698,Recent Low-Value
+1042,62,17,11076,Champions
+1043,132,36,19525,Champions
+1044,89,21,6491,Champions
+1045,237,8,16550,Loyal Customers
+1046,42,5,15008,At Risk / Lost
+1047,89,26,11690,Champions
+1048,296,16,16379,Champions
+1049,328,36,2850,Champions
+1050,295,28,10016,At Risk / Lost
+1051,104,29,6906,At Risk / Lost
+1052,14,12,6529,Champions
+1053,288,37,8223,Champions
+1054,179,30,18115,Recent Low-Value
+1055,125,23,6552,At Risk / Lost
+1056,353,16,17258,Recent Low-Value
+1057,23,14,15556,Champions
+1058,63,10,4119,Champions
+1059,143,7,12519,Champions
+1060,153,37,1029,Champions
+1061,145,29,19496,Loyal Customers
+1062,225,3,6364,Loyal Customers
+1063,309,15,8073,Loyal Customers
+1064,104,36,9797,Recent Low-Value
+1065,104,19,11236,At Risk / Lost
+1066,39,13,19303,Champions
+1067,198,21,1284,At Risk / Lost
+1068,134,37,17011,Loyal Customers
+1069,67,27,1016,Champions
+1070,179,29,3674,Champions
+1071,42,20,3419,Recent Low-Value
+1072,15,25,17890,At Risk / Lost
+1073,111,6,17725,Recent Low-Value
+1074,157,36,5306,Loyal Customers
+1075,289,2,19617,At Risk / Lost
+1076,231,22,17282,Loyal Customers
+1077,157,32,18007,Recent Low-Value
+1078,38,16,5028,Recent Low-Value
+1079,97,18,16205,Champions
+1080,289,5,2988,At Risk / Lost
+1081,254,36,2790,At Risk / Lost
+1082,196,30,4191,Champions
+1083,86,19,14060,At Risk / Lost
+1084,322,23,790,Loyal Customers
+1085,10,34,1595,Loyal Customers
+1086,5,13,11185,Recent Low-Value
+1087,123,29,17376,Loyal Customers
+1088,330,36,10820,At Risk / Lost
+1089,353,22,5973,Champions
+1090,118,36,4603,Recent Low-Value
+1091,294,9,11820,Champions
+1092,159,39,14064,Recent Low-Value
+1093,303,19,997,Recent Low-Value
+1094,228,38,17194,Champions
+1095,216,6,3795,Loyal Customers
+1096,184,15,2786,Loyal Customers
+1097,15,20,5878,Loyal Customers
+1098,157,9,15250,Loyal Customers
+1099,136,32,16899,Champions
+1100,261,4,9763,At Risk / Lost
+1101,157,18,4280,Recent Low-Value
+1102,47,5,4362,Champions
+1103,324,20,2615,Loyal Customers
+1104,332,23,11336,Loyal Customers
+1105,173,11,14204,Champions
+1106,130,37,6716,Recent Low-Value
+1107,95,22,17476,Champions
+1108,115,4,4470,Champions
+1109,243,29,18257,At Risk / Lost
+1110,292,34,3916,Champions
+1111,282,13,1856,At Risk / Lost
+1112,299,9,2473,Recent Low-Value
+1113,283,31,2676,Champions
+1114,69,7,4284,Champions
+1115,148,4,2497,Loyal Customers
+1116,11,19,12774,Champions
+1117,254,30,10426,Loyal Customers
+1118,330,31,10646,Loyal Customers
+1119,360,35,4635,Loyal Customers
+1120,38,21,14699,Recent Low-Value
+1121,134,31,9268,At Risk / Lost
+1122,200,19,17218,Loyal Customers
+1123,23,31,732,Champions
+1124,303,32,13380,Champions
+1125,346,2,14846,Loyal Customers
+1126,302,10,4368,Loyal Customers
+1127,363,2,19385,Champions
+1128,218,2,18147,Loyal Customers
+1129,141,24,15421,At Risk / Lost
+1130,104,17,10307,At Risk / Lost
+1131,210,32,5691,Recent Low-Value
+1132,111,16,16326,Loyal Customers
+1133,104,16,1154,Recent Low-Value
+1134,316,39,8672,Recent Low-Value
+1135,171,31,13679,Recent Low-Value
+1136,356,24,19566,Loyal Customers
+1137,324,1,10683,Recent Low-Value
+1138,133,11,8107,At Risk / Lost
+1139,293,21,16003,Recent Low-Value
+1140,328,4,9884,At Risk / Lost
+1141,127,7,4361,At Risk / Lost
+1142,106,26,2489,Loyal Customers
+1143,92,12,14039,Recent Low-Value
+1144,287,31,11319,Loyal Customers
+1145,51,17,9499,At Risk / Lost
+1146,29,33,644,Champions
+1147,296,11,2339,Recent Low-Value
+1148,297,28,10659,Loyal Customers
+1149,214,32,2727,Champions
+1150,267,1,6718,Recent Low-Value
+1151,257,28,12223,Recent Low-Value
+1152,302,7,6880,Loyal Customers
+1153,101,2,8115,Champions
+1154,346,24,3230,Loyal Customers
+1155,110,4,16580,Recent Low-Value
+1156,182,19,14931,Recent Low-Value
+1157,313,26,2808,At Risk / Lost
+1158,1,11,5497,Recent Low-Value
+1159,319,11,11628,Recent Low-Value
+1160,55,3,16940,Champions
+1161,149,12,6014,Champions
+1162,309,3,4468,At Risk / Lost
+1163,137,27,11279,At Risk / Lost
+1164,202,2,12176,At Risk / Lost
+1165,313,16,18421,Loyal Customers
+1166,117,2,14048,Loyal Customers
+1167,154,30,17630,At Risk / Lost
+1168,291,20,13924,Loyal Customers
+1169,63,38,4399,Recent Low-Value
+1170,244,28,14220,At Risk / Lost
+1171,25,25,8218,At Risk / Lost
+1172,90,32,10856,Loyal Customers
+1173,75,10,8053,Champions
+1174,294,33,4884,At Risk / Lost
+1175,210,13,15285,Loyal Customers
+1176,347,37,9124,Loyal Customers
+1177,17,16,14774,Champions
+1178,128,22,17945,At Risk / Lost
+1179,364,20,11808,Champions
+1180,251,27,1259,Recent Low-Value
+1181,179,16,486,Champions
+1182,182,34,7292,Champions
+1183,152,32,10845,Loyal Customers
+1184,25,26,10010,Champions
+1185,180,25,3509,Recent Low-Value
+1186,198,2,17173,Loyal Customers
+1187,344,12,13280,Recent Low-Value
+1188,161,9,17436,Champions
+1189,177,12,6242,Recent Low-Value
+1190,285,26,6067,Recent Low-Value
+1191,63,9,7305,Champions
+1192,150,10,16106,Champions
+1193,154,32,12209,Loyal Customers
+1194,156,34,13134,Loyal Customers
+1195,49,20,2584,At Risk / Lost
+1196,337,39,1954,Loyal Customers
+1197,84,2,11731,Champions
+1198,361,1,19715,Recent Low-Value
+1199,177,36,2697,Recent Low-Value
+1200,148,24,7929,Loyal Customers
+1201,118,27,8286,Loyal Customers
+1202,342,2,4083,Champions
+1203,63,31,6784,Recent Low-Value
+1204,189,14,10483,At Risk / Lost
+1205,360,2,17140,At Risk / Lost
+1206,49,29,12104,Loyal Customers
+1207,327,15,12203,At Risk / Lost
+1208,257,12,6412,Champions
+1209,224,37,8038,At Risk / Lost
+1210,141,28,10054,Loyal Customers
+1211,215,20,19769,Champions
+1212,211,39,9877,Recent Low-Value
+1213,318,24,3663,Champions
+1214,32,21,5141,Loyal Customers
+1215,158,10,11392,Loyal Customers
+1216,285,14,8126,At Risk / Lost
+1217,305,37,14023,At Risk / Lost
+1218,286,18,19728,Recent Low-Value
+1219,144,24,17524,Recent Low-Value
+1220,19,14,18757,Loyal Customers
+1221,18,34,3729,Loyal Customers
+1222,257,12,2214,Loyal Customers
+1223,78,22,1777,Recent Low-Value
+1224,175,6,3194,Loyal Customers
+1225,194,36,2384,Recent Low-Value
+1226,113,36,5152,Loyal Customers
+1227,114,22,18073,Champions
+1228,222,14,19004,Champions
+1229,166,16,12147,Loyal Customers
+1230,319,36,794,Champions
+1231,132,25,15688,Recent Low-Value
+1232,264,32,13155,At Risk / Lost
+1233,55,33,16180,Champions
+1234,359,36,6804,At Risk / Lost
+1235,131,20,7468,Champions
+1236,288,18,2071,Recent Low-Value
+1237,266,38,14693,Champions
+1238,162,3,8155,Champions
+1239,87,23,11541,Loyal Customers
+1240,55,32,14777,At Risk / Lost
+1241,288,16,1968,At Risk / Lost
+1242,178,5,18155,Recent Low-Value
+1243,349,4,1828,Recent Low-Value
+1244,8,21,7732,At Risk / Lost
+1245,321,14,12143,Loyal Customers
+1246,313,39,6503,Loyal Customers
+1247,247,31,15832,At Risk / Lost
+1248,323,14,18626,Champions
+1249,255,6,9440,At Risk / Lost
+1250,328,12,6284,Champions
+1251,54,16,353,At Risk / Lost
+1252,249,17,4202,Champions
+1253,239,23,3642,Loyal Customers
+1254,229,14,19259,At Risk / Lost
+1255,67,7,6312,Recent Low-Value
+1256,51,32,4737,Champions
+1257,97,15,11625,Loyal Customers
+1258,92,17,11571,Recent Low-Value
+1259,264,34,12600,Loyal Customers
+1260,291,5,15347,Champions
+1261,96,27,10632,At Risk / Lost
+1262,88,23,13618,Loyal Customers
+1263,78,14,6576,At Risk / Lost
+1264,288,15,19632,At Risk / Lost
+1265,120,33,19843,Loyal Customers
+1266,302,31,1104,Loyal Customers
+1267,165,35,10386,Loyal Customers
+1268,182,17,4817,At Risk / Lost
+1269,223,28,3371,Recent Low-Value
+1270,311,19,12814,Champions
+1271,7,23,309,Recent Low-Value
+1272,330,32,5639,At Risk / Lost
+1273,263,13,16637,Loyal Customers
+1274,161,20,8706,Loyal Customers
+1275,151,35,11716,Champions
+1276,85,5,1384,Champions
+1277,147,9,3248,Recent Low-Value
+1278,112,29,868,Recent Low-Value
+1279,36,6,5707,Champions
+1280,285,25,19686,At Risk / Lost
+1281,188,31,19271,Recent Low-Value
+1282,82,22,18694,Loyal Customers
+1283,2,2,7499,Loyal Customers
+1284,303,5,458,At Risk / Lost
+1285,197,27,949,Champions
+1286,11,25,7598,Recent Low-Value
+1287,234,8,4622,Loyal Customers
+1288,195,1,19028,Champions
+1289,119,20,12873,Recent Low-Value
+1290,20,23,18315,At Risk / Lost
+1291,261,32,17956,Loyal Customers
+1292,293,11,9728,At Risk / Lost
+1293,256,39,429,At Risk / Lost
+1294,222,24,5951,At Risk / Lost
+1295,226,11,7132,Recent Low-Value
+1296,53,29,15426,At Risk / Lost
+1297,355,26,5366,Recent Low-Value
+1298,342,16,4454,Recent Low-Value
+1299,364,35,15182,At Risk / Lost
+1300,280,20,4822,At Risk / Lost
+1301,81,3,17872,Champions
+1302,202,1,9011,Loyal Customers
+1303,158,1,3335,Champions
+1304,120,17,4676,Loyal Customers
+1305,59,2,1200,Loyal Customers
+1306,215,29,8964,Champions
+1307,128,20,8808,Champions
+1308,224,6,19016,Loyal Customers
+1309,209,8,17265,Loyal Customers
+1310,115,29,14539,Loyal Customers
+1311,209,33,11850,Recent Low-Value
+1312,14,3,9881,Loyal Customers
+1313,9,35,5095,At Risk / Lost
+1314,40,5,17985,At Risk / Lost
+1315,237,27,12086,At Risk / Lost
+1316,281,12,12610,Champions
+1317,359,20,19564,Champions
+1318,201,20,9368,Champions
+1319,246,9,602,Loyal Customers
+1320,278,39,9631,At Risk / Lost
+1321,235,4,8109,Loyal Customers
+1322,4,19,17107,Recent Low-Value
+1323,154,38,11642,Recent Low-Value
+1324,29,27,17534,Champions
+1325,109,13,17813,Recent Low-Value
+1326,98,13,13535,At Risk / Lost
+1327,215,22,4214,Recent Low-Value
+1328,293,28,13668,Champions
+1329,75,22,3467,Loyal Customers
+1330,326,19,8195,Recent Low-Value
+1331,146,8,5241,At Risk / Lost
+1332,128,8,4051,At Risk / Lost
+1333,341,26,14987,At Risk / Lost
+1334,42,26,1673,Loyal Customers
+1335,356,23,13459,At Risk / Lost
+1336,41,13,19118,Champions
+1337,34,28,2868,Champions
+1338,17,9,5402,At Risk / Lost
+1339,165,20,13846,Recent Low-Value
+1340,153,19,1311,At Risk / Lost
+1341,76,39,15545,Champions
+1342,87,12,15915,Champions
+1343,117,15,1260,Champions
+1344,362,31,7141,Recent Low-Value
+1345,342,14,18867,Recent Low-Value
+1346,27,11,10946,Recent Low-Value
+1347,313,26,5976,Champions
+1348,287,27,12989,Loyal Customers
+1349,134,11,13982,At Risk / Lost
+1350,219,38,14838,At Risk / Lost
+1351,168,34,1195,Champions
+1352,98,19,6001,Recent Low-Value
+1353,268,6,8315,Loyal Customers
+1354,237,38,13011,Loyal Customers
+1355,309,28,14223,Recent Low-Value
+1356,173,1,1179,At Risk / Lost
+1357,190,35,12610,At Risk / Lost
+1358,122,8,19331,Loyal Customers
+1359,46,7,18444,Loyal Customers
+1360,64,11,1573,Recent Low-Value
+1361,130,39,4988,At Risk / Lost
+1362,310,4,5079,Loyal Customers
+1363,363,25,1312,At Risk / Lost
+1364,193,12,9101,Loyal Customers
+1365,307,26,13348,Recent Low-Value
+1366,181,38,519,At Risk / Lost
+1367,292,12,15708,Loyal Customers
+1368,282,37,3759,Loyal Customers
+1369,29,24,5383,Loyal Customers
+1370,149,16,10815,Loyal Customers
+1371,267,13,16265,Recent Low-Value
+1372,296,25,1440,At Risk / Lost
+1373,11,4,14905,At Risk / Lost
+1374,164,11,10684,Champions
+1375,113,32,14880,At Risk / Lost
+1376,187,7,5237,Champions
+1377,295,11,17845,Loyal Customers
+1378,232,28,691,Recent Low-Value
+1379,227,23,626,Recent Low-Value
+1380,310,23,7955,Loyal Customers
+1381,98,28,10795,Champions
+1382,55,26,1392,Loyal Customers
+1383,111,25,18138,Recent Low-Value
+1384,152,29,16671,Recent Low-Value
+1385,246,19,19242,At Risk / Lost
+1386,69,33,8725,Champions
+1387,312,36,6531,At Risk / Lost
+1388,289,14,16026,Recent Low-Value
+1389,250,14,11804,Recent Low-Value
+1390,36,35,537,At Risk / Lost
+1391,239,30,10880,At Risk / Lost
+1392,148,28,17316,Recent Low-Value
+1393,227,17,9088,At Risk / Lost
+1394,244,3,9053,At Risk / Lost
+1395,337,16,5894,Champions
+1396,201,30,3674,Recent Low-Value
+1397,154,29,16401,Loyal Customers
+1398,73,15,784,Champions
+1399,201,25,4333,Loyal Customers
+1400,296,38,17061,At Risk / Lost
+1401,17,38,13097,At Risk / Lost
+1402,129,23,8107,Loyal Customers
+1403,217,25,16711,At Risk / Lost
+1404,61,7,2428,At Risk / Lost
+1405,104,22,19215,Champions
+1406,42,17,9119,Loyal Customers
+1407,25,18,16914,Champions
+1408,39,10,9355,Loyal Customers
+1409,291,10,18193,Champions
+1410,131,7,5882,Recent Low-Value
+1411,229,38,1334,Recent Low-Value
+1412,108,27,5305,Loyal Customers
+1413,172,33,1520,Recent Low-Value
+1414,102,1,17252,Champions
+1415,354,34,9696,Loyal Customers
+1416,12,4,19588,Recent Low-Value
+1417,275,17,4455,Recent Low-Value
+1418,101,4,19789,Loyal Customers
+1419,44,26,18022,Recent Low-Value
+1420,305,4,17815,Recent Low-Value
+1421,17,1,8361,Loyal Customers
+1422,330,7,13865,Recent Low-Value
+1423,57,30,6044,Recent Low-Value
+1424,311,9,7226,Recent Low-Value
+1425,303,35,16964,Recent Low-Value
+1426,12,8,5363,At Risk / Lost
+1427,318,24,15400,Loyal Customers
+1428,80,19,2893,At Risk / Lost
+1429,216,36,2992,At Risk / Lost
+1430,339,27,1298,Champions
+1431,264,32,18856,At Risk / Lost
+1432,149,14,18376,At Risk / Lost
+1433,81,18,1983,Champions
+1434,215,28,897,Recent Low-Value
+1435,198,29,8309,Recent Low-Value
+1436,200,16,8335,At Risk / Lost
+1437,25,35,16638,Champions
+1438,89,31,15357,Recent Low-Value
+1439,268,4,8150,Champions
+1440,143,37,6047,Loyal Customers
+1441,59,17,9717,Loyal Customers
+1442,26,39,1992,Loyal Customers
+1443,47,26,3524,Loyal Customers
+1444,288,39,9550,At Risk / Lost
+1445,266,4,13518,Loyal Customers
+1446,16,30,2115,Loyal Customers
+1447,199,30,4933,Champions
+1448,282,22,9994,Recent Low-Value
+1449,86,11,16042,Champions
+1450,250,2,9165,At Risk / Lost
+1451,270,12,665,Loyal Customers
+1452,335,30,7512,Recent Low-Value
+1453,117,36,18502,Recent Low-Value
+1454,7,18,10177,Loyal Customers
+1455,137,26,10415,Loyal Customers
+1456,176,7,12934,At Risk / Lost
+1457,328,1,2414,At Risk / Lost
+1458,315,26,4512,Loyal Customers
+1459,215,23,3983,Loyal Customers
+1460,82,26,11484,Loyal Customers
+1461,223,6,10151,Loyal Customers
+1462,103,6,8316,Recent Low-Value
+1463,273,8,11795,At Risk / Lost
+1464,14,24,8002,Loyal Customers
+1465,159,22,13287,Loyal Customers
+1466,152,19,17673,Recent Low-Value
+1467,108,37,12388,Champions
+1468,188,18,14310,Loyal Customers
+1469,301,31,6984,Recent Low-Value
+1470,98,37,19641,Recent Low-Value
+1471,131,30,10659,Champions
+1472,293,33,18225,At Risk / Lost
+1473,171,10,3788,At Risk / Lost
+1474,183,37,14214,At Risk / Lost
+1475,364,12,5469,Loyal Customers
+1476,39,30,12038,At Risk / Lost
+1477,15,27,4123,Loyal Customers
+1478,4,39,16082,Loyal Customers
+1479,349,9,17200,Recent Low-Value
+1480,210,21,4067,At Risk / Lost
+1481,161,12,7523,At Risk / Lost
+1482,16,29,6550,At Risk / Lost
+1483,108,33,12313,Loyal Customers
+1484,311,15,3315,Loyal Customers
+1485,227,2,490,At Risk / Lost
+1486,170,39,19521,Loyal Customers
+1487,34,18,332,Loyal Customers
+1488,251,3,19615,Champions
+1489,247,7,7734,Champions
+1490,269,18,11598,At Risk / Lost
+1491,141,38,11016,At Risk / Lost
+1492,274,37,333,Champions
+1493,96,33,1491,Loyal Customers
+1494,227,31,11184,Loyal Customers
+1495,39,11,9547,Recent Low-Value
+1496,302,4,14284,At Risk / Lost
+1497,29,18,11982,At Risk / Lost
+1498,318,4,14938,At Risk / Lost
+1499,245,34,17373,Recent Low-Value
+1500,236,29,8002,Recent Low-Value
+1501,185,24,12979,Loyal Customers
+1502,272,22,17229,Champions
+1503,236,2,10011,Champions
+1504,239,6,527,Champions
+1505,266,25,831,Loyal Customers
+1506,359,21,899,Champions
+1507,340,16,7125,Recent Low-Value
+1508,65,31,14581,Recent Low-Value
+1509,177,14,7724,At Risk / Lost
+1510,3,39,15061,Champions
+1511,142,28,19022,Recent Low-Value
+1512,158,32,8332,At Risk / Lost
+1513,324,28,3467,Champions
+1514,146,9,13362,Champions
+1515,293,22,5329,Recent Low-Value
+1516,153,32,18899,At Risk / Lost
+1517,193,5,13847,At Risk / Lost
+1518,73,23,19433,Recent Low-Value
+1519,305,5,4361,Recent Low-Value
+1520,344,32,3566,Recent Low-Value
+1521,140,10,13885,Champions
+1522,187,39,3188,Recent Low-Value
+1523,293,15,13115,Recent Low-Value
+1524,61,7,1215,Loyal Customers
+1525,198,29,4678,Recent Low-Value
+1526,295,3,2690,Recent Low-Value
+1527,319,19,7472,Champions
+1528,302,10,3673,At Risk / Lost
+1529,344,28,3078,Champions
+1530,11,29,10739,Loyal Customers
+1531,62,15,9522,Recent Low-Value
+1532,333,35,10958,Recent Low-Value
+1533,226,6,5075,Recent Low-Value
+1534,153,12,5025,Recent Low-Value
+1535,199,38,10886,Recent Low-Value
+1536,52,13,19914,Recent Low-Value
+1537,260,29,14816,Loyal Customers
+1538,59,19,2095,Recent Low-Value
+1539,72,3,13944,Recent Low-Value
+1540,148,8,3991,Recent Low-Value
+1541,349,8,15622,Loyal Customers
+1542,63,20,7245,Recent Low-Value
+1543,310,4,8598,Loyal Customers
+1544,243,21,9654,Champions
+1545,330,3,2202,Recent Low-Value
+1546,107,8,3130,At Risk / Lost
+1547,226,23,8624,Loyal Customers
+1548,313,16,8207,Champions
+1549,218,13,16726,Loyal Customers
+1550,241,3,18368,Loyal Customers
+1551,259,9,15035,Champions
+1552,262,14,9724,Recent Low-Value
+1553,5,13,15923,Recent Low-Value
+1554,261,7,7963,Loyal Customers
+1555,54,15,3209,Champions
+1556,47,7,18670,Recent Low-Value
+1557,215,38,12582,Loyal Customers
+1558,177,34,1650,At Risk / Lost
+1559,9,22,746,Champions
+1560,99,24,13507,At Risk / Lost
+1561,20,37,12800,At Risk / Lost
+1562,241,1,637,Loyal Customers
+1563,61,10,14266,Champions
+1564,178,16,6672,Recent Low-Value
+1565,338,8,334,Recent Low-Value
+1566,62,25,14167,Loyal Customers
+1567,145,12,9796,Recent Low-Value
+1568,216,25,14250,Recent Low-Value
+1569,3,17,17858,At Risk / Lost
+1570,160,26,2009,At Risk / Lost
+1571,227,14,12250,Champions
+1572,269,36,180,At Risk / Lost
+1573,120,23,2183,Recent Low-Value
+1574,89,6,13478,Champions
+1575,329,5,15317,Champions
+1576,68,25,18174,Loyal Customers
+1577,357,18,17240,At Risk / Lost
+1578,98,13,2770,Champions
+1579,267,14,3851,Recent Low-Value
+1580,105,28,11844,Champions
+1581,323,18,5361,Champions
+1582,123,28,14791,Loyal Customers
+1583,29,27,6952,Recent Low-Value
+1584,137,32,1594,Recent Low-Value
+1585,195,9,17385,At Risk / Lost
+1586,226,32,772,Recent Low-Value
+1587,332,20,8730,Champions
+1588,170,28,10368,Recent Low-Value
+1589,9,33,544,Recent Low-Value
+1590,40,4,9257,Champions
+1591,25,34,12082,Loyal Customers
+1592,261,3,8755,At Risk / Lost
+1593,226,26,18682,At Risk / Lost
+1594,124,8,2387,Loyal Customers
+1595,38,6,12057,Champions
+1596,328,16,4108,At Risk / Lost
+1597,251,24,11796,Loyal Customers
+1598,176,39,9204,Loyal Customers
+1599,90,30,596,Loyal Customers
+1600,37,13,1563,At Risk / Lost
+1601,316,5,12559,At Risk / Lost
+1602,176,25,16977,At Risk / Lost
+1603,284,20,17910,At Risk / Lost
+1604,81,18,9984,Recent Low-Value
+1605,114,18,18277,Loyal Customers
+1606,40,2,2823,Recent Low-Value
+1607,301,10,17142,Loyal Customers
+1608,224,12,4861,At Risk / Lost
+1609,318,13,7730,At Risk / Lost
+1610,349,11,16475,Recent Low-Value
+1611,115,19,8841,Champions
+1612,186,35,4450,At Risk / Lost
+1613,323,39,307,Champions
+1614,56,26,4290,Loyal Customers
+1615,40,14,1983,Recent Low-Value
+1616,354,24,2986,Champions
+1617,40,1,16961,Champions
+1618,347,22,9053,At Risk / Lost
+1619,237,23,8481,Champions
+1620,289,19,13895,Champions
+1621,262,18,17239,Loyal Customers
+1622,216,12,9738,Recent Low-Value
+1623,147,28,5031,At Risk / Lost
+1624,336,28,9955,At Risk / Lost
+1625,168,33,5824,Champions
+1626,92,19,12520,Loyal Customers
+1627,353,28,4160,Champions
+1628,59,37,4865,Champions
+1629,59,26,6653,At Risk / Lost
+1630,304,35,7478,Champions
+1631,169,34,18173,Champions
+1632,269,35,17800,Loyal Customers
+1633,363,16,7230,At Risk / Lost
+1634,45,38,3286,Recent Low-Value
+1635,345,13,5889,Loyal Customers
+1636,181,23,16222,Loyal Customers
+1637,170,22,17629,Loyal Customers
+1638,356,16,8042,At Risk / Lost
+1639,191,28,7648,Champions
+1640,155,35,17044,Recent Low-Value
+1641,188,8,18396,At Risk / Lost
+1642,7,22,18348,Champions
+1643,133,21,396,Loyal Customers
+1644,235,26,2509,At Risk / Lost
+1645,45,21,1561,Champions
+1646,314,25,2368,Recent Low-Value
+1647,249,1,17478,Recent Low-Value
+1648,31,6,6654,Champions
+1649,23,23,16491,At Risk / Lost
+1650,160,23,18999,Loyal Customers
+1651,363,23,17901,Champions
+1652,158,32,18800,Loyal Customers
+1653,39,30,7458,Recent Low-Value
+1654,82,13,17771,Champions
+1655,356,18,17602,Recent Low-Value
+1656,258,23,7737,Loyal Customers
+1657,206,15,760,Loyal Customers
+1658,77,33,9007,Champions
+1659,12,21,7022,Champions
+1660,295,39,12053,Champions
+1661,224,23,19013,Recent Low-Value
+1662,13,27,4070,Loyal Customers
+1663,46,18,3507,Loyal Customers
+1664,155,24,9146,Recent Low-Value
+1665,113,7,14647,Champions
+1666,233,20,4860,At Risk / Lost
+1667,17,27,18381,Champions
+1668,360,6,13565,At Risk / Lost
+1669,223,27,4187,At Risk / Lost
+1670,354,9,7707,Recent Low-Value
+1671,188,31,4119,Loyal Customers
+1672,344,21,915,Loyal Customers
+1673,163,26,12663,Loyal Customers
+1674,326,13,13392,Loyal Customers
+1675,74,23,16258,Recent Low-Value
+1676,233,20,1022,At Risk / Lost
+1677,224,37,13029,Loyal Customers
+1678,319,28,15025,At Risk / Lost
+1679,60,17,17748,Recent Low-Value
+1680,335,28,11079,Champions
+1681,222,2,2822,Recent Low-Value
+1682,37,25,5455,Loyal Customers
+1683,278,6,13401,Champions
+1684,196,11,2650,Recent Low-Value
+1685,352,38,11241,Recent Low-Value
+1686,242,6,18157,At Risk / Lost
+1687,324,11,11384,Recent Low-Value
+1688,219,14,18150,Champions
+1689,192,2,1484,Recent Low-Value
+1690,17,3,8352,Loyal Customers
+1691,12,35,7338,At Risk / Lost
+1692,193,33,6126,Champions
+1693,22,24,10582,Champions
+1694,120,19,13901,Recent Low-Value
+1695,210,18,16220,Loyal Customers
+1696,306,24,15680,At Risk / Lost
+1697,270,35,8764,Champions
+1698,192,1,17442,At Risk / Lost
+1699,175,36,593,Recent Low-Value
+1700,285,25,16565,Loyal Customers
+1701,204,34,7099,Recent Low-Value
+1702,164,25,13933,At Risk / Lost
+1703,251,16,3070,Recent Low-Value
+1704,227,34,111,At Risk / Lost
+1705,7,29,15651,Champions
+1706,29,19,17245,Champions
+1707,33,23,3285,Recent Low-Value
+1708,134,19,16509,Champions
+1709,79,25,1906,At Risk / Lost
+1710,58,16,5764,Champions
+1711,26,9,14226,Loyal Customers
+1712,226,1,12994,Loyal Customers
+1713,285,19,5254,Recent Low-Value
+1714,4,33,13867,Recent Low-Value
+1715,99,34,15326,Recent Low-Value
+1716,39,16,1625,Recent Low-Value
+1717,271,18,860,At Risk / Lost
+1718,285,34,17078,At Risk / Lost
+1719,157,25,13980,Loyal Customers
+1720,75,6,1155,At Risk / Lost
+1721,288,21,10146,Champions
+1722,130,6,3183,Loyal Customers
+1723,175,32,15778,Recent Low-Value
+1724,84,39,12208,Recent Low-Value
+1725,22,31,9750,At Risk / Lost
+1726,27,10,6057,Loyal Customers
+1727,195,30,5355,At Risk / Lost
+1728,337,18,9511,At Risk / Lost
+1729,236,24,16444,At Risk / Lost
+1730,92,9,9791,Loyal Customers
+1731,21,31,18314,Recent Low-Value
+1732,303,15,3495,Champions
+1733,357,4,1303,Recent Low-Value
+1734,84,9,19294,Loyal Customers
+1735,262,9,19576,Recent Low-Value
+1736,147,26,3144,Recent Low-Value
+1737,257,4,7372,Champions
+1738,58,17,3614,Recent Low-Value
+1739,15,16,10090,Recent Low-Value
+1740,162,15,6292,Recent Low-Value
+1741,163,35,10867,At Risk / Lost
+1742,320,5,16628,Loyal Customers
+1743,281,5,7607,Loyal Customers
+1744,280,20,4957,Champions
+1745,12,15,12218,At Risk / Lost
+1746,274,18,17861,At Risk / Lost
+1747,271,2,3246,Recent Low-Value
+1748,208,29,17277,Loyal Customers
+1749,27,13,5856,Champions
+1750,72,4,4514,At Risk / Lost
+1751,60,10,17594,Recent Low-Value
+1752,145,31,4037,Champions
+1753,93,8,4063,At Risk / Lost
+1754,309,3,5997,Champions
+1755,8,9,9074,At Risk / Lost
+1756,79,30,14477,Champions
+1757,27,11,17600,At Risk / Lost
+1758,174,35,16156,At Risk / Lost
+1759,50,37,1850,Champions
+1760,199,13,4127,At Risk / Lost
+1761,349,36,11628,At Risk / Lost
+1762,181,13,5845,At Risk / Lost
+1763,24,12,9779,Champions
+1764,316,37,6038,Champions
+1765,46,10,12250,At Risk / Lost
+1766,15,9,13506,At Risk / Lost
+1767,153,7,19881,Champions
+1768,222,2,17843,Recent Low-Value
+1769,206,23,4953,At Risk / Lost
+1770,273,39,18425,Recent Low-Value
+1771,236,39,3248,Champions
+1772,340,21,16343,At Risk / Lost
+1773,228,23,8033,Recent Low-Value
+1774,9,29,9536,Champions
+1775,166,14,17769,Recent Low-Value
+1776,319,26,6574,Loyal Customers
+1777,214,5,14779,Champions
+1778,117,31,11328,Loyal Customers
+1779,344,25,870,Champions
+1780,72,31,1943,Champions
+1781,64,20,173,At Risk / Lost
+1782,205,17,18144,Loyal Customers
+1783,209,2,16159,Loyal Customers
+1784,72,25,8100,Loyal Customers
+1785,277,13,13373,Champions
+1786,274,39,16221,Loyal Customers
+1787,320,28,431,Loyal Customers
+1788,338,6,17905,At Risk / Lost
+1789,95,3,7612,Recent Low-Value
+1790,166,35,5031,Recent Low-Value
+1791,32,18,12842,Loyal Customers
+1792,11,11,13526,Loyal Customers
+1793,301,20,5213,Loyal Customers
+1794,217,5,8519,Loyal Customers
+1795,289,19,2981,Recent Low-Value
+1796,102,22,13245,At Risk / Lost
+1797,267,19,13656,Champions
+1798,214,16,19349,Loyal Customers
+1799,179,24,2675,Loyal Customers
+1800,88,4,12814,Recent Low-Value
+1801,41,15,6285,Loyal Customers
+1802,76,25,8756,At Risk / Lost
+1803,46,35,5841,At Risk / Lost
+1804,160,14,16761,Loyal Customers
+1805,80,19,165,Recent Low-Value
+1806,310,38,4362,Loyal Customers
+1807,86,36,5804,Loyal Customers
+1808,92,7,15455,Recent Low-Value
+1809,148,30,8694,At Risk / Lost
+1810,161,19,12275,Champions
+1811,202,25,12796,Loyal Customers
+1812,242,16,6355,At Risk / Lost
+1813,353,8,7541,Loyal Customers
+1814,2,18,15086,Champions
+1815,225,28,13450,Recent Low-Value
+1816,289,16,14540,At Risk / Lost
+1817,233,19,8060,Champions
+1818,77,17,17921,Loyal Customers
+1819,116,13,19862,Champions
+1820,154,7,13765,At Risk / Lost
+1821,103,27,6729,Recent Low-Value
+1822,194,10,13928,Loyal Customers
+1823,166,34,4641,Recent Low-Value
+1824,359,36,7976,Recent Low-Value
+1825,90,25,13411,Champions
+1826,174,6,14688,Champions
+1827,122,24,16748,At Risk / Lost
+1828,143,18,12480,At Risk / Lost
+1829,106,23,9977,Recent Low-Value
+1830,305,6,17918,At Risk / Lost
+1831,360,29,5197,Recent Low-Value
+1832,317,25,18144,Loyal Customers
+1833,123,17,18838,Recent Low-Value
+1834,9,24,6561,At Risk / Lost
+1835,262,11,7144,At Risk / Lost
+1836,73,26,5597,Recent Low-Value
+1837,359,34,13851,Champions
+1838,223,28,9404,Recent Low-Value
+1839,41,3,10526,Recent Low-Value
+1840,204,11,11158,Champions
+1841,264,38,11360,Loyal Customers
+1842,328,14,18663,Champions
+1843,178,26,734,At Risk / Lost
+1844,348,21,10157,Champions
+1845,318,39,13445,At Risk / Lost
+1846,84,30,10247,At Risk / Lost
+1847,318,8,18702,Recent Low-Value
+1848,111,20,1489,Recent Low-Value
+1849,251,32,13171,Loyal Customers
+1850,7,22,11422,At Risk / Lost
+1851,84,7,4376,Recent Low-Value
+1852,208,9,12406,At Risk / Lost
+1853,314,1,1349,Loyal Customers
+1854,22,29,17729,At Risk / Lost
+1855,3,8,8345,Loyal Customers
+1856,127,4,11202,Loyal Customers
+1857,297,35,16326,Loyal Customers
+1858,188,3,10688,Recent Low-Value
+1859,362,7,542,Champions
+1860,14,27,7076,Champions
+1861,12,1,4775,Recent Low-Value
+1862,87,27,11903,At Risk / Lost
+1863,12,16,8053,Recent Low-Value
+1864,25,38,4477,At Risk / Lost
+1865,301,7,10699,Loyal Customers
+1866,243,23,7158,Recent Low-Value
+1867,122,11,17306,Champions
+1868,147,33,11994,At Risk / Lost
+1869,55,36,3039,Recent Low-Value
+1870,238,37,1131,Recent Low-Value
+1871,356,17,10308,At Risk / Lost
+1872,173,35,662,Loyal Customers
+1873,221,5,10830,Loyal Customers
+1874,119,32,16824,Loyal Customers
+1875,309,3,16252,Loyal Customers
+1876,183,35,14098,At Risk / Lost
+1877,288,14,18780,Champions
+1878,307,31,16718,Recent Low-Value
+1879,300,31,9408,Recent Low-Value
+1880,82,17,9709,Loyal Customers
+1881,211,24,17775,At Risk / Lost
+1882,150,23,8820,Champions
+1883,37,18,10272,Champions
+1884,352,14,14557,Recent Low-Value
+1885,312,15,3039,Loyal Customers
+1886,361,15,14445,Recent Low-Value
+1887,59,6,16258,Recent Low-Value
+1888,131,27,5535,Champions
+1889,202,15,5492,At Risk / Lost
+1890,243,36,8072,Champions
+1891,35,8,17717,Recent Low-Value
+1892,93,15,19284,Loyal Customers
+1893,207,3,14899,Loyal Customers
+1894,353,13,19259,At Risk / Lost
+1895,332,34,15152,At Risk / Lost
+1896,305,24,6144,At Risk / Lost
+1897,350,32,19971,Recent Low-Value
+1898,213,32,14515,Recent Low-Value
+1899,159,30,17374,At Risk / Lost
+1900,24,13,13958,Loyal Customers
+1901,293,1,17672,Loyal Customers
+1902,4,34,5744,Loyal Customers
+1903,220,15,17224,Recent Low-Value
+1904,364,14,17853,Champions
+1905,20,29,18484,Loyal Customers
+1906,152,34,17955,Loyal Customers
+1907,50,18,18020,Loyal Customers
+1908,177,7,16802,At Risk / Lost
+1909,96,29,5253,Recent Low-Value
+1910,105,31,1994,At Risk / Lost
+1911,250,25,8091,At Risk / Lost
+1912,117,38,15539,Champions
+1913,354,14,9567,At Risk / Lost
+1914,228,8,6035,Champions
+1915,66,27,17207,At Risk / Lost
+1916,335,2,2429,Loyal Customers
+1917,262,17,9427,Recent Low-Value
+1918,295,37,2870,At Risk / Lost
+1919,243,14,4946,Champions
+1920,186,25,16751,Recent Low-Value
+1921,246,30,16376,Champions
+1922,125,29,14733,Loyal Customers
+1923,268,20,13728,At Risk / Lost
+1924,131,21,669,Recent Low-Value
+1925,237,22,2073,Loyal Customers
+1926,18,35,2922,At Risk / Lost
+1927,40,37,370,At Risk / Lost
+1928,21,16,16420,Champions
+1929,225,17,7741,Champions
+1930,355,16,9030,Loyal Customers
+1931,282,2,6780,Champions
+1932,8,4,1357,Loyal Customers
+1933,100,21,8350,Loyal Customers
+1934,240,39,5470,Loyal Customers
+1935,87,34,4958,Champions
+1936,298,30,8681,Recent Low-Value
+1937,14,6,13591,Loyal Customers
+1938,334,17,12536,Recent Low-Value
+1939,2,39,12970,At Risk / Lost
+1940,293,25,16604,Champions
+1941,325,5,7008,Champions
+1942,41,5,10944,Recent Low-Value
+1943,318,20,18787,At Risk / Lost
+1944,316,16,4961,At Risk / Lost
+1945,111,37,3011,Loyal Customers
+1946,14,9,9091,Champions
+1947,231,5,11672,At Risk / Lost
+1948,84,2,10398,At Risk / Lost
+1949,130,9,7336,Loyal Customers
+1950,231,36,5665,Loyal Customers
+1951,326,22,17593,Recent Low-Value
+1952,145,22,7029,Champions
+1953,345,22,17734,At Risk / Lost
+1954,28,34,18133,Recent Low-Value
+1955,66,29,7451,Champions
+1956,163,38,19440,Recent Low-Value
+1957,229,33,15001,Champions
+1958,261,18,10738,Champions
+1959,164,7,5928,At Risk / Lost
+1960,301,1,11656,Champions
+1961,303,33,18199,Loyal Customers
+1962,287,1,8250,At Risk / Lost
+1963,10,24,10207,Loyal Customers
+1964,195,4,19967,Recent Low-Value
+1965,118,4,1857,Recent Low-Value
+1966,270,18,18293,Champions
+1967,80,27,11299,Champions
+1968,93,32,16395,Loyal Customers
+1969,266,33,12907,Loyal Customers
+1970,332,28,17635,Loyal Customers
+1971,350,36,5592,Recent Low-Value
+1972,361,6,6402,Loyal Customers
+1973,257,16,16029,At Risk / Lost
+1974,133,34,4847,At Risk / Lost
+1975,276,23,14338,Recent Low-Value
+1976,264,24,8502,Loyal Customers
+1977,171,13,10786,Loyal Customers
+1978,1,18,4781,Champions
+1979,313,13,18991,At Risk / Lost
+1980,64,37,19447,Recent Low-Value
+1981,284,39,3528,Loyal Customers
+1982,121,17,7594,Champions
+1983,107,15,4055,Recent Low-Value
+1984,175,18,14126,Recent Low-Value
+1985,204,23,9344,At Risk / Lost
+1986,165,30,813,Loyal Customers
+1987,305,34,11180,Recent Low-Value
+1988,120,4,8621,Champions
+1989,44,3,1846,Champions
+1990,312,7,17691,Recent Low-Value
+1991,156,18,17268,Champions
+1992,207,7,2796,Recent Low-Value
+1993,108,6,12112,Champions
+1994,251,22,14788,Recent Low-Value
+1995,334,1,5136,Recent Low-Value
+1996,130,4,7227,Recent Low-Value
+1997,293,29,3818,Champions
+1998,20,21,8010,Recent Low-Value
+1999,282,26,2793,At Risk / Lost
+2000,285,14,17109,Recent Low-Value
+2001,1,9,15958,Loyal Customers
+2002,119,12,16032,Loyal Customers
+2003,35,6,7792,At Risk / Lost
+2004,198,20,6498,Recent Low-Value
+2005,245,24,7352,Loyal Customers
+2006,59,27,11821,Recent Low-Value
+2007,325,38,18039,Loyal Customers
+2008,161,8,11925,Champions
+2009,179,1,4287,Champions
+2010,206,24,136,At Risk / Lost
+2011,12,7,18271,At Risk / Lost
+2012,276,19,6383,Recent Low-Value
+2013,181,22,15302,At Risk / Lost
+2014,242,35,8160,Recent Low-Value
+2015,216,30,8165,Champions
+2016,251,29,3980,Champions
+2017,299,22,6032,Loyal Customers
+2018,126,11,8428,Recent Low-Value
+2019,217,20,6433,Champions
+2020,306,29,13970,Champions
+2021,285,34,11368,Recent Low-Value
+2022,185,1,5167,Loyal Customers
+2023,39,31,15716,Loyal Customers
+2024,223,30,12175,Loyal Customers
+2025,184,18,17145,Loyal Customers
+2026,178,17,8073,Champions
+2027,294,38,10102,Recent Low-Value
+2028,340,14,7987,Recent Low-Value
+2029,151,23,514,Champions
+2030,126,25,6950,Champions
+2031,301,15,2829,Champions
+2032,308,22,12029,At Risk / Lost
+2033,336,3,15088,Recent Low-Value
+2034,234,19,3997,Recent Low-Value
+2035,8,34,2269,Recent Low-Value
+2036,341,35,13663,Loyal Customers
+2037,129,1,18362,Champions
+2038,264,21,12988,Champions
+2039,157,29,4670,Champions
+2040,352,6,1615,At Risk / Lost
+2041,358,37,17058,Recent Low-Value
+2042,5,1,12734,Champions
+2043,86,1,19351,At Risk / Lost
+2044,175,27,13898,Champions
+2045,290,21,4577,Loyal Customers
+2046,193,16,16555,Recent Low-Value
+2047,311,26,19464,At Risk / Lost
+2048,119,16,9651,Champions
+2049,218,28,14279,Recent Low-Value
+2050,114,1,139,At Risk / Lost
+2051,145,36,10322,Recent Low-Value
+2052,26,10,16216,Recent Low-Value
+2053,136,17,18384,Loyal Customers
+2054,303,23,18701,Recent Low-Value
+2055,232,7,16149,At Risk / Lost
+2056,76,7,4896,Recent Low-Value
+2057,328,15,4706,At Risk / Lost
+2058,345,34,17767,Recent Low-Value
+2059,302,4,8875,Champions
+2060,289,14,14964,Loyal Customers
+2061,1,14,14293,Champions
+2062,147,16,14776,Loyal Customers
+2063,287,7,10557,At Risk / Lost
+2064,142,32,17299,Loyal Customers
+2065,53,19,16144,Recent Low-Value
+2066,304,2,15166,Recent Low-Value
+2067,69,10,18995,Champions
+2068,361,17,346,Loyal Customers
+2069,90,37,6616,At Risk / Lost
+2070,220,12,16900,At Risk / Lost
+2071,192,6,13442,Recent Low-Value
+2072,63,22,16591,At Risk / Lost
+2073,73,32,9130,Recent Low-Value
+2074,161,20,1521,Recent Low-Value
+2075,169,1,13070,Recent Low-Value
+2076,89,6,7383,Champions
+2077,176,19,16045,Champions
+2078,269,18,355,Recent Low-Value
+2079,73,6,11119,Recent Low-Value
+2080,245,33,15587,Recent Low-Value
+2081,77,23,9129,At Risk / Lost
+2082,159,23,19446,Recent Low-Value
+2083,324,26,2382,Recent Low-Value
+2084,98,13,8844,Loyal Customers
+2085,102,7,17961,Loyal Customers
+2086,132,15,10019,Loyal Customers
+2087,102,27,13435,Loyal Customers
+2088,19,26,691,Recent Low-Value
+2089,82,33,6377,Loyal Customers
+2090,279,15,2360,At Risk / Lost
+2091,339,36,11239,At Risk / Lost
+2092,331,27,447,Loyal Customers
+2093,129,5,4543,Champions
+2094,344,2,11188,At Risk / Lost
+2095,310,33,8874,At Risk / Lost
+2096,89,16,6969,Loyal Customers
+2097,213,23,19522,Loyal Customers
+2098,143,38,2945,Recent Low-Value
+2099,65,16,12486,At Risk / Lost
+2100,76,14,1365,Loyal Customers
+2101,199,29,12545,Loyal Customers
+2102,143,26,13038,Recent Low-Value
+2103,316,35,11259,At Risk / Lost
+2104,93,15,2374,Loyal Customers
+2105,305,3,18954,Recent Low-Value
+2106,224,23,10582,Loyal Customers
+2107,291,29,19061,Champions
+2108,102,34,1168,Champions
+2109,267,33,14806,Loyal Customers
+2110,355,23,6074,At Risk / Lost
+2111,110,7,11028,Champions
+2112,330,3,2050,Recent Low-Value
+2113,265,32,19577,Loyal Customers
+2114,3,31,10511,Recent Low-Value
+2115,85,18,13488,Champions
+2116,282,7,17871,At Risk / Lost
+2117,328,1,4374,Recent Low-Value
+2118,304,14,2385,Champions
+2119,117,32,19690,Champions
+2120,221,6,19408,Champions
+2121,154,39,7145,Recent Low-Value
+2122,153,10,1718,Champions
+2123,12,7,11079,Loyal Customers
+2124,133,26,8662,Champions
+2125,304,34,12126,Loyal Customers
+2126,293,30,7943,At Risk / Lost
+2127,300,36,9995,Loyal Customers
+2128,228,21,12066,At Risk / Lost
+2129,271,17,17832,At Risk / Lost
+2130,43,33,5389,Loyal Customers
+2131,343,10,18906,At Risk / Lost
+2132,326,12,18912,Loyal Customers
+2133,302,16,3133,Recent Low-Value
+2134,364,32,8960,At Risk / Lost
+2135,21,15,7913,Loyal Customers
+2136,107,27,17898,At Risk / Lost
+2137,336,28,13960,Champions
+2138,303,17,14394,Loyal Customers
+2139,117,2,3721,Champions
+2140,124,36,17238,At Risk / Lost
+2141,281,7,2447,At Risk / Lost
+2142,292,13,14982,Recent Low-Value
+2143,203,15,17210,Loyal Customers
+2144,51,25,5023,Champions
+2145,271,23,19133,Recent Low-Value
+2146,324,22,15711,At Risk / Lost
+2147,277,26,15467,At Risk / Lost
+2148,141,33,19299,Recent Low-Value
+2149,275,11,9166,Champions
+2150,290,10,3379,At Risk / Lost
+2151,334,25,19468,At Risk / Lost
+2152,52,37,3907,Loyal Customers
+2153,27,38,14065,Recent Low-Value
+2154,157,24,16223,At Risk / Lost
+2155,239,33,17091,Champions
+2156,156,17,734,Loyal Customers
+2157,291,24,12871,Recent Low-Value
+2158,136,37,17558,Champions
+2159,144,2,18398,At Risk / Lost
+2160,106,32,14440,Recent Low-Value
+2161,158,24,688,Recent Low-Value
+2162,146,9,3331,Champions
+2163,2,4,6451,Recent Low-Value
+2164,77,17,3938,Champions
+2165,132,17,2073,At Risk / Lost
+2166,90,30,14446,Loyal Customers
+2167,345,11,5144,Champions
+2168,350,21,10347,Loyal Customers
+2169,263,21,11772,Recent Low-Value
+2170,351,18,10371,Champions
+2171,108,29,6783,At Risk / Lost
+2172,74,24,11344,Champions
+2173,39,10,6883,Champions
+2174,159,17,5694,Champions
+2175,71,18,3922,Loyal Customers
+2176,312,20,3489,Loyal Customers
+2177,241,37,6014,Recent Low-Value
+2178,298,18,18264,Recent Low-Value
+2179,36,17,3788,Recent Low-Value
+2180,84,9,14783,Recent Low-Value
+2181,263,14,13180,Champions
+2182,310,29,10016,Loyal Customers
+2183,172,31,5137,Loyal Customers
+2184,173,4,13553,Loyal Customers
+2185,362,18,8740,Loyal Customers
+2186,47,20,181,Recent Low-Value
+2187,141,9,6378,Champions
+2188,118,13,16178,Loyal Customers
+2189,277,15,15636,At Risk / Lost
+2190,214,27,17890,Champions
+2191,220,15,7510,At Risk / Lost
+2192,26,28,16026,Champions
+2193,9,37,15600,Champions
+2194,271,19,1580,Champions
+2195,10,26,9371,At Risk / Lost
+2196,121,26,3698,Loyal Customers
+2197,125,25,15132,Loyal Customers
+2198,170,26,8093,At Risk / Lost
+2199,72,26,10995,Loyal Customers
+2200,152,28,15467,Recent Low-Value
+2201,208,18,7744,Loyal Customers
+2202,49,32,12048,Recent Low-Value
+2203,154,3,18242,Recent Low-Value
+2204,347,2,2699,Recent Low-Value
+2205,293,33,5913,At Risk / Lost
+2206,68,19,3953,Loyal Customers
+2207,50,17,18776,Loyal Customers
+2208,152,33,1601,At Risk / Lost
+2209,19,12,8522,At Risk / Lost
+2210,100,3,7650,Loyal Customers
+2211,60,26,4350,At Risk / Lost
+2212,167,35,7091,At Risk / Lost
+2213,202,8,16598,Recent Low-Value
+2214,345,36,4506,At Risk / Lost
+2215,146,7,18831,Recent Low-Value
+2216,164,36,1141,Champions
+2217,242,16,7027,Recent Low-Value
+2218,69,24,16495,Recent Low-Value
+2219,175,1,7971,At Risk / Lost
+2220,49,25,6475,Loyal Customers
+2221,108,10,3776,Champions
+2222,226,16,13117,Champions
+2223,161,16,3165,Champions
+2224,119,8,2136,Loyal Customers
+2225,149,29,3146,Champions
+2226,150,39,17024,Champions
+2227,293,28,176,Loyal Customers
+2228,143,6,19551,Champions
+2229,160,16,15980,At Risk / Lost
+2230,11,20,16507,At Risk / Lost
+2231,138,16,17159,Recent Low-Value
+2232,78,7,4367,Recent Low-Value
+2233,77,14,6088,Recent Low-Value
+2234,254,26,8780,At Risk / Lost
+2235,258,26,1585,At Risk / Lost
+2236,320,14,14813,At Risk / Lost
+2237,291,7,2519,Recent Low-Value
+2238,263,33,15412,Recent Low-Value
+2239,85,26,3595,Recent Low-Value
+2240,146,20,17240,Recent Low-Value
+2241,323,3,10816,Recent Low-Value
+2242,42,4,12542,Recent Low-Value
+2243,125,26,18263,At Risk / Lost
+2244,167,11,13061,Loyal Customers
+2245,241,2,10407,Loyal Customers
+2246,280,14,6587,Recent Low-Value
+2247,188,30,9764,Loyal Customers
+2248,302,12,16460,Loyal Customers
+2249,19,26,16742,At Risk / Lost
+2250,68,33,4175,Recent Low-Value
+2251,218,13,17602,Recent Low-Value
+2252,102,14,15385,Loyal Customers
+2253,42,24,7731,Recent Low-Value
+2254,288,34,3117,Recent Low-Value
+2255,167,26,18142,Recent Low-Value
+2256,109,21,18281,Recent Low-Value
+2257,36,28,884,Loyal Customers
+2258,232,36,5791,Champions
+2259,229,2,15865,Loyal Customers
+2260,353,9,3296,At Risk / Lost
+2261,164,23,9652,Champions
+2262,73,15,8632,Champions
+2263,136,13,17046,Champions
+2264,353,23,4846,Loyal Customers
+2265,70,17,3099,At Risk / Lost
+2266,196,2,17677,Loyal Customers
+2267,269,20,11402,At Risk / Lost
+2268,49,20,16552,Loyal Customers
+2269,316,3,15695,Loyal Customers
+2270,130,12,18912,Loyal Customers
+2271,5,2,6300,Champions
+2272,27,36,5496,Loyal Customers
+2273,160,14,13510,At Risk / Lost
+2274,149,16,13303,At Risk / Lost
+2275,264,19,3698,At Risk / Lost
+2276,230,34,10664,Champions
+2277,200,6,12848,Loyal Customers
+2278,50,13,17057,Loyal Customers
+2279,67,36,7736,Recent Low-Value
+2280,300,22,17962,Champions
+2281,58,18,10365,At Risk / Lost
+2282,259,12,9805,At Risk / Lost
+2283,342,30,14398,Loyal Customers
+2284,326,7,18680,At Risk / Lost
+2285,130,32,9803,Loyal Customers
+2286,215,19,13436,Loyal Customers
+2287,172,6,8266,Recent Low-Value
+2288,258,20,16216,Champions
+2289,102,27,6150,Loyal Customers
+2290,209,37,11284,Loyal Customers
+2291,291,7,12812,Loyal Customers
+2292,354,5,8584,Recent Low-Value
+2293,286,11,2693,Loyal Customers
+2294,116,15,10415,Champions
+2295,264,3,15300,Champions
+2296,150,5,9207,At Risk / Lost
+2297,300,23,3969,Champions
+2298,36,37,15547,At Risk / Lost
+2299,333,9,8071,Champions
+2300,287,15,3089,At Risk / Lost
+2301,303,3,5440,Loyal Customers
+2302,311,29,9743,Recent Low-Value
+2303,208,6,3923,Recent Low-Value
+2304,106,17,13554,Recent Low-Value
+2305,158,26,4032,Loyal Customers
+2306,121,21,10320,Recent Low-Value
+2307,55,8,8654,Champions
+2308,12,21,2529,At Risk / Lost
+2309,145,11,7544,Loyal Customers
+2310,136,38,10610,Recent Low-Value
+2311,3,8,11377,Champions
+2312,144,24,10637,Champions
+2313,30,35,7247,Loyal Customers
+2314,237,14,7731,Loyal Customers
+2315,279,14,3698,Recent Low-Value
+2316,348,10,4429,At Risk / Lost
+2317,115,12,6818,Recent Low-Value
+2318,104,38,10023,Recent Low-Value
+2319,118,34,13882,Loyal Customers
+2320,5,10,16576,Recent Low-Value
+2321,360,17,151,Recent Low-Value
+2322,248,17,16802,At Risk / Lost
+2323,364,3,10284,Champions
+2324,321,31,12568,Champions
+2325,121,1,15579,At Risk / Lost
+2326,286,12,7310,Champions
+2327,149,39,13034,Recent Low-Value
+2328,84,4,4056,At Risk / Lost
+2329,231,13,6157,At Risk / Lost
+2330,288,34,11310,Loyal Customers
+2331,161,21,14690,Champions
+2332,272,22,13964,Loyal Customers
+2333,38,4,1625,Recent Low-Value
+2334,226,18,13377,At Risk / Lost
+2335,142,5,7143,Recent Low-Value
+2336,292,19,17762,Champions
+2337,151,2,8805,Loyal Customers
+2338,114,12,6225,Champions
+2339,237,17,7974,Recent Low-Value
+2340,66,10,12629,Loyal Customers
+2341,361,34,15055,Champions
+2342,341,6,2600,Recent Low-Value
+2343,258,8,3564,Champions
+2344,249,11,18743,At Risk / Lost
+2345,331,12,16054,Loyal Customers
+2346,323,9,19143,Loyal Customers
+2347,180,2,355,Loyal Customers
+2348,190,8,1602,At Risk / Lost
+2349,154,11,4756,Loyal Customers
+2350,196,36,10402,At Risk / Lost
+2351,311,10,5530,Loyal Customers
+2352,262,21,8698,Champions
+2353,143,20,19660,Champions
+2354,342,8,16076,Champions
+2355,316,36,1960,Champions
+2356,101,29,6258,At Risk / Lost
+2357,244,12,5906,Recent Low-Value
+2358,12,14,17206,Recent Low-Value
+2359,239,21,9574,Champions
+2360,49,22,17097,Recent Low-Value
+2361,42,21,19815,Recent Low-Value
+2362,166,30,5890,Loyal Customers
+2363,82,39,19600,At Risk / Lost
+2364,291,20,10270,Champions
+2365,158,24,9104,Recent Low-Value
+2366,216,23,10078,Recent Low-Value
+2367,158,7,16814,Champions
+2368,134,9,18696,Loyal Customers
+2369,67,1,7332,Champions
+2370,336,26,12774,Loyal Customers
+2371,7,38,16152,Recent Low-Value
+2372,14,38,15874,At Risk / Lost
+2373,73,22,6013,Loyal Customers
+2374,163,10,14202,Loyal Customers
+2375,66,6,15489,Champions
+2376,347,17,10667,Recent Low-Value
+2377,130,38,5711,At Risk / Lost
+2378,206,24,9532,Champions
+2379,276,10,419,Champions
+2380,256,8,12786,At Risk / Lost
+2381,266,21,4891,Recent Low-Value
+2382,25,6,429,At Risk / Lost
+2383,281,21,8951,Champions
+2384,253,39,11410,Champions
+2385,310,24,10264,Loyal Customers
+2386,289,33,18277,At Risk / Lost
+2387,164,18,5803,At Risk / Lost
+2388,95,28,10749,At Risk / Lost
+2389,270,32,12772,Champions
+2390,321,12,4255,Recent Low-Value
+2391,110,27,2711,Champions
+2392,336,10,19077,Loyal Customers
+2393,310,32,16579,Champions
+2394,238,26,9280,Champions
+2395,25,25,9404,Champions
+2396,141,11,14710,Loyal Customers
+2397,117,23,8537,At Risk / Lost
+2398,25,34,10450,Recent Low-Value
+2399,79,23,12621,Recent Low-Value
+2400,68,29,19833,Loyal Customers
+2401,173,31,6660,At Risk / Lost
+2402,12,7,5347,At Risk / Lost
+2403,288,33,4177,Loyal Customers
+2404,128,21,10958,Champions
+2405,96,2,11491,At Risk / Lost
+2406,92,18,11046,Recent Low-Value
+2407,141,33,15286,Loyal Customers
+2408,31,37,1517,Recent Low-Value
+2409,334,34,16594,Champions
+2410,20,20,9054,Loyal Customers
+2411,146,35,13691,Recent Low-Value
+2412,316,18,7491,Recent Low-Value
+2413,160,24,11464,Champions
+2414,349,8,10471,Loyal Customers
+2415,43,30,2604,At Risk / Lost
+2416,254,10,5339,At Risk / Lost
+2417,130,23,16776,Recent Low-Value
+2418,60,11,18218,Champions
+2419,151,2,5220,Recent Low-Value
+2420,287,26,6493,Champions
+2421,5,36,2296,At Risk / Lost
+2422,266,33,3566,Recent Low-Value
+2423,345,13,2006,Recent Low-Value
+2424,130,25,18205,Champions
+2425,267,4,11983,Loyal Customers
+2426,178,19,15537,Champions
+2427,253,18,14597,Loyal Customers
+2428,56,37,1916,At Risk / Lost
+2429,83,30,10813,Recent Low-Value
+2430,99,19,3949,Recent Low-Value
+2431,149,23,6949,Champions
+2432,329,16,1158,Champions
+2433,156,1,11830,At Risk / Lost
+2434,190,12,18806,At Risk / Lost
+2435,263,24,17432,Loyal Customers
+2436,80,34,4459,At Risk / Lost
+2437,252,8,12909,At Risk / Lost
+2438,97,18,5760,At Risk / Lost
+2439,260,5,7354,At Risk / Lost
+2440,260,26,12922,Loyal Customers
+2441,103,30,2193,At Risk / Lost
+2442,40,13,11830,Loyal Customers
+2443,273,19,18047,Champions
+2444,101,29,8317,Recent Low-Value
+2445,359,3,16658,Champions
+2446,308,26,17818,At Risk / Lost
+2447,221,12,16805,Recent Low-Value
+2448,308,2,12442,At Risk / Lost
+2449,124,11,12339,At Risk / Lost
+2450,231,28,13954,Champions
+2451,178,18,13997,At Risk / Lost
+2452,63,13,11519,Champions
+2453,116,37,10164,At Risk / Lost
+2454,191,22,15103,Loyal Customers
+2455,62,12,10359,Recent Low-Value
+2456,256,2,5774,Champions
+2457,7,37,5102,Champions
+2458,155,7,1010,Recent Low-Value
+2459,92,26,1049,Champions
+2460,14,26,18998,Recent Low-Value
+2461,229,24,11623,Loyal Customers
+2462,86,12,11321,At Risk / Lost
+2463,133,16,16584,Loyal Customers
+2464,183,23,4746,At Risk / Lost
+2465,62,9,7045,Recent Low-Value
+2466,219,32,2500,Loyal Customers
+2467,246,15,11663,At Risk / Lost
+2468,230,37,18827,Recent Low-Value
+2469,79,13,452,At Risk / Lost
+2470,149,5,19439,Champions
+2471,138,11,15589,Champions
+2472,314,10,1118,Recent Low-Value
+2473,65,13,17663,At Risk / Lost
+2474,13,15,5293,Champions
+2475,213,7,15801,Loyal Customers
+2476,242,28,3636,At Risk / Lost
+2477,213,32,15549,At Risk / Lost
+2478,181,35,11942,Champions
+2479,338,15,18986,Champions
+2480,173,36,3919,Recent Low-Value
+2481,160,21,17463,At Risk / Lost
+2482,164,6,1076,Loyal Customers
+2483,188,1,18764,Champions
+2484,191,4,5997,At Risk / Lost
+2485,308,11,16057,Champions
+2486,256,26,15459,Recent Low-Value
+2487,183,37,13340,At Risk / Lost
+2488,117,23,207,At Risk / Lost
+2489,282,29,15624,Recent Low-Value
+2490,196,21,1726,Loyal Customers
+2491,34,27,6329,Champions
+2492,52,39,6977,Recent Low-Value
+2493,112,13,974,At Risk / Lost
+2494,252,23,5643,Recent Low-Value
+2495,82,16,3909,At Risk / Lost
+2496,232,30,10703,Recent Low-Value
+2497,227,4,2207,Loyal Customers
+2498,233,16,11845,At Risk / Lost
+2499,221,31,9565,Recent Low-Value
+2500,42,25,659,Loyal Customers
+2501,21,12,8408,Loyal Customers
+2502,42,26,15350,Champions
+2503,113,37,13355,At Risk / Lost
+2504,105,33,3146,Champions
+2505,192,28,13956,Loyal Customers
+2506,17,9,16527,Champions
+2507,120,12,608,Champions
+2508,129,5,6207,Recent Low-Value
+2509,130,28,13576,Champions
+2510,60,35,3539,Loyal Customers
+2511,48,5,13236,Champions
+2512,29,34,14267,At Risk / Lost
+2513,97,34,17400,Recent Low-Value
+2514,10,13,17282,Loyal Customers
+2515,242,39,5071,Champions
+2516,314,14,18244,At Risk / Lost
+2517,232,11,19759,Loyal Customers
+2518,277,38,15983,Champions
+2519,284,4,918,Recent Low-Value
+2520,203,33,10460,Champions
+2521,247,7,12027,Loyal Customers
+2522,290,8,16123,Loyal Customers
+2523,264,37,3165,Loyal Customers
+2524,214,10,3359,At Risk / Lost
+2525,200,15,17390,Champions
+2526,79,38,12400,Champions
+2527,343,15,702,Champions
+2528,344,5,4395,Recent Low-Value
+2529,173,29,10083,At Risk / Lost
+2530,69,19,3627,At Risk / Lost
+2531,87,10,1911,Recent Low-Value
+2532,101,12,12203,At Risk / Lost
+2533,8,4,9132,Recent Low-Value
+2534,333,31,12977,Loyal Customers
+2535,200,18,8063,Loyal Customers
+2536,87,16,15324,At Risk / Lost
+2537,43,36,9016,Loyal Customers
+2538,109,25,6866,Loyal Customers
+2539,152,23,17286,Loyal Customers
+2540,17,12,19066,Champions
+2541,133,34,1765,Loyal Customers
+2542,148,36,16032,Champions
+2543,277,37,7075,Recent Low-Value
+2544,232,3,2652,Recent Low-Value
+2545,314,9,13319,Recent Low-Value
+2546,228,18,14374,Recent Low-Value
+2547,139,35,12712,Recent Low-Value
+2548,211,34,2908,Loyal Customers
+2549,28,14,11190,Loyal Customers
+2550,51,4,12360,Loyal Customers
+2551,261,29,15395,Recent Low-Value
+2552,261,15,14937,Recent Low-Value
+2553,350,28,14769,Champions
+2554,352,16,10623,At Risk / Lost
+2555,8,12,12862,Loyal Customers
+2556,320,5,13869,At Risk / Lost
+2557,138,34,13831,Recent Low-Value
+2558,38,1,11977,Recent Low-Value
+2559,111,39,2556,Recent Low-Value
+2560,220,32,5523,At Risk / Lost
+2561,337,26,14346,Champions
+2562,223,17,12946,Recent Low-Value
+2563,136,27,4417,Champions
+2564,256,24,18040,Champions
+2565,360,35,18689,Loyal Customers
+2566,329,39,12735,At Risk / Lost
+2567,49,26,13570,Recent Low-Value
+2568,292,38,13276,Champions
+2569,324,23,9213,At Risk / Lost
+2570,78,22,13646,At Risk / Lost
+2571,105,4,6905,Recent Low-Value
+2572,169,9,16888,Loyal Customers
+2573,217,4,18104,Loyal Customers
+2574,119,7,19436,Champions
+2575,190,23,8180,Loyal Customers
+2576,255,2,3218,Loyal Customers
+2577,266,24,6730,Loyal Customers
+2578,149,31,665,At Risk / Lost
+2579,164,31,15801,Recent Low-Value
+2580,140,34,14959,At Risk / Lost
+2581,347,24,7770,At Risk / Lost
+2582,258,26,19352,Recent Low-Value
+2583,269,16,9576,At Risk / Lost
+2584,181,13,8876,Champions
+2585,160,15,15121,Champions
+2586,351,27,4427,At Risk / Lost
+2587,288,4,15375,Loyal Customers
+2588,288,16,7714,At Risk / Lost
+2589,226,30,1345,Loyal Customers
+2590,11,30,8343,At Risk / Lost
+2591,10,36,10455,Champions
+2592,271,3,637,Loyal Customers
+2593,273,22,16024,Champions
+2594,183,22,16336,At Risk / Lost
+2595,153,12,17024,Recent Low-Value
+2596,315,21,17298,Loyal Customers
+2597,334,4,1515,Loyal Customers
+2598,124,31,11130,At Risk / Lost
+2599,114,31,1752,At Risk / Lost
+2600,278,23,10957,Loyal Customers
+2601,213,20,18840,Recent Low-Value
+2602,172,15,3910,At Risk / Lost
+2603,288,23,16669,At Risk / Lost
+2604,174,28,1651,At Risk / Lost
+2605,113,16,13684,Recent Low-Value
+2606,122,37,861,Loyal Customers
+2607,32,21,12611,Champions
+2608,222,15,9571,At Risk / Lost
+2609,119,17,12567,Recent Low-Value
+2610,39,37,6263,Loyal Customers
+2611,268,13,16165,Loyal Customers
+2612,233,19,11986,Recent Low-Value
+2613,18,30,19765,At Risk / Lost
+2614,149,18,18020,Champions
+2615,149,14,6301,At Risk / Lost
+2616,126,36,19648,Loyal Customers
+2617,302,36,15680,Champions
+2618,360,20,19254,At Risk / Lost
+2619,238,19,7499,Champions
+2620,135,7,19919,Recent Low-Value
+2621,151,4,17045,At Risk / Lost
+2622,236,34,7723,Loyal Customers
+2623,224,2,10427,Loyal Customers
+2624,203,5,7287,Champions
+2625,256,10,2280,Recent Low-Value
+2626,86,32,2060,At Risk / Lost
+2627,150,13,5253,Recent Low-Value
+2628,235,39,7135,Recent Low-Value
+2629,345,5,11571,Champions
+2630,22,10,19754,Champions
+2631,348,10,682,At Risk / Lost
+2632,285,38,15614,Loyal Customers
+2633,269,27,15631,At Risk / Lost
+2634,258,21,16772,Recent Low-Value
+2635,29,8,8079,Champions
+2636,213,1,3160,Recent Low-Value
+2637,283,28,13831,Champions
+2638,50,39,12394,Loyal Customers
+2639,95,14,17667,Recent Low-Value
+2640,88,21,14374,Champions
+2641,44,30,17930,At Risk / Lost
+2642,278,21,16448,At Risk / Lost
+2643,171,9,2003,At Risk / Lost
+2644,189,17,14651,Recent Low-Value
+2645,353,5,15241,Champions
+2646,184,31,2477,Champions
+2647,3,38,947,Champions
+2648,191,19,14480,Recent Low-Value
+2649,118,36,17723,Champions
+2650,19,33,9624,Loyal Customers
+2651,23,13,15331,Recent Low-Value
+2652,30,14,11798,Loyal Customers
+2653,295,33,10671,Loyal Customers
+2654,108,29,12414,At Risk / Lost
+2655,281,36,11529,Recent Low-Value
+2656,128,10,2465,Champions
+2657,229,31,10704,Loyal Customers
+2658,111,6,11466,Recent Low-Value
+2659,136,1,5155,Champions
+2660,362,7,5722,At Risk / Lost
+2661,186,27,16856,Recent Low-Value
+2662,144,21,7883,Recent Low-Value
+2663,72,28,2049,Recent Low-Value
+2664,129,16,16728,Champions
+2665,364,23,10132,Loyal Customers
+2666,261,20,11719,Loyal Customers
+2667,3,38,16608,Recent Low-Value
+2668,104,25,12924,Recent Low-Value
+2669,224,28,11045,Champions
+2670,320,5,2019,At Risk / Lost
+2671,362,21,9927,Recent Low-Value
+2672,354,18,9717,Recent Low-Value
+2673,10,6,9832,At Risk / Lost
+2674,302,29,630,Recent Low-Value
+2675,231,19,7949,Loyal Customers
+2676,219,33,7029,Recent Low-Value
+2677,66,1,4449,Loyal Customers
+2678,112,3,14556,Champions
+2679,13,21,11395,Champions
+2680,86,35,18285,Loyal Customers
+2681,234,3,5256,Loyal Customers
+2682,90,25,9328,At Risk / Lost
+2683,314,38,12020,Loyal Customers
+2684,54,20,7532,Loyal Customers
+2685,12,34,12303,Recent Low-Value
+2686,209,21,6289,At Risk / Lost
+2687,14,23,1242,Loyal Customers
+2688,121,6,7714,Loyal Customers
+2689,20,13,14353,Loyal Customers
+2690,75,23,18113,Recent Low-Value
+2691,243,9,17246,Recent Low-Value
+2692,223,17,7005,Recent Low-Value
+2693,70,2,4989,Champions
+2694,312,19,4939,Recent Low-Value
+2695,211,19,4057,Loyal Customers
+2696,101,7,657,Recent Low-Value
+2697,186,20,4721,Recent Low-Value
+2698,132,9,15032,At Risk / Lost
+2699,111,17,939,Loyal Customers
+2700,132,27,9343,Recent Low-Value
+2701,20,2,9696,Champions
+2702,24,36,7098,At Risk / Lost
+2703,227,19,10229,Recent Low-Value
+2704,154,17,610,At Risk / Lost
+2705,293,5,11696,At Risk / Lost
+2706,230,39,13074,Champions
+2707,310,18,1237,Champions
+2708,359,7,13800,Champions
+2709,202,17,4766,Loyal Customers
+2710,38,39,9006,At Risk / Lost
+2711,260,36,10578,Recent Low-Value
+2712,188,4,2754,Champions
+2713,57,38,1090,Champions
+2714,20,25,2260,At Risk / Lost
+2715,273,5,15236,At Risk / Lost
+2716,119,30,10436,At Risk / Lost
+2717,71,12,14369,Recent Low-Value
+2718,4,4,16306,Loyal Customers
+2719,221,24,2163,Loyal Customers
+2720,14,29,10895,Champions
+2721,3,9,18461,Loyal Customers
+2722,216,4,8667,Recent Low-Value
+2723,229,24,9033,Loyal Customers
+2724,336,14,19151,Recent Low-Value
+2725,186,5,15719,Champions
+2726,55,18,5019,At Risk / Lost
+2727,254,19,11841,Recent Low-Value
+2728,24,12,8898,At Risk / Lost
+2729,162,18,17027,Champions
+2730,158,17,14666,Recent Low-Value
+2731,82,30,983,Recent Low-Value
+2732,159,24,9515,Loyal Customers
+2733,188,11,11185,Recent Low-Value
+2734,60,35,15108,Champions
+2735,305,23,18552,At Risk / Lost
+2736,319,17,8220,Recent Low-Value
+2737,211,1,7920,Champions
+2738,152,15,12001,Champions
+2739,109,32,18270,Recent Low-Value
+2740,76,9,16359,Loyal Customers
+2741,30,15,9749,Recent Low-Value
+2742,314,28,8369,Recent Low-Value
+2743,117,24,11905,Loyal Customers
+2744,356,35,17792,Champions
+2745,192,22,10479,Recent Low-Value
+2746,19,27,8844,Loyal Customers
+2747,173,19,13385,At Risk / Lost
+2748,228,12,8573,At Risk / Lost
+2749,350,20,10779,Loyal Customers
+2750,183,1,14705,Champions
+2751,113,21,11085,Loyal Customers
+2752,183,1,12491,Champions
+2753,146,10,4961,At Risk / Lost
+2754,319,32,19260,Recent Low-Value
+2755,116,39,1696,Loyal Customers
+2756,113,22,16963,At Risk / Lost
+2757,251,18,19796,Recent Low-Value
+2758,251,32,10255,At Risk / Lost
+2759,303,27,8019,Loyal Customers
+2760,313,28,10434,Loyal Customers
+2761,118,18,14728,Recent Low-Value
+2762,301,39,2172,Loyal Customers
+2763,161,29,9587,At Risk / Lost
+2764,198,18,5724,Recent Low-Value
+2765,260,8,1038,Recent Low-Value
+2766,148,31,8276,At Risk / Lost
+2767,240,34,861,Champions
+2768,47,7,13041,Recent Low-Value
+2769,198,36,1769,Champions
+2770,47,18,7228,At Risk / Lost
+2771,78,38,19169,At Risk / Lost
+2772,124,9,12191,Recent Low-Value
+2773,75,9,18415,Loyal Customers
+2774,359,8,7408,Recent Low-Value
+2775,137,35,1226,Loyal Customers
+2776,90,18,6121,Champions
+2777,325,5,6537,Loyal Customers
+2778,61,14,7139,Recent Low-Value
+2779,138,28,17687,Loyal Customers
+2780,50,30,4235,At Risk / Lost
+2781,259,4,15211,Champions
+2782,107,39,12064,At Risk / Lost
+2783,113,20,8811,At Risk / Lost
+2784,350,25,8004,At Risk / Lost
+2785,254,28,2383,At Risk / Lost
+2786,118,12,2577,Loyal Customers
+2787,198,2,3193,At Risk / Lost
+2788,337,14,7307,Loyal Customers
+2789,51,22,9494,At Risk / Lost
+2790,245,31,14941,Recent Low-Value
+2791,35,23,6327,At Risk / Lost
+2792,302,20,13380,Recent Low-Value
+2793,69,38,3635,Loyal Customers
+2794,349,4,10682,Champions
+2795,320,15,3013,Loyal Customers
+2796,49,24,2440,Champions
+2797,74,25,5389,Champions
+2798,192,1,697,At Risk / Lost
+2799,261,7,15125,Champions
+2800,356,31,7245,Loyal Customers
+2801,70,12,3002,At Risk / Lost
+2802,90,5,9055,Champions
+2803,260,38,7794,Loyal Customers
+2804,126,12,4930,Champions
+2805,231,39,9934,Champions
+2806,295,18,10589,At Risk / Lost
+2807,129,2,15868,At Risk / Lost
+2808,280,10,10464,Loyal Customers
+2809,313,15,2260,At Risk / Lost
+2810,100,30,13368,At Risk / Lost
+2811,326,17,14585,Recent Low-Value
+2812,297,4,3022,Recent Low-Value
+2813,182,7,3904,Loyal Customers
+2814,174,31,2468,At Risk / Lost
+2815,316,39,15257,Loyal Customers
+2816,364,34,8193,Recent Low-Value
+2817,188,6,4032,Recent Low-Value
+2818,57,38,11652,Recent Low-Value
+2819,31,34,5708,Loyal Customers
+2820,84,15,12999,At Risk / Lost
+2821,152,14,9392,Champions
+2822,36,6,9962,At Risk / Lost
+2823,213,37,5631,Loyal Customers
+2824,364,32,10512,Recent Low-Value
+2825,106,3,6444,Champions
+2826,342,3,16859,Loyal Customers
+2827,220,22,7987,Recent Low-Value
+2828,163,22,18093,Loyal Customers
+2829,220,10,16258,Champions
+2830,270,3,19423,Recent Low-Value
+2831,120,12,18097,At Risk / Lost
+2832,336,29,3779,Loyal Customers
+2833,182,17,7640,Champions
+2834,106,7,9588,At Risk / Lost
+2835,217,13,7174,Champions
+2836,205,2,4096,Loyal Customers
+2837,70,4,5795,Champions
+2838,44,10,14335,Recent Low-Value
+2839,329,39,2466,Champions
+2840,301,24,14264,Loyal Customers
+2841,228,17,6864,Recent Low-Value
+2842,184,6,15627,Champions
+2843,107,19,16392,Champions
+2844,84,5,1714,Recent Low-Value
+2845,338,32,14496,At Risk / Lost
+2846,250,10,18900,At Risk / Lost
+2847,363,9,16980,Recent Low-Value
+2848,21,27,16988,Champions
+2849,196,13,5833,At Risk / Lost
+2850,178,19,3316,Recent Low-Value
+2851,7,21,4464,Loyal Customers
+2852,70,24,12369,Champions
+2853,127,38,17961,Loyal Customers
+2854,160,4,13929,Champions
+2855,248,24,5060,At Risk / Lost
+2856,203,35,18881,Loyal Customers
+2857,148,3,8401,Loyal Customers
+2858,143,4,8941,Recent Low-Value
+2859,199,37,7830,At Risk / Lost
+2860,154,35,17983,At Risk / Lost
+2861,142,31,17079,Champions
+2862,313,25,1078,Recent Low-Value
+2863,165,13,830,Recent Low-Value
+2864,314,4,156,Champions
+2865,21,14,2343,Loyal Customers
+2866,82,13,1801,Champions
+2867,69,27,17770,Champions
+2868,131,6,8403,Champions
+2869,87,17,15200,Recent Low-Value
+2870,218,36,13098,Champions
+2871,305,35,9493,Champions
+2872,345,17,1047,Champions
+2873,341,2,6653,At Risk / Lost
+2874,161,13,857,Loyal Customers
+2875,178,2,14966,Loyal Customers
+2876,117,28,11680,Loyal Customers
+2877,196,26,5751,Loyal Customers
+2878,327,22,7373,Recent Low-Value
+2879,86,3,10133,Recent Low-Value
+2880,289,35,3635,Champions
+2881,81,12,18777,Recent Low-Value
+2882,152,24,17588,Loyal Customers
+2883,61,5,8953,At Risk / Lost
+2884,61,20,1008,Champions
+2885,354,39,4717,Champions
+2886,28,39,10148,Loyal Customers
+2887,43,13,2411,Loyal Customers
+2888,169,12,16120,Loyal Customers
+2889,86,13,17273,Recent Low-Value
+2890,177,10,13685,Champions
+2891,17,33,14117,Loyal Customers
+2892,98,16,16655,At Risk / Lost
+2893,198,35,12652,Champions
+2894,98,3,13437,Champions
+2895,65,5,1985,Recent Low-Value
+2896,330,26,1149,Champions
+2897,341,11,10603,Loyal Customers
+2898,5,7,1261,Loyal Customers
+2899,2,10,915,At Risk / Lost
+2900,22,34,3866,Champions
+2901,112,3,3339,Champions
+2902,57,8,14042,Recent Low-Value
+2903,66,31,8372,Loyal Customers
+2904,330,11,19288,At Risk / Lost
+2905,98,7,969,Loyal Customers
+2906,144,2,5626,Champions
+2907,125,6,7841,Champions
+2908,167,32,4794,At Risk / Lost
+2909,86,20,2034,Champions
+2910,76,34,17187,At Risk / Lost
+2911,344,16,16418,At Risk / Lost
+2912,294,25,19007,Loyal Customers
+2913,59,12,19123,At Risk / Lost
+2914,138,7,6259,Champions
+2915,99,39,15819,Recent Low-Value
+2916,192,17,13093,Recent Low-Value
+2917,243,11,13913,Champions
+2918,319,6,1264,Recent Low-Value
+2919,49,23,719,Recent Low-Value
+2920,32,27,8082,At Risk / Lost
+2921,277,6,3166,Recent Low-Value
+2922,20,38,8738,Recent Low-Value
+2923,154,2,2437,Recent Low-Value
+2924,68,22,5694,Loyal Customers
+2925,214,20,2560,Champions
+2926,143,25,6920,At Risk / Lost
+2927,232,15,3542,Recent Low-Value
+2928,213,29,16291,Champions
+2929,79,8,19195,Recent Low-Value
+2930,214,37,16426,Loyal Customers
+2931,116,33,10629,Loyal Customers
+2932,92,22,17775,Recent Low-Value
+2933,270,5,10490,Recent Low-Value
+2934,168,39,14130,Recent Low-Value
+2935,58,18,5474,Loyal Customers
+2936,284,38,13242,Loyal Customers
+2937,26,37,19139,Champions
+2938,66,30,12304,At Risk / Lost
+2939,248,31,7494,At Risk / Lost
+2940,254,10,17188,Loyal Customers
+2941,44,15,925,At Risk / Lost
+2942,97,18,9296,Recent Low-Value
+2943,42,23,11752,Champions
+2944,227,33,16860,Loyal Customers
+2945,262,16,1072,Loyal Customers
+2946,167,38,11368,At Risk / Lost
+2947,279,35,543,Recent Low-Value
+2948,89,34,854,Champions
+2949,178,28,16123,At Risk / Lost
+2950,197,2,10463,Loyal Customers
+2951,307,30,10997,Loyal Customers
+2952,267,13,5496,At Risk / Lost
+2953,268,16,3565,Recent Low-Value
+2954,74,5,2811,Champions
+2955,8,28,18891,Champions
+2956,297,39,5847,Champions
+2957,164,20,18207,Champions
+2958,85,24,2019,Recent Low-Value
+2959,72,27,17402,Loyal Customers
+2960,55,30,13573,Loyal Customers
+2961,47,27,17065,Champions
+2962,238,26,14335,Champions
+2963,104,7,15810,Champions
+2964,210,38,14534,At Risk / Lost
+2965,42,5,13578,At Risk / Lost
+2966,316,23,3981,Loyal Customers
+2967,268,28,2099,Loyal Customers
+2968,263,34,14949,Champions
+2969,336,15,11003,At Risk / Lost
+2970,259,32,16884,Recent Low-Value
+2971,283,26,14800,At Risk / Lost
+2972,114,31,5545,Loyal Customers
+2973,363,19,2728,At Risk / Lost
+2974,40,9,18140,Loyal Customers
+2975,220,29,17104,Champions
+2976,129,39,346,Recent Low-Value
+2977,8,4,5312,Champions
+2978,101,3,3439,Champions
+2979,176,29,19494,Recent Low-Value
+2980,107,11,2468,Recent Low-Value
+2981,101,33,12286,Recent Low-Value
+2982,260,38,1939,Loyal Customers
+2983,246,11,19387,Champions
+2984,275,27,6305,Loyal Customers
+2985,32,33,4495,Recent Low-Value
+2986,137,21,15390,Loyal Customers
+2987,12,39,3791,Recent Low-Value
+2988,302,31,7570,At Risk / Lost
+2989,16,38,3941,Recent Low-Value
+2990,129,2,4448,Champions
+2991,63,27,17876,Champions
+2992,109,36,6160,Champions
+2993,21,11,15625,Loyal Customers
+2994,158,18,4400,Champions
+2995,269,1,3438,Recent Low-Value
+2996,162,35,5587,At Risk / Lost
+2997,260,35,3614,Champions
+2998,102,31,17243,Loyal Customers
+2999,223,28,11380,At Risk / Lost
+3000,59,39,10407,Champions
+3001,247,1,10015,Champions
+3002,128,25,11258,At Risk / Lost
+3003,283,38,8721,Champions
+3004,325,20,10647,Loyal Customers
+3005,25,3,13585,Recent Low-Value
+3006,131,2,2559,Recent Low-Value
+3007,353,18,5373,At Risk / Lost
+3008,196,10,18202,Recent Low-Value
+3009,281,5,9557,Champions
+3010,154,9,5523,Champions
+3011,133,2,17792,Loyal Customers
+3012,227,34,17534,Recent Low-Value
+3013,189,38,5579,At Risk / Lost
+3014,265,31,15519,Champions
+3015,134,10,2349,At Risk / Lost
+3016,211,12,2909,Champions
+3017,60,36,3021,Champions
+3018,364,21,4776,Loyal Customers
+3019,364,6,2517,Recent Low-Value
+3020,213,3,17016,Loyal Customers
+3021,216,10,13563,Recent Low-Value
+3022,226,5,8267,At Risk / Lost
+3023,131,26,1569,Recent Low-Value
+3024,76,21,7392,At Risk / Lost
+3025,286,26,7031,Champions
+3026,277,38,19908,At Risk / Lost
+3027,156,26,1191,At Risk / Lost
+3028,248,8,16463,Champions
+3029,218,5,360,At Risk / Lost
+3030,190,15,10556,At Risk / Lost
+3031,163,16,13535,Champions
+3032,180,1,9477,Champions
+3033,34,16,15913,Champions
+3034,41,37,4401,Recent Low-Value
+3035,307,3,7307,Champions
+3036,338,31,16576,Champions
+3037,314,13,8656,At Risk / Lost
+3038,75,16,13895,Loyal Customers
+3039,279,21,6225,Loyal Customers
+3040,176,2,2024,Recent Low-Value
+3041,150,27,19579,Recent Low-Value
+3042,273,38,6783,Loyal Customers
+3043,325,26,19022,Loyal Customers
+3044,108,38,18760,Champions
+3045,139,25,13431,At Risk / Lost
+3046,350,11,10045,Champions
+3047,271,8,17394,Recent Low-Value
+3048,347,8,406,Loyal Customers
+3049,289,33,4331,Recent Low-Value
+3050,212,7,6128,Champions
+3051,272,38,12307,Recent Low-Value
+3052,66,21,6758,Recent Low-Value
+3053,248,8,6436,At Risk / Lost
+3054,156,21,13996,Recent Low-Value
+3055,47,20,9730,Champions
+3056,201,8,17356,At Risk / Lost
+3057,148,31,1241,Recent Low-Value
+3058,124,29,17149,Champions
+3059,1,9,8500,Loyal Customers
+3060,247,15,1051,At Risk / Lost
+3061,343,30,9349,Recent Low-Value
+3062,128,26,13036,Recent Low-Value
+3063,191,10,14555,At Risk / Lost
+3064,67,29,4822,Champions
+3065,4,16,12912,Recent Low-Value
+3066,303,36,4108,Champions
+3067,294,20,10160,At Risk / Lost
+3068,143,37,13156,Recent Low-Value
+3069,191,22,6755,Loyal Customers
+3070,21,7,17255,Loyal Customers
+3071,227,23,13127,Loyal Customers
+3072,313,29,4130,At Risk / Lost
+3073,117,16,621,Recent Low-Value
+3074,302,38,19839,At Risk / Lost
+3075,142,28,1500,Recent Low-Value
+3076,39,38,12030,Loyal Customers
+3077,355,31,3823,Loyal Customers
+3078,252,14,6679,Champions
+3079,333,33,19731,At Risk / Lost
+3080,207,9,18342,At Risk / Lost
+3081,210,27,4881,Champions
+3082,115,24,12973,Loyal Customers
+3083,225,13,18882,Loyal Customers
+3084,134,26,16626,At Risk / Lost
+3085,251,29,11143,Recent Low-Value
+3086,219,28,19953,Loyal Customers
+3087,91,28,16475,Champions
+3088,354,8,17201,Champions
+3089,46,23,742,Champions
+3090,38,29,19032,At Risk / Lost
+3091,142,5,11985,At Risk / Lost
+3092,100,7,7649,At Risk / Lost
+3093,328,36,13497,At Risk / Lost
+3094,190,27,15174,Champions
+3095,35,2,13871,Champions
+3096,147,25,1049,At Risk / Lost
+3097,30,9,17005,At Risk / Lost
+3098,334,27,14832,Champions
+3099,84,1,16838,At Risk / Lost
+3100,281,23,17966,At Risk / Lost
+3101,344,10,9939,At Risk / Lost
+3102,270,25,12923,At Risk / Lost
+3103,154,3,18699,Loyal Customers
+3104,102,6,19021,At Risk / Lost
+3105,215,6,14790,Champions
+3106,150,2,6439,Champions
+3107,83,18,11056,Champions
+3108,110,23,3865,Champions
+3109,275,2,2927,At Risk / Lost
+3110,201,12,2158,Loyal Customers
+3111,284,22,11619,Recent Low-Value
+3112,173,37,830,Recent Low-Value
+3113,327,20,1932,Recent Low-Value
+3114,206,39,8700,Recent Low-Value
+3115,63,24,15718,Champions
+3116,73,20,7270,At Risk / Lost
+3117,251,1,4279,At Risk / Lost
+3118,124,1,6399,Recent Low-Value
+3119,121,17,7930,Recent Low-Value
+3120,275,1,11539,Loyal Customers
+3121,120,30,4902,Loyal Customers
+3122,317,3,6715,Loyal Customers
+3123,164,11,6862,Champions
+3124,286,24,5643,At Risk / Lost
+3125,265,22,4983,Champions
+3126,320,26,15839,Champions
+3127,161,13,766,At Risk / Lost
+3128,308,1,376,Loyal Customers
+3129,89,24,14163,At Risk / Lost
+3130,142,10,981,Recent Low-Value
+3131,203,35,2160,Loyal Customers
+3132,309,24,14777,At Risk / Lost
+3133,227,28,18566,Champions
+3134,334,36,6802,At Risk / Lost
+3135,222,16,9529,Loyal Customers
+3136,41,16,15953,Recent Low-Value
+3137,196,17,258,Champions
+3138,68,15,16096,Recent Low-Value
+3139,264,16,5329,Recent Low-Value
+3140,2,15,8056,Champions
+3141,361,34,12666,At Risk / Lost
+3142,125,11,2626,At Risk / Lost
+3143,110,1,7903,Recent Low-Value
+3144,86,15,6674,At Risk / Lost
+3145,120,26,8833,Loyal Customers
+3146,127,4,17622,Recent Low-Value
+3147,255,5,7357,Recent Low-Value
+3148,183,35,3383,Recent Low-Value
+3149,16,13,16009,Loyal Customers
+3150,62,10,11902,Recent Low-Value
+3151,158,11,7996,At Risk / Lost
+3152,268,18,18903,At Risk / Lost
+3153,35,34,13626,At Risk / Lost
+3154,267,39,18240,At Risk / Lost
+3155,64,23,11378,Recent Low-Value
+3156,50,7,13342,Loyal Customers
+3157,255,39,18790,Champions
+3158,149,3,2670,At Risk / Lost
+3159,325,12,424,Champions
+3160,304,7,9821,Champions
+3161,276,26,5745,Recent Low-Value
+3162,357,33,18429,At Risk / Lost
+3163,172,37,14504,At Risk / Lost
+3164,201,15,4586,At Risk / Lost
+3165,324,2,2530,Champions
+3166,35,7,19994,At Risk / Lost
+3167,216,32,17329,At Risk / Lost
+3168,65,4,13256,Loyal Customers
+3169,8,20,667,Recent Low-Value
+3170,301,36,2279,At Risk / Lost
+3171,343,32,2119,At Risk / Lost
+3172,332,28,16019,Recent Low-Value
+3173,76,13,19803,Recent Low-Value
+3174,174,1,18804,Champions
+3175,47,35,18130,Champions
+3176,15,30,4009,Champions
+3177,361,36,8115,Recent Low-Value
+3178,147,25,3520,Loyal Customers
+3179,26,16,14985,At Risk / Lost
+3180,308,19,16840,Recent Low-Value
+3181,93,1,7585,Loyal Customers
+3182,232,5,19565,Recent Low-Value
+3183,21,22,18764,Loyal Customers
+3184,307,24,4231,Recent Low-Value
+3185,38,37,10752,Recent Low-Value
+3186,276,36,14479,Loyal Customers
+3187,157,36,15003,Loyal Customers
+3188,179,4,16013,Loyal Customers
+3189,132,36,19271,Loyal Customers
+3190,311,18,9570,Loyal Customers
+3191,348,16,16949,Loyal Customers
+3192,28,18,11640,Loyal Customers
+3193,260,22,17971,Loyal Customers
+3194,76,2,4697,Recent Low-Value
+3195,67,21,4636,Loyal Customers
+3196,342,36,16809,Loyal Customers
+3197,194,39,10057,Recent Low-Value
+3198,162,39,4262,Recent Low-Value
+3199,347,29,403,Champions
+3200,361,26,5167,Champions
+3201,257,21,5124,Loyal Customers
+3202,72,17,7815,Loyal Customers
+3203,87,16,11326,Champions
+3204,262,31,2731,Champions
+3205,214,9,13512,At Risk / Lost
+3206,153,31,15137,At Risk / Lost
+3207,210,14,11747,Loyal Customers
+3208,61,37,12669,At Risk / Lost
+3209,268,2,2469,Champions
+3210,262,14,11759,Loyal Customers
+3211,218,33,628,Recent Low-Value
+3212,283,35,10602,Recent Low-Value
+3213,136,39,4775,Champions
+3214,362,20,18147,At Risk / Lost
+3215,93,2,19848,Recent Low-Value
+3216,109,19,2441,At Risk / Lost
+3217,241,37,14019,Recent Low-Value
+3218,355,18,14830,At Risk / Lost
+3219,142,16,15356,Recent Low-Value
+3220,291,4,5005,Recent Low-Value
+3221,237,12,15639,Loyal Customers
+3222,340,29,15355,Loyal Customers
+3223,312,7,8984,Champions
+3224,177,14,9243,Recent Low-Value
+3225,141,12,6050,At Risk / Lost
+3226,189,35,1460,Recent Low-Value
+3227,49,5,5227,At Risk / Lost
+3228,302,17,14352,At Risk / Lost
+3229,190,32,8830,Recent Low-Value
+3230,136,10,4025,At Risk / Lost
+3231,43,17,8563,Champions
+3232,353,5,17512,Loyal Customers
+3233,90,9,1342,At Risk / Lost
+3234,295,33,8884,Recent Low-Value
+3235,341,36,9897,Loyal Customers
+3236,245,36,6506,Champions
+3237,192,18,19861,At Risk / Lost
+3238,318,9,14065,At Risk / Lost
+3239,106,29,13833,Loyal Customers
+3240,363,14,17924,At Risk / Lost
+3241,310,25,3726,Recent Low-Value
+3242,233,15,10174,Loyal Customers
+3243,265,6,16668,Loyal Customers
+3244,344,29,8131,At Risk / Lost
+3245,37,15,3288,Champions
+3246,305,29,3045,Champions
+3247,41,4,6865,Champions
+3248,17,18,18958,Champions
+3249,344,39,10907,Loyal Customers
+3250,277,16,10304,Loyal Customers
+3251,307,11,9452,At Risk / Lost
+3252,59,14,4699,Champions
+3253,183,3,4413,Champions
+3254,41,38,2318,At Risk / Lost
+3255,39,18,13886,At Risk / Lost
+3256,192,20,17636,At Risk / Lost
+3257,267,25,156,Recent Low-Value
+3258,147,38,12633,At Risk / Lost
+3259,333,13,243,At Risk / Lost
+3260,127,4,7318,Recent Low-Value
+3261,46,14,8659,Champions
+3262,45,33,715,Loyal Customers
+3263,1,28,8162,Champions
+3264,168,37,11620,Loyal Customers
+3265,108,8,6077,Loyal Customers
+3266,19,34,11519,At Risk / Lost
+3267,332,5,9880,At Risk / Lost
+3268,72,5,10781,Recent Low-Value
+3269,109,31,7084,Champions
+3270,268,9,5071,Champions
+3271,240,32,1044,Loyal Customers
+3272,301,33,9214,At Risk / Lost
+3273,90,3,7178,At Risk / Lost
+3274,103,30,18230,Champions
+3275,250,12,12412,Recent Low-Value
+3276,8,29,5883,At Risk / Lost
+3277,153,3,9851,Recent Low-Value
+3278,347,26,7007,Champions
+3279,174,30,19410,Champions
+3280,343,9,17573,Recent Low-Value
+3281,158,26,3057,At Risk / Lost
+3282,215,2,19096,Champions
+3283,177,3,6147,Loyal Customers
+3284,175,4,6349,Champions
+3285,340,25,16447,At Risk / Lost
+3286,338,13,3859,Loyal Customers
+3287,146,39,4363,Champions
+3288,324,35,10381,At Risk / Lost
+3289,161,23,2002,At Risk / Lost
+3290,127,9,2667,Champions
+3291,82,2,10290,At Risk / Lost
+3292,147,31,8175,Recent Low-Value
+3293,239,2,3094,Loyal Customers
+3294,84,32,5329,Recent Low-Value
+3295,113,18,2110,Champions
+3296,225,13,7477,Recent Low-Value
+3297,332,5,13136,Champions
+3298,243,10,17314,Champions
+3299,143,25,148,At Risk / Lost
+3300,41,34,4310,At Risk / Lost
+3301,258,37,17662,Champions
+3302,285,30,14938,Loyal Customers
+3303,105,7,16138,Loyal Customers
+3304,202,6,7978,Loyal Customers
+3305,307,3,16554,Recent Low-Value
+3306,331,13,15447,Champions
+3307,266,3,7979,At Risk / Lost
+3308,210,26,18261,Recent Low-Value
+3309,51,24,13354,Recent Low-Value
+3310,118,6,7480,At Risk / Lost
+3311,201,12,2328,Champions
+3312,39,36,9914,Recent Low-Value
+3313,28,2,8988,Champions
+3314,259,11,6491,Champions
+3315,84,39,9529,Champions
+3316,155,34,18890,At Risk / Lost
+3317,117,26,737,Champions
+3318,2,18,17433,Recent Low-Value
+3319,93,21,10196,At Risk / Lost
+3320,166,36,3687,At Risk / Lost
+3321,350,22,1211,Recent Low-Value
+3322,296,30,8467,At Risk / Lost
+3323,258,30,822,Recent Low-Value
+3324,81,8,4966,Loyal Customers
+3325,268,34,10239,Recent Low-Value
+3326,235,9,17186,At Risk / Lost
+3327,321,20,2228,Recent Low-Value
+3328,311,25,9218,Loyal Customers
+3329,301,19,2617,Champions
+3330,357,5,17633,Champions
+3331,213,11,14328,Champions
+3332,62,15,14279,At Risk / Lost
+3333,49,8,18362,Loyal Customers
+3334,127,19,9775,Recent Low-Value
+3335,223,23,409,Recent Low-Value
+3336,279,27,4052,Recent Low-Value
+3337,294,32,19533,Recent Low-Value
+3338,284,26,13971,At Risk / Lost
+3339,277,27,9792,At Risk / Lost
+3340,107,19,115,Loyal Customers
+3341,146,29,17089,Recent Low-Value
+3342,99,39,16105,Champions
+3343,73,33,14378,At Risk / Lost
+3344,122,19,14917,Loyal Customers
+3345,30,37,9859,Loyal Customers
+3346,188,19,15764,At Risk / Lost
+3347,364,33,6512,Champions
+3348,354,16,10296,Champions
+3349,288,23,8607,Recent Low-Value
+3350,195,7,4920,At Risk / Lost
+3351,156,26,7935,Champions
+3352,172,32,1949,At Risk / Lost
+3353,335,12,13687,Loyal Customers
+3354,41,8,2053,Loyal Customers
+3355,63,5,19253,Loyal Customers
+3356,23,28,12831,At Risk / Lost
+3357,360,5,19530,Recent Low-Value
+3358,75,26,6940,Recent Low-Value
+3359,48,5,5166,Champions
+3360,160,22,2515,At Risk / Lost
+3361,313,15,2489,Recent Low-Value
+3362,118,13,16311,At Risk / Lost
+3363,100,28,863,Recent Low-Value
+3364,167,33,17299,Loyal Customers
+3365,290,23,6355,Loyal Customers
+3366,156,33,17361,Champions
+3367,7,18,7273,Loyal Customers
+3368,196,30,10618,Recent Low-Value
+3369,56,26,10352,Champions
+3370,321,16,12547,Champions
+3371,193,13,15189,Loyal Customers
+3372,47,39,9495,At Risk / Lost
+3373,148,33,12167,Loyal Customers
+3374,275,26,19307,Loyal Customers
+3375,157,1,5387,Champions
+3376,202,38,19769,Loyal Customers
+3377,126,2,13561,Recent Low-Value
+3378,305,6,13502,Champions
+3379,294,38,7533,Loyal Customers
+3380,64,24,11384,At Risk / Lost
+3381,325,18,4926,Recent Low-Value
+3382,176,27,3764,At Risk / Lost
+3383,116,8,10628,Recent Low-Value
+3384,204,28,597,At Risk / Lost
+3385,321,10,7741,Loyal Customers
+3386,31,17,4743,Recent Low-Value
+3387,113,29,5156,Champions
+3388,325,6,231,Champions
+3389,344,14,5543,At Risk / Lost
+3390,67,22,17341,At Risk / Lost
+3391,75,6,13543,At Risk / Lost
+3392,45,26,8812,Recent Low-Value
+3393,260,39,8321,Champions
+3394,154,12,15760,Loyal Customers
+3395,155,35,6247,Recent Low-Value
+3396,363,14,11688,At Risk / Lost
+3397,234,22,4704,Champions
+3398,51,23,9552,At Risk / Lost
+3399,306,7,18042,Loyal Customers
+3400,262,25,16499,Loyal Customers
+3401,315,13,3705,Champions
+3402,125,21,13384,Recent Low-Value
+3403,245,10,1707,Loyal Customers
+3404,30,9,11809,Loyal Customers
+3405,122,15,2116,Loyal Customers
+3406,125,2,3674,Loyal Customers
+3407,37,25,13641,At Risk / Lost
+3408,170,13,7374,At Risk / Lost
+3409,124,34,10035,Recent Low-Value
+3410,357,34,15848,Champions
+3411,35,35,6506,Champions
+3412,87,38,11926,Champions
+3413,134,3,17572,Loyal Customers
+3414,196,6,1461,At Risk / Lost
+3415,274,19,4573,At Risk / Lost
+3416,201,3,7419,Recent Low-Value
+3417,285,18,8767,Champions
+3418,77,39,9581,At Risk / Lost
+3419,59,9,8620,Recent Low-Value
+3420,126,12,17670,Champions
+3421,109,5,19898,Loyal Customers
+3422,224,3,3636,At Risk / Lost
+3423,278,11,1873,At Risk / Lost
+3424,68,30,10355,Champions
+3425,69,4,2658,Loyal Customers
+3426,165,5,5179,Loyal Customers
+3427,305,1,14441,At Risk / Lost
+3428,162,27,19775,Champions
+3429,342,28,10081,Recent Low-Value
+3430,309,29,3624,At Risk / Lost
+3431,343,18,19988,Loyal Customers
+3432,42,12,9098,Recent Low-Value
+3433,354,13,13797,Champions
+3434,109,2,19150,Loyal Customers
+3435,51,37,13706,Recent Low-Value
+3436,250,16,13529,At Risk / Lost
+3437,341,24,16139,Loyal Customers
+3438,21,35,7240,Champions
+3439,300,22,8885,Loyal Customers
+3440,139,36,15001,At Risk / Lost
+3441,359,11,3380,Champions
+3442,324,29,2312,At Risk / Lost
+3443,92,35,15313,Recent Low-Value
+3444,280,15,8178,Loyal Customers
+3445,125,31,16036,At Risk / Lost
+3446,111,16,17097,Recent Low-Value
+3447,354,10,14374,Champions
+3448,139,32,968,Champions
+3449,273,2,17295,Recent Low-Value
+3450,99,24,16142,Recent Low-Value
+3451,252,23,15507,Champions
+3452,338,2,16354,At Risk / Lost
+3453,104,38,1844,Recent Low-Value
+3454,214,31,2356,At Risk / Lost
+3455,249,26,11959,Champions
+3456,152,29,5523,At Risk / Lost
+3457,250,3,5189,At Risk / Lost
+3458,275,14,6708,Recent Low-Value
+3459,165,25,9817,At Risk / Lost
+3460,341,1,17953,At Risk / Lost
+3461,8,3,19159,At Risk / Lost
+3462,284,26,17997,Champions
+3463,5,18,4976,Champions
+3464,145,9,17935,Loyal Customers
+3465,101,38,3107,Champions
+3466,164,23,14425,Champions
+3467,147,21,3224,Loyal Customers
+3468,64,1,1853,Loyal Customers
+3469,91,21,18096,Recent Low-Value
+3470,117,27,3375,Recent Low-Value
+3471,354,6,8847,Champions
+3472,267,36,12543,At Risk / Lost
+3473,310,28,18533,Recent Low-Value
+3474,173,17,924,Recent Low-Value
+3475,47,3,13980,Champions
+3476,140,12,11141,At Risk / Lost
+3477,246,39,19514,Loyal Customers
+3478,149,12,1181,Loyal Customers
+3479,246,2,11617,Champions
+3480,5,22,16976,Champions
+3481,184,23,4864,At Risk / Lost
+3482,20,30,8366,Champions
+3483,46,5,11283,Champions
+3484,12,9,19844,Champions
+3485,70,21,16812,At Risk / Lost
+3486,17,11,12977,Champions
+3487,147,5,10082,Recent Low-Value
+3488,154,35,9068,At Risk / Lost
+3489,304,27,14739,Recent Low-Value
+3490,108,2,4774,At Risk / Lost
+3491,236,24,4416,Recent Low-Value
+3492,308,31,15414,At Risk / Lost
+3493,352,33,9795,Loyal Customers
+3494,70,39,15914,Champions
+3495,183,30,19809,Champions
+3496,250,37,8479,At Risk / Lost
+3497,228,28,1314,Recent Low-Value
+3498,102,31,11738,Loyal Customers
+3499,75,11,10813,Recent Low-Value
+3500,216,23,16077,Champions
+3501,203,2,12171,Champions
+3502,192,27,3236,Recent Low-Value
+3503,249,35,6718,At Risk / Lost
+3504,242,2,5365,At Risk / Lost
+3505,179,39,8065,Recent Low-Value
+3506,219,37,9697,Champions
+3507,82,21,8808,Recent Low-Value
+3508,92,5,6669,Champions
+3509,175,21,17975,Recent Low-Value
+3510,239,29,5313,At Risk / Lost
+3511,260,20,11981,Loyal Customers
+3512,163,38,4328,Champions
+3513,48,20,4509,Loyal Customers
+3514,329,25,690,At Risk / Lost
+3515,328,2,19540,Recent Low-Value
+3516,116,32,18690,At Risk / Lost
+3517,337,26,2808,Loyal Customers
+3518,337,6,6081,At Risk / Lost
+3519,225,3,12321,At Risk / Lost
+3520,352,33,17231,Recent Low-Value
+3521,328,1,13885,Loyal Customers
+3522,147,5,6653,Loyal Customers
+3523,63,13,17981,Loyal Customers
+3524,294,19,1479,Champions
+3525,323,12,7460,At Risk / Lost
+3526,325,25,3870,Loyal Customers
+3527,13,35,19826,At Risk / Lost
+3528,189,12,14549,Recent Low-Value
+3529,287,30,9188,Recent Low-Value
+3530,208,5,1646,Champions
+3531,114,34,19610,Champions
+3532,22,22,6308,Recent Low-Value
+3533,349,39,16450,Loyal Customers
+3534,214,13,8975,Recent Low-Value
+3535,171,3,1395,At Risk / Lost
+3536,323,20,15961,Champions
+3537,54,31,14073,Champions
+3538,298,5,17869,Recent Low-Value
+3539,320,24,14581,Loyal Customers
+3540,126,33,17426,Loyal Customers
+3541,277,8,3380,At Risk / Lost
+3542,204,24,13697,Champions
+3543,194,20,17517,Recent Low-Value
+3544,169,16,2886,Recent Low-Value
+3545,152,12,2333,Champions
+3546,35,13,1720,Recent Low-Value
+3547,184,39,3635,Champions
+3548,286,25,19689,Loyal Customers
+3549,57,32,2982,Loyal Customers
+3550,222,24,16654,Recent Low-Value
+3551,303,9,9845,Loyal Customers
+3552,163,23,3997,Loyal Customers
+3553,19,13,15961,At Risk / Lost
+3554,264,32,2937,Champions
+3555,282,15,8699,Champions
+3556,113,36,16011,Recent Low-Value
+3557,327,5,6821,Champions
+3558,30,22,17163,At Risk / Lost
+3559,135,16,5587,Recent Low-Value
+3560,67,10,15221,Recent Low-Value
+3561,65,24,336,Champions
+3562,292,18,11729,Loyal Customers
+3563,25,18,11649,Loyal Customers
+3564,37,7,2523,Loyal Customers
+3565,1,4,13006,Loyal Customers
+3566,37,26,15088,At Risk / Lost
+3567,141,5,1132,Recent Low-Value
+3568,232,16,6439,Loyal Customers
+3569,136,35,3040,At Risk / Lost
+3570,188,26,12362,Recent Low-Value
+3571,128,18,19616,Champions
+3572,201,29,11752,Champions
+3573,127,23,5042,At Risk / Lost
+3574,257,14,7061,Recent Low-Value
+3575,164,15,7830,Loyal Customers
+3576,35,33,733,Recent Low-Value
+3577,194,25,6922,Loyal Customers
+3578,191,21,6587,At Risk / Lost
+3579,104,17,15231,Loyal Customers
+3580,23,23,19930,At Risk / Lost
+3581,265,17,5838,Recent Low-Value
+3582,290,14,3198,Recent Low-Value
+3583,260,29,8197,Loyal Customers
+3584,358,20,13236,Recent Low-Value
+3585,75,30,5576,Loyal Customers
+3586,355,19,8353,Recent Low-Value
+3587,72,39,18301,Champions
+3588,259,13,4987,Loyal Customers
+3589,188,18,19082,At Risk / Lost
+3590,173,23,11743,Champions
+3591,290,33,9592,At Risk / Lost
+3592,45,39,2753,Recent Low-Value
+3593,61,18,1554,Champions
+3594,83,9,17622,Recent Low-Value
+3595,123,33,5907,Loyal Customers
+3596,358,32,3292,At Risk / Lost
+3597,16,17,12912,Recent Low-Value
+3598,66,19,15875,At Risk / Lost
+3599,145,27,10502,At Risk / Lost
+3600,162,6,13174,Recent Low-Value
+3601,234,35,15345,Loyal Customers
+3602,144,37,3859,At Risk / Lost
+3603,358,34,19513,Recent Low-Value
+3604,188,20,15783,Loyal Customers
+3605,322,25,12560,Recent Low-Value
+3606,13,4,16547,Loyal Customers
+3607,184,10,15560,At Risk / Lost
+3608,111,10,17829,Champions
+3609,290,24,17458,Recent Low-Value
+3610,295,21,9914,At Risk / Lost
+3611,215,11,13990,Recent Low-Value
+3612,120,27,19814,Recent Low-Value
+3613,55,16,1840,Loyal Customers
+3614,27,26,11318,Recent Low-Value
+3615,118,30,6155,Loyal Customers
+3616,221,16,2054,At Risk / Lost
+3617,231,7,16763,Recent Low-Value
+3618,53,16,18875,At Risk / Lost
+3619,295,35,9332,Champions
+3620,321,16,6539,At Risk / Lost
+3621,233,12,1061,Recent Low-Value
+3622,158,35,17701,Champions
+3623,269,21,6107,Loyal Customers
+3624,21,36,17876,Champions
+3625,53,17,2176,Recent Low-Value
+3626,275,32,6296,Recent Low-Value
+3627,313,6,16392,At Risk / Lost
+3628,281,24,10415,Loyal Customers
+3629,214,27,11885,Recent Low-Value
+3630,31,20,8242,Recent Low-Value
+3631,337,25,6360,Loyal Customers
+3632,183,2,15634,Loyal Customers
+3633,23,9,4941,At Risk / Lost
+3634,32,28,13484,Champions
+3635,74,38,17543,Loyal Customers
+3636,10,3,2022,Recent Low-Value
+3637,54,20,12091,Loyal Customers
+3638,52,6,6201,Recent Low-Value
+3639,148,39,2573,At Risk / Lost
+3640,160,33,8208,Champions
+3641,14,1,15550,At Risk / Lost
+3642,178,37,10143,Loyal Customers
+3643,53,6,16310,Recent Low-Value
+3644,335,34,4649,Loyal Customers
+3645,22,15,694,Loyal Customers
+3646,30,26,16990,Loyal Customers
+3647,191,14,4989,Loyal Customers
+3648,260,7,8312,Champions
+3649,205,31,17883,Recent Low-Value
+3650,59,24,3301,Loyal Customers
+3651,264,31,7954,Recent Low-Value
+3652,12,29,6863,Champions
+3653,119,32,10753,Recent Low-Value
+3654,290,17,5290,Recent Low-Value
+3655,338,14,13815,Champions
+3656,248,36,5781,Loyal Customers
+3657,354,24,3778,Recent Low-Value
+3658,127,27,14202,At Risk / Lost
+3659,75,25,16820,Recent Low-Value
+3660,361,32,1767,Loyal Customers
+3661,204,18,17393,At Risk / Lost
+3662,49,18,8304,Loyal Customers
+3663,79,37,5222,Recent Low-Value
+3664,241,26,11317,Champions
+3665,349,9,15683,Loyal Customers
+3666,154,35,1073,Loyal Customers
+3667,274,8,1508,Champions
+3668,96,20,10235,Recent Low-Value
+3669,214,22,18772,Loyal Customers
+3670,294,19,8838,Recent Low-Value
+3671,209,30,14449,Recent Low-Value
+3672,343,28,1318,Recent Low-Value
+3673,88,35,17904,Champions
+3674,306,11,3477,Recent Low-Value
+3675,264,31,11064,Recent Low-Value
+3676,325,39,4198,At Risk / Lost
+3677,320,36,19222,At Risk / Lost
+3678,157,30,7719,At Risk / Lost
+3679,156,23,12039,Loyal Customers
+3680,139,19,18326,Loyal Customers
+3681,121,12,19300,At Risk / Lost
+3682,65,15,16978,Champions
+3683,107,31,6660,Champions
+3684,147,37,5610,At Risk / Lost
+3685,137,37,3544,Loyal Customers
+3686,162,15,7643,Loyal Customers
+3687,100,29,12529,Champions
+3688,338,26,7353,Recent Low-Value
+3689,307,2,13875,Champions
+3690,141,20,145,Recent Low-Value
+3691,83,15,15697,Loyal Customers
+3692,177,4,2157,Loyal Customers
+3693,198,22,763,At Risk / Lost
+3694,112,38,4768,Loyal Customers
+3695,56,23,18513,Recent Low-Value
+3696,179,26,5817,Champions
+3697,186,11,2796,At Risk / Lost
+3698,218,28,13300,Recent Low-Value
+3699,316,2,16201,Champions
+3700,217,8,8931,Champions
+3701,120,29,19147,Champions
+3702,175,11,19229,Loyal Customers
+3703,23,37,5104,Champions
+3704,213,18,13256,Loyal Customers
+3705,235,14,4502,Champions
+3706,13,10,10887,Champions
+3707,101,35,14762,Loyal Customers
+3708,24,9,19911,Loyal Customers
+3709,364,35,6012,Recent Low-Value
+3710,11,11,494,Champions
+3711,273,12,14735,Loyal Customers
+3712,281,3,3697,Recent Low-Value
+3713,94,39,10624,Recent Low-Value
+3714,201,14,429,Loyal Customers
+3715,21,28,17256,Champions
+3716,340,11,1745,Recent Low-Value
+3717,211,39,18271,Champions
+3718,140,25,9915,Champions
+3719,293,21,17483,Recent Low-Value
+3720,298,10,1948,Loyal Customers
+3721,101,15,1661,Champions
+3722,304,19,873,At Risk / Lost
+3723,359,22,7411,Loyal Customers
+3724,28,21,15303,Recent Low-Value
+3725,41,32,18287,At Risk / Lost
+3726,355,23,9390,Champions
+3727,303,13,2150,Loyal Customers
+3728,146,5,17231,At Risk / Lost
+3729,256,4,4073,Loyal Customers
+3730,227,28,1715,Champions
+3731,236,14,14650,Loyal Customers
+3732,361,8,10594,At Risk / Lost
+3733,13,9,5606,Loyal Customers
+3734,210,35,13154,Recent Low-Value
+3735,229,37,13961,Recent Low-Value
+3736,100,21,11687,At Risk / Lost
+3737,31,18,13615,Loyal Customers
+3738,16,33,5954,At Risk / Lost
+3739,137,8,16700,Loyal Customers
+3740,329,17,17843,Champions
+3741,166,31,3874,Recent Low-Value
+3742,310,34,5027,Champions
+3743,100,6,4529,Loyal Customers
+3744,109,22,4706,Champions
+3745,343,14,4578,At Risk / Lost
+3746,173,3,16176,At Risk / Lost
+3747,237,12,18380,Loyal Customers
+3748,162,36,7466,Recent Low-Value
+3749,216,12,4527,At Risk / Lost
+3750,264,2,13576,Recent Low-Value
+3751,263,2,5461,Loyal Customers
+3752,292,15,741,Recent Low-Value
+3753,274,23,10185,Loyal Customers
+3754,3,29,19759,Champions
+3755,28,17,4150,Loyal Customers
+3756,326,32,4653,Champions
+3757,149,7,18788,Loyal Customers
+3758,28,30,3443,At Risk / Lost
+3759,310,28,2156,At Risk / Lost
+3760,65,14,19292,Recent Low-Value
+3761,356,30,9516,Loyal Customers
+3762,21,17,7326,Loyal Customers
+3763,252,32,986,Loyal Customers
+3764,235,6,8684,Recent Low-Value
+3765,227,24,18930,At Risk / Lost
+3766,13,6,11630,Loyal Customers
+3767,313,27,3691,Recent Low-Value
+3768,49,18,18665,Loyal Customers
+3769,118,24,16838,Champions
+3770,54,37,2731,Loyal Customers
+3771,138,24,18005,Champions
+3772,53,38,19156,Recent Low-Value
+3773,44,34,11470,Recent Low-Value
+3774,303,15,18821,At Risk / Lost
+3775,53,11,17112,Loyal Customers
+3776,74,22,2779,Recent Low-Value
+3777,46,24,4522,At Risk / Lost
+3778,13,1,7563,Loyal Customers
+3779,165,18,9713,Recent Low-Value
+3780,102,12,17610,Champions
+3781,280,28,1880,Recent Low-Value
+3782,258,7,9524,Champions
+3783,337,23,6671,At Risk / Lost
+3784,356,21,925,At Risk / Lost
+3785,138,34,11255,Loyal Customers
+3786,163,11,2495,Loyal Customers
+3787,111,22,4245,Loyal Customers
+3788,102,35,15879,At Risk / Lost
+3789,17,29,5592,Champions
+3790,268,28,7211,Loyal Customers
+3791,182,18,13187,Loyal Customers
+3792,24,14,10084,At Risk / Lost
+3793,29,18,6892,Champions
+3794,171,28,7811,Recent Low-Value
+3795,228,24,1665,Loyal Customers
+3796,188,8,3767,Recent Low-Value
+3797,346,8,6559,Recent Low-Value
+3798,230,4,4196,Loyal Customers
+3799,321,27,1119,At Risk / Lost
+3800,340,36,9576,Loyal Customers
+3801,119,5,8354,Champions
+3802,156,33,11684,Champions
+3803,272,34,6065,Loyal Customers
+3804,175,30,11564,Recent Low-Value
+3805,104,8,18753,Champions
+3806,92,39,12539,Champions
+3807,186,26,4821,Loyal Customers
+3808,283,37,8508,Loyal Customers
+3809,181,34,295,At Risk / Lost
+3810,170,7,3373,Loyal Customers
+3811,187,28,15430,Loyal Customers
+3812,175,39,10986,Champions
+3813,222,39,3312,Champions
+3814,233,28,2855,Champions
+3815,162,14,18005,Recent Low-Value
+3816,134,38,1180,Champions
+3817,224,4,15601,Champions
+3818,153,18,17205,Loyal Customers
+3819,33,25,14147,At Risk / Lost
+3820,55,7,18046,Champions
+3821,7,38,739,At Risk / Lost
+3822,244,28,12602,Champions
+3823,313,5,5290,Champions
+3824,126,3,3836,At Risk / Lost
+3825,12,31,16573,Loyal Customers
+3826,16,20,1351,Champions
+3827,208,19,9394,At Risk / Lost
+3828,43,11,16832,Champions
+3829,135,3,4152,Recent Low-Value
+3830,228,23,19425,Recent Low-Value
+3831,111,7,371,Recent Low-Value
+3832,307,23,18514,Recent Low-Value
+3833,160,7,11798,Loyal Customers
+3834,331,34,15989,Recent Low-Value
+3835,264,19,9757,At Risk / Lost
+3836,225,9,9487,Champions
+3837,217,18,16476,At Risk / Lost
+3838,45,25,11379,Recent Low-Value
+3839,214,14,12115,Loyal Customers
+3840,59,25,7141,Recent Low-Value
+3841,132,19,17610,Recent Low-Value
+3842,104,39,8808,Loyal Customers
+3843,195,15,10957,Loyal Customers
+3844,157,16,9593,Loyal Customers
+3845,98,27,8152,Loyal Customers
+3846,226,10,17095,Loyal Customers
+3847,205,4,17233,Loyal Customers
+3848,79,19,13680,Champions
+3849,124,28,18340,Recent Low-Value
+3850,218,21,18010,Recent Low-Value
+3851,4,14,10316,Loyal Customers
+3852,90,33,6329,At Risk / Lost
+3853,104,10,13443,Loyal Customers
+3854,119,19,2198,Champions
+3855,133,30,15538,At Risk / Lost
+3856,312,22,7965,Champions
+3857,96,3,16657,At Risk / Lost
+3858,331,37,12311,At Risk / Lost
+3859,143,18,600,Loyal Customers
+3860,288,11,3746,Champions
+3861,28,2,18847,At Risk / Lost
+3862,278,12,10148,Champions
+3863,233,6,11444,Loyal Customers
+3864,17,29,18380,Loyal Customers
+3865,59,30,10010,Loyal Customers
+3866,90,2,1878,Loyal Customers
+3867,199,9,13084,Recent Low-Value
+3868,362,2,19541,At Risk / Lost
+3869,26,29,5290,Recent Low-Value
+3870,25,33,15404,Loyal Customers
+3871,301,10,7097,At Risk / Lost
+3872,339,34,12120,At Risk / Lost
+3873,267,8,4847,Champions
+3874,181,37,9386,Loyal Customers
+3875,360,33,145,Recent Low-Value
+3876,68,6,7858,Champions
+3877,351,19,19685,At Risk / Lost
+3878,321,32,555,Recent Low-Value
+3879,49,27,9954,Loyal Customers
+3880,175,1,19408,Recent Low-Value
+3881,52,33,17449,Recent Low-Value
+3882,102,32,1628,Recent Low-Value
+3883,216,5,3076,Champions
+3884,188,17,19555,At Risk / Lost
+3885,57,8,13388,Recent Low-Value
+3886,47,34,6487,At Risk / Lost
+3887,159,9,2621,Champions
+3888,174,23,6625,Loyal Customers
+3889,242,35,1226,Loyal Customers
+3890,282,7,13448,Recent Low-Value
+3891,241,15,7816,Champions
+3892,5,20,16202,Loyal Customers
+3893,84,25,3504,Champions
+3894,308,3,4592,Champions
+3895,361,24,2443,Recent Low-Value
+3896,248,34,206,Recent Low-Value
+3897,54,22,15295,Champions
+3898,161,11,13341,Champions
+3899,226,8,19638,Recent Low-Value
+3900,15,39,12675,Champions
+3901,224,35,4901,Recent Low-Value
+3902,61,38,5680,At Risk / Lost
+3903,122,8,16698,Champions
+3904,277,37,5500,Recent Low-Value
+3905,46,27,6975,Champions
+3906,294,28,8756,Recent Low-Value
+3907,62,34,6347,Champions
+3908,86,32,6277,Loyal Customers
+3909,210,15,7369,Loyal Customers
+3910,78,17,15074,Champions
+3911,202,33,14137,Loyal Customers
+3912,302,16,18856,Champions
+3913,223,29,16267,Champions
+3914,222,9,10480,At Risk / Lost
+3915,3,33,6717,At Risk / Lost
+3916,6,29,403,Loyal Customers
+3917,93,13,12783,At Risk / Lost
+3918,8,21,16817,At Risk / Lost
+3919,235,21,11125,Champions
+3920,108,5,18815,Recent Low-Value
+3921,161,10,4661,Champions
+3922,209,6,179,At Risk / Lost
+3923,240,13,3863,Champions
+3924,331,1,10269,Loyal Customers
+3925,333,20,17216,Recent Low-Value
+3926,50,8,4076,At Risk / Lost
+3927,11,10,17868,At Risk / Lost
+3928,351,9,2224,Champions
+3929,156,3,6752,Champions
+3930,70,11,5383,Champions
+3931,169,12,7276,Champions
+3932,272,10,18776,At Risk / Lost
+3933,68,25,12509,Champions
+3934,355,25,12419,At Risk / Lost
+3935,252,11,1097,Champions
+3936,48,36,11101,Recent Low-Value
+3937,184,39,4764,Recent Low-Value
+3938,320,26,18841,Champions
+3939,187,14,18163,Champions
+3940,90,39,13217,Loyal Customers
+3941,332,1,11331,Recent Low-Value
+3942,139,4,7540,At Risk / Lost
+3943,357,30,11318,Recent Low-Value
+3944,89,12,15708,At Risk / Lost
+3945,274,35,19229,Champions
+3946,19,13,4190,Recent Low-Value
+3947,311,31,7571,Recent Low-Value
+3948,358,38,3843,Loyal Customers
+3949,154,23,10296,Loyal Customers
+3950,260,4,7108,Recent Low-Value
+3951,108,16,3424,Recent Low-Value
+3952,285,7,8732,Recent Low-Value
+3953,59,22,19741,At Risk / Lost
+3954,125,29,326,Champions
+3955,354,11,14963,Loyal Customers
+3956,273,33,16127,Champions
+3957,107,29,18885,Loyal Customers
+3958,299,39,4818,Loyal Customers
+3959,245,12,17508,Loyal Customers
+3960,336,7,5772,Recent Low-Value
+3961,247,39,15362,Loyal Customers
+3962,8,26,17354,Champions
+3963,141,9,3299,Loyal Customers
+3964,362,34,18229,Champions
+3965,8,13,5370,Loyal Customers
+3966,352,36,12850,Loyal Customers
+3967,94,25,7997,Recent Low-Value
+3968,321,24,8764,Champions
+3969,39,17,14992,Loyal Customers
+3970,81,2,8371,Loyal Customers
+3971,187,13,5258,Champions
+3972,84,31,12944,Loyal Customers
+3973,88,29,689,At Risk / Lost
+3974,242,28,9652,Recent Low-Value
+3975,342,27,16367,Champions
+3976,93,15,18368,Recent Low-Value
+3977,86,31,16259,At Risk / Lost
+3978,44,15,14363,At Risk / Lost
+3979,137,33,5499,At Risk / Lost
+3980,74,20,8603,Champions
+3981,36,12,1176,At Risk / Lost
+3982,101,37,7335,Champions
+3983,156,9,16517,Champions
+3984,255,23,1941,Loyal Customers
+3985,171,8,4581,Champions
+3986,216,32,1234,At Risk / Lost
+3987,170,14,13239,Champions
+3988,252,27,7871,Champions
+3989,360,25,8667,Recent Low-Value
+3990,322,13,9015,At Risk / Lost
+3991,55,21,13998,Champions
+3992,91,31,2013,Loyal Customers
+3993,278,37,4397,Champions
+3994,101,5,2042,Champions
+3995,155,13,17815,Recent Low-Value
+3996,349,28,437,At Risk / Lost
+3997,364,25,14356,At Risk / Lost
+3998,141,35,10157,Loyal Customers
+3999,173,39,9083,Loyal Customers
+4000,10,7,16383,Loyal Customers
+4001,228,38,3800,Champions
+4002,265,32,12245,Champions
+4003,248,3,6218,Loyal Customers
+4004,247,39,2773,At Risk / Lost
+4005,155,37,2222,At Risk / Lost
+4006,34,22,12077,Loyal Customers
+4007,129,8,8350,Recent Low-Value
+4008,160,17,18546,At Risk / Lost
+4009,89,27,17738,At Risk / Lost
+4010,93,33,3788,Loyal Customers
+4011,327,17,3848,At Risk / Lost
+4012,241,12,6442,Champions
+4013,323,27,16375,Champions
+4014,117,8,13765,At Risk / Lost
+4015,94,23,4230,Champions
+4016,163,29,3129,Recent Low-Value
+4017,99,20,19330,At Risk / Lost
+4018,113,16,13282,Loyal Customers
+4019,359,17,4135,Champions
+4020,91,16,15227,Recent Low-Value
+4021,346,19,2999,Recent Low-Value
+4022,206,8,9738,Champions
+4023,17,38,13322,Recent Low-Value
+4024,274,38,17396,At Risk / Lost
+4025,173,29,4342,Recent Low-Value
+4026,116,36,18195,Champions
+4027,349,26,1539,Recent Low-Value
+4028,181,31,5713,Champions
+4029,91,12,5475,Champions
+4030,82,17,8977,Recent Low-Value
+4031,324,15,2566,Champions
+4032,114,9,7924,Champions
+4033,257,39,12429,Loyal Customers
+4034,58,12,11730,At Risk / Lost
+4035,154,32,17449,Champions
+4036,116,25,14303,At Risk / Lost
+4037,343,39,7028,Loyal Customers
+4038,266,18,9211,Loyal Customers
+4039,315,15,8220,Loyal Customers
+4040,203,32,11164,Loyal Customers
+4041,41,6,17992,At Risk / Lost
+4042,105,35,9504,Recent Low-Value
+4043,193,34,971,Recent Low-Value
+4044,278,38,12682,At Risk / Lost
+4045,354,5,963,Champions
+4046,237,18,14983,At Risk / Lost
+4047,221,16,12245,Champions
+4048,68,8,3155,Champions
+4049,197,25,12286,Recent Low-Value
+4050,256,32,2782,Loyal Customers
+4051,139,26,12982,Recent Low-Value
+4052,312,22,5378,Recent Low-Value
+4053,149,31,13905,At Risk / Lost
+4054,99,10,17097,At Risk / Lost
+4055,76,12,1972,Champions
+4056,282,28,11446,At Risk / Lost
+4057,109,6,7823,Champions
+4058,188,20,13971,Champions
+4059,199,5,16046,Loyal Customers
+4060,303,23,7289,Loyal Customers
+4061,327,9,12852,Recent Low-Value
+4062,154,29,11665,Loyal Customers
+4063,40,16,7042,Champions
+4064,133,22,14830,At Risk / Lost
+4065,132,8,11483,Loyal Customers
+4066,279,20,344,Loyal Customers
+4067,362,14,120,Loyal Customers
+4068,84,39,14017,Loyal Customers
+4069,242,37,13821,Champions
+4070,116,34,5867,Champions
+4071,109,11,10347,Recent Low-Value
+4072,221,33,3615,At Risk / Lost
+4073,41,31,2010,Recent Low-Value
+4074,147,34,10850,Recent Low-Value
+4075,112,7,8176,Loyal Customers
+4076,103,23,18106,At Risk / Lost
+4077,46,7,15151,Loyal Customers
+4078,324,25,4414,Champions
+4079,271,3,2553,Recent Low-Value
+4080,195,38,2115,At Risk / Lost
+4081,280,20,10336,Champions
+4082,283,34,2900,Recent Low-Value
+4083,40,30,9123,At Risk / Lost
+4084,189,17,11984,Recent Low-Value
+4085,164,10,16452,At Risk / Lost
+4086,24,35,12982,Recent Low-Value
+4087,24,20,10446,Loyal Customers
+4088,4,18,14135,Recent Low-Value
+4089,323,27,16208,Recent Low-Value
+4090,290,36,2953,At Risk / Lost
+4091,181,23,18720,At Risk / Lost
+4092,248,32,4276,Loyal Customers
+4093,116,10,2255,At Risk / Lost
+4094,279,11,6929,Recent Low-Value
+4095,69,38,1986,At Risk / Lost
+4096,351,6,6571,At Risk / Lost
+4097,254,34,12689,At Risk / Lost
+4098,181,36,8491,Loyal Customers
+4099,318,37,19424,Loyal Customers
+4100,169,17,19974,Champions
+4101,313,12,13450,Loyal Customers
+4102,249,21,7999,Loyal Customers
+4103,188,19,406,Loyal Customers
+4104,54,3,3175,Recent Low-Value
+4105,326,18,18140,Champions
+4106,357,19,7344,Recent Low-Value
+4107,313,6,6711,Loyal Customers
+4108,138,16,19176,Loyal Customers
+4109,168,8,14234,Champions
+4110,103,18,18248,Champions
+4111,85,39,375,At Risk / Lost
+4112,317,12,5371,Loyal Customers
+4113,212,10,7431,Loyal Customers
+4114,3,7,11653,Recent Low-Value
+4115,179,1,11673,At Risk / Lost
+4116,342,36,19944,Loyal Customers
+4117,303,21,10172,Recent Low-Value
+4118,332,37,16117,Champions
+4119,38,24,18328,Recent Low-Value
+4120,239,25,16555,Loyal Customers
+4121,169,7,7486,Recent Low-Value
+4122,343,17,6962,Recent Low-Value
+4123,314,29,7440,At Risk / Lost
+4124,306,30,9587,At Risk / Lost
+4125,30,7,15161,Champions
+4126,190,33,7735,At Risk / Lost
+4127,357,7,14704,Recent Low-Value
+4128,25,24,17527,At Risk / Lost
+4129,112,11,3142,Loyal Customers
+4130,206,9,17298,Recent Low-Value
+4131,185,12,10486,Recent Low-Value
+4132,47,35,11792,Recent Low-Value
+4133,228,4,15325,Loyal Customers
+4134,39,36,16793,Recent Low-Value
+4135,16,28,6761,At Risk / Lost
+4136,22,13,10353,Loyal Customers
+4137,213,23,18361,Recent Low-Value
+4138,310,19,18970,At Risk / Lost
+4139,149,37,12037,At Risk / Lost
+4140,241,39,894,Champions
+4141,272,24,14698,At Risk / Lost
+4142,59,16,6886,At Risk / Lost
+4143,287,33,4114,Champions
+4144,202,12,7492,Champions
+4145,32,34,12645,Loyal Customers
+4146,162,7,5453,At Risk / Lost
+4147,255,11,3507,Loyal Customers
+4148,254,31,17458,Loyal Customers
+4149,9,29,16153,Recent Low-Value
+4150,139,13,13289,Loyal Customers
+4151,10,31,11313,Loyal Customers
+4152,214,2,7348,Loyal Customers
+4153,273,39,4469,Loyal Customers
+4154,324,15,8150,Champions
+4155,48,11,16948,At Risk / Lost
+4156,111,34,5515,Recent Low-Value
+4157,153,39,15498,Champions
+4158,123,4,8215,Recent Low-Value
+4159,357,11,387,Recent Low-Value
+4160,102,29,3295,Champions
+4161,241,2,18476,Loyal Customers
+4162,321,16,7550,Champions
+4163,191,39,3025,Recent Low-Value
+4164,217,13,14615,Recent Low-Value
+4165,51,37,17604,Loyal Customers
+4166,292,17,5410,Champions
+4167,81,21,16930,At Risk / Lost
+4168,88,19,11860,Recent Low-Value
+4169,194,7,14996,Champions
+4170,104,38,19380,Loyal Customers
+4171,271,8,17205,Loyal Customers
+4172,96,13,18647,At Risk / Lost
+4173,198,37,10874,Recent Low-Value
+4174,1,2,15557,At Risk / Lost
+4175,167,11,9643,At Risk / Lost
+4176,126,24,4080,At Risk / Lost
+4177,313,6,11676,At Risk / Lost
+4178,81,26,18209,Loyal Customers
+4179,251,7,3513,Recent Low-Value
+4180,169,39,594,At Risk / Lost
+4181,73,19,1047,Recent Low-Value
+4182,141,6,122,Loyal Customers
+4183,70,29,1228,Loyal Customers
+4184,262,39,14086,Champions
+4185,340,2,16261,Champions
+4186,308,19,16260,Recent Low-Value
+4187,245,4,17041,Champions
+4188,3,6,9908,At Risk / Lost
+4189,337,37,7098,Recent Low-Value
+4190,63,28,7282,Loyal Customers
+4191,49,30,18140,Loyal Customers
+4192,76,7,9098,At Risk / Lost
+4193,175,9,3412,Champions
+4194,109,25,13429,Recent Low-Value
+4195,183,33,15902,Recent Low-Value
+4196,192,1,11267,At Risk / Lost
+4197,65,6,2424,Champions
+4198,337,18,9739,Recent Low-Value
+4199,271,10,13438,At Risk / Lost
+4200,100,28,10853,Recent Low-Value
+4201,32,11,6084,Loyal Customers
+4202,352,33,18995,Recent Low-Value
+4203,128,1,15242,Recent Low-Value
+4204,339,13,11163,Recent Low-Value
+4205,43,37,462,Champions
+4206,78,20,3554,Champions
+4207,314,1,19282,At Risk / Lost
+4208,289,3,3355,Champions
+4209,270,18,17701,Recent Low-Value
+4210,162,14,17969,Recent Low-Value
+4211,189,31,5449,Champions
+4212,247,27,7295,Champions
+4213,216,17,10147,Recent Low-Value
+4214,315,29,7850,Recent Low-Value
+4215,339,36,9499,Loyal Customers
+4216,168,37,13786,At Risk / Lost
+4217,339,26,8135,Champions
+4218,193,17,1607,At Risk / Lost
+4219,283,22,17487,Recent Low-Value
+4220,336,25,14876,At Risk / Lost
+4221,13,2,17409,Champions
+4222,240,22,6683,Champions
+4223,320,5,4027,At Risk / Lost
+4224,147,4,17469,Champions
+4225,204,36,15897,Loyal Customers
+4226,80,6,4331,Recent Low-Value
+4227,43,21,5402,Recent Low-Value
+4228,89,13,5391,Champions
+4229,148,37,1008,Recent Low-Value
+4230,95,25,15223,Loyal Customers
+4231,151,26,12977,Champions
+4232,2,39,14339,Loyal Customers
+4233,22,20,2686,Loyal Customers
+4234,313,33,9435,Recent Low-Value
+4235,328,14,15740,Recent Low-Value
+4236,7,36,17815,At Risk / Lost
+4237,206,17,10634,Loyal Customers
+4238,114,21,1906,Recent Low-Value
+4239,272,16,10392,Loyal Customers
+4240,83,16,17289,At Risk / Lost
+4241,179,20,11067,Loyal Customers
+4242,210,29,16555,Champions
+4243,328,28,127,At Risk / Lost
+4244,124,8,8760,At Risk / Lost
+4245,113,24,7155,Loyal Customers
+4246,12,3,9716,Loyal Customers
+4247,126,25,10540,Recent Low-Value
+4248,53,19,3932,Champions
+4249,331,33,16070,At Risk / Lost
+4250,283,2,13207,At Risk / Lost
+4251,140,15,13877,At Risk / Lost
+4252,97,22,16054,Recent Low-Value
+4253,5,10,17043,Champions
+4254,57,18,8057,At Risk / Lost
+4255,334,22,12766,At Risk / Lost
+4256,69,27,10210,Recent Low-Value
+4257,118,13,7444,Loyal Customers
+4258,59,33,16562,At Risk / Lost
+4259,33,5,13796,Champions
+4260,318,26,1131,Champions
+4261,50,13,18556,Champions
+4262,19,27,15190,Champions
+4263,214,14,15916,Recent Low-Value
+4264,197,24,17968,At Risk / Lost
+4265,47,3,10537,Recent Low-Value
+4266,167,30,15553,Champions
+4267,289,35,14358,Champions
+4268,141,14,1650,Champions
+4269,84,12,13077,Recent Low-Value
+4270,182,28,4782,Champions
+4271,79,29,14539,At Risk / Lost
+4272,215,17,18313,Champions
+4273,14,21,3851,At Risk / Lost
+4274,215,23,13014,At Risk / Lost
+4275,128,20,10323,Champions
+4276,310,11,15498,Recent Low-Value
+4277,248,34,6701,Loyal Customers
+4278,29,10,3956,Loyal Customers
+4279,280,10,12761,At Risk / Lost
+4280,338,6,15691,Recent Low-Value
+4281,319,36,6282,Loyal Customers
+4282,202,24,8070,Champions
+4283,361,12,15254,Champions
+4284,57,23,2194,At Risk / Lost
+4285,218,27,12195,Recent Low-Value
+4286,62,37,19516,Recent Low-Value
+4287,157,6,13772,Loyal Customers
+4288,202,1,18032,Loyal Customers
+4289,17,6,14328,Champions
+4290,322,22,8659,At Risk / Lost
+4291,6,24,164,Recent Low-Value
+4292,58,25,3399,Loyal Customers
+4293,325,15,4949,Loyal Customers
+4294,318,26,5739,At Risk / Lost
+4295,169,8,18519,At Risk / Lost
+4296,82,24,11155,Champions
+4297,219,38,18712,At Risk / Lost
+4298,177,6,17080,Champions
+4299,204,35,10966,Champions
+4300,71,1,3989,At Risk / Lost
+4301,266,36,19990,At Risk / Lost
+4302,98,12,15558,At Risk / Lost
+4303,345,38,17879,At Risk / Lost
+4304,291,11,552,At Risk / Lost
+4305,208,12,11095,Champions
+4306,2,39,2731,Loyal Customers
+4307,124,7,2286,Recent Low-Value
+4308,280,11,6067,Recent Low-Value
+4309,74,36,4448,Champions
+4310,166,31,1559,Champions
+4311,22,33,2042,Loyal Customers
+4312,154,13,14996,At Risk / Lost
+4313,295,18,14507,Champions
+4314,219,24,15722,Recent Low-Value
+4315,157,9,14657,At Risk / Lost
+4316,230,31,16545,Champions
+4317,20,10,17978,At Risk / Lost
+4318,41,2,17664,Recent Low-Value
+4319,148,38,13193,At Risk / Lost
+4320,108,15,2888,Champions
+4321,84,3,10500,Champions
+4322,322,31,16589,Recent Low-Value
+4323,309,6,4025,Loyal Customers
+4324,290,3,18392,Loyal Customers
+4325,323,11,18533,At Risk / Lost
+4326,134,15,14668,Champions
+4327,207,28,12756,Champions
+4328,283,10,9566,Recent Low-Value
+4329,266,38,4004,Recent Low-Value
+4330,73,7,15567,Champions
+4331,352,15,10519,Recent Low-Value
+4332,48,18,16776,Loyal Customers
+4333,326,18,10514,Loyal Customers
+4334,233,24,12265,At Risk / Lost
+4335,100,2,10783,Recent Low-Value
+4336,59,20,15542,At Risk / Lost
+4337,258,34,4960,Recent Low-Value
+4338,65,26,3829,Recent Low-Value
